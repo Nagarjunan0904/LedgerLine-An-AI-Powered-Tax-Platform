@@ -1,122 +1,157 @@
-import type { FieldState } from '@/types'
+import { useState } from "react"
 
-const STATES: { state: FieldState; description: string }[] = [
-  { state: 'ai-suggested', description: 'AI proposed this value; no one has looked at it yet' },
-  { state: 'needs-review', description: 'Flagged for a preparer to confirm' },
-  { state: 'verified', description: 'A person checked this and signed off' },
-  { state: 'editable', description: 'Open for direct entry' },
-  { state: 'locked', description: 'Filed, or otherwise closed to edits' },
+import type { FieldState } from "@/types"
+import { FieldBox } from "@/components/field/FieldBox"
+import type { FieldSize } from "@/components/field/fieldVariants"
+
+const SIZES: FieldSize[] = ["sm", "md", "lg"]
+
+const STATE_ROWS: { state: FieldState; label: string }[] = [
+  { state: "ai-suggested", label: "AI-suggested" },
+  { state: "needs-review", label: "Needs review" },
+  { state: "verified", label: "Verified" },
+  { state: "editable", label: "Editable" },
+  { state: "locked", label: "Locked" },
 ]
-
-const FIGURES = [
-  { label: 'Wages, tips, other comp.', value: 84250.0 },
-  { label: 'Federal income tax withheld', value: 9312.47 },
-  { label: 'Interest income', value: 128.6 },
-  { label: 'Qualified dividends', value: 1904.0 },
-  { label: 'Total tax', value: 11875.02 },
-]
-
-function StateSwatch({ state, description }: { state: FieldState; description: string }) {
-  return (
-    <div
-      className="rounded-sm border p-4"
-      style={{
-        borderColor: `var(--state-${state}-border)`,
-        backgroundColor: `var(--state-${state}-fill)`,
-        color: `var(--state-${state}-text)`,
-      }}
-    >
-      <p className="font-display text-xs uppercase tracking-wider font-semibold">{state}</p>
-      <p className="mt-1 text-sm">{description}</p>
-      <dl className="mt-3 space-y-1 text-xs font-mono">
-        <div className="flex justify-between gap-4">
-          <dt className="opacity-70">border</dt>
-          <dd>--color-state-{state}-border</dd>
-        </div>
-        <div className="flex justify-between gap-4">
-          <dt className="opacity-70">fill</dt>
-          <dd>--color-state-{state}-fill</dd>
-        </div>
-        <div className="flex justify-between gap-4">
-          <dt className="opacity-70">text</dt>
-          <dd>--color-state-{state}-text</dd>
-        </div>
-      </dl>
-    </div>
-  )
-}
 
 function App() {
+  const [lastAction, setLastAction] = useState<string | null>(null)
+
+  function renderStateExample(state: FieldState, size: FieldSize) {
+    const label = `Wages, box 1`
+    switch (state) {
+      case "ai-suggested":
+        return (
+          <FieldBox
+            state={state}
+            size={size}
+            label={label}
+            value={84250}
+            confidence={0.82}
+            onExplain={() => setLastAction(`Explain requested — ${label} (${size})`)}
+            onEdit={(v) => setLastAction(`Edited ${label} (${size}) → ${v}`)}
+          />
+        )
+      case "needs-review":
+        return (
+          <FieldBox
+            state={state}
+            size={size}
+            label={label}
+            value={9312.47}
+            onEdit={(v) => setLastAction(`Edited ${label} (${size}) → ${v}`)}
+          />
+        )
+      case "verified":
+        return (
+          <FieldBox
+            state={state}
+            size={size}
+            label={label}
+            value={128.6}
+            verifiedBy={{ by: "Priya N.", at: "2026-08-05T14:30:00Z" }}
+          />
+        )
+      case "editable":
+        return (
+          <FieldBox
+            state={state}
+            size={size}
+            label={label}
+            value={1904}
+            onEdit={(v) => setLastAction(`Edited ${label} (${size}) → ${v}`)}
+          />
+        )
+      case "locked":
+        return (
+          <FieldBox
+            state={state}
+            size={size}
+            label={label}
+            value={11875.02}
+            lockReason="Filed with the IRS on Apr 14 — locked from further edits."
+          />
+        )
+    }
+  }
+
   return (
     <main className="min-h-screen bg-paper text-ink p-10">
-      <header className="mb-12">
+      <header className="mb-10">
         <p className="font-display text-xs uppercase tracking-widest text-ink/60">Ledgerline</p>
         <h1 className="font-display text-3xl uppercase tracking-wide font-bold mt-1">
-          Design token proof sheet
+          FieldBox kitchen sink
         </h1>
         <p className="font-body text-sm text-ink/70 mt-2 max-w-prose">
-          Every color, font, and figure style the product uses, rendered directly from the
-          tokens in <code className="font-mono text-xs bg-panel px-1 py-0.5 rounded-sm">src/index.css</code>.
+          Every field state at every size, plus the edge cases. Tab to a field and press Enter
+          to edit it, Escape to cancel. Hover or focus the lock icon on a locked field to see
+          why it can't be changed.
         </p>
       </header>
 
       <section className="mb-12">
         <h2 className="font-display text-sm uppercase tracking-widest font-semibold border-b pb-2 mb-4">
-          Field state
+          State × size
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-          {STATES.map(({ state, description }) => (
-            <StateSwatch key={state} state={state} description={description} />
+        <div className="space-y-8">
+          {STATE_ROWS.map(({ state, label }) => (
+            <div key={state}>
+              <p className="font-mono text-xs uppercase tracking-wide text-ink/50 mb-2">{label}</p>
+              <div className="flex flex-wrap items-start gap-4">
+                {SIZES.map((size) => (
+                  <div key={size}>{renderStateExample(state, size)}</div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </section>
 
       <section className="mb-12">
         <h2 className="font-display text-sm uppercase tracking-widest font-semibold border-b pb-2 mb-4">
-          Type
+          Edge cases
         </h2>
-        <div className="space-y-6">
-          <div className="rounded-sm border bg-panel/50 p-4">
-            <p className="font-mono text-xs text-ink/60 mb-2">--font-display · Archivo</p>
-            <p className="font-display text-2xl uppercase tracking-wide font-bold">
-              Schedule C — Profit or Loss
-            </p>
-          </div>
-          <div className="rounded-sm border bg-panel/50 p-4">
-            <p className="font-mono text-xs text-ink/60 mb-2">--font-body · Inter Variable</p>
-            <p className="font-body text-base">
-              This return has three open items before it can move to review. The client was
-              notified on August 4th.
-            </p>
-          </div>
-          <div className="rounded-sm border bg-panel/50 p-4">
-            <p className="font-mono text-xs text-ink/60 mb-2">
-              --font-mono · JetBrains Mono Variable · tabular-nums
-            </p>
-            <p className="font-mono text-2xl">1,204,309.48</p>
-          </div>
+        <div className="flex flex-wrap items-start gap-4">
+          <FieldBox
+            state="editable"
+            label="Very long value"
+            value={123456789012.34}
+            onEdit={(v) => setLastAction(`Edited Very long value → ${v}`)}
+          />
+          <FieldBox
+            state="editable"
+            label="Zero value"
+            value={0}
+            onEdit={(v) => setLastAction(`Edited Zero value → ${v}`)}
+          />
+          <FieldBox
+            state="editable"
+            label="Negative value"
+            value={-450.32}
+            onEdit={(v) => setLastAction(`Edited Negative value → ${v}`)}
+          />
+          <FieldBox
+            state="editable"
+            label="Missing value"
+            value={null}
+            onEdit={(v) => setLastAction(`Edited Missing value → ${v}`)}
+          />
+          <FieldBox
+            state="verified"
+            label="Total interest income (3 sources)"
+            value={1284.91}
+            verifiedBy={{ by: "Priya N.", at: "2026-08-02T09:15:00Z" }}
+          />
         </div>
       </section>
 
       <section>
         <h2 className="font-display text-sm uppercase tracking-widest font-semibold border-b pb-2 mb-4">
-          Tabular alignment
+          Last interaction
         </h2>
-        <div className="rounded-sm border max-w-sm">
-          {FIGURES.map((row, i) => (
-            <div
-              key={row.label}
-              className={`flex justify-between items-baseline gap-6 px-4 py-2 ${
-                i !== FIGURES.length - 1 ? 'border-b' : ''
-              }`}
-            >
-              <span className="font-body text-sm text-ink/70">{row.label}</span>
-              <span className="font-mono text-sm tabular-nums text-right">
-                {row.value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-              </span>
-            </div>
-          ))}
-        </div>
+        <p className="font-mono text-sm text-ink/70">
+          {lastAction ?? "No interactions yet — tab to a field and press Enter, or click Explain."}
+        </p>
       </section>
     </main>
   )

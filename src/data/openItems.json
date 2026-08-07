@@ -1,0 +1,1676 @@
+[
+  {
+    "id": "item-ellery-conflicting-1099int",
+    "returnId": "return-ellery-2025",
+    "title": "Confirm correct 1099-INT amount from Regional Community Bank",
+    "description": "Two 1099-INT forms were uploaded from the same payer with different amounts ($412.50 vs. $458.90). Confirm with the client which is correct — or whether one is a corrected reissue — before totaling interest income.",
+    "owner": "firm",
+    "assignedTo": "user-nadia-osei",
+    "dueDate": "2026-08-12T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-ellery-1099int-regional-a"
+      },
+      {
+        "type": "document",
+        "id": "doc-ellery-1099int-regional-b"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-ellery-failed-extraction",
+    "returnId": "return-ellery-2025",
+    "title": "Re-upload or manually enter the blurry expense receipt",
+    "description": "Automatic extraction failed on this receipt — the image is too blurry to read. Ask the client for a clearer photo, or enter the amount manually from the original.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-14T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-ellery-1099b-failed"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0001",
+    "returnId": "return-ellery-2025",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-17T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0002",
+    "returnId": "return-ellery-2025",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-05T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-08-06T12:00:00.000Z"
+  },
+  {
+    "id": "item-0003",
+    "returnId": "return-ellery-2025",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-05T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-06T12:00:00.000Z"
+  },
+  {
+    "id": "item-0004",
+    "returnId": "return-whitfield-2024",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2025-01-20T00:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": "2025-01-18T00:00:00.000Z"
+  },
+  {
+    "id": "item-0005",
+    "returnId": "return-whitfield-2024",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2025-03-10T00:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2025-03-09T00:00:00.000Z"
+  },
+  {
+    "id": "item-voss-missing-k1",
+    "returnId": "return-voss-2025",
+    "title": "Provide Schedule K-1 from Voss Consulting LLC",
+    "description": "Business income can't be finalized until the K-1 arrives. The client has been notified; following up weekly.",
+    "owner": "client",
+    "assignedTo": "user-0004",
+    "dueDate": "2026-08-11T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0006",
+    "returnId": "return-osei-2025",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-19T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0007",
+    "returnId": "return-0001",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "firm",
+    "assignedTo": "user-0002",
+    "dueDate": "2026-08-16T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0034"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0008",
+    "returnId": "return-0001",
+    "title": "Upload Form 1095-A",
+    "description": "Marketplace health insurance was indicated on the questionnaire. Please upload Form 1095-A to reconcile the premium tax credit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-02T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-14T12:00:00.000Z"
+  },
+  {
+    "id": "item-0009",
+    "returnId": "return-0001",
+    "title": "Provide charitable contribution receipts",
+    "description": "Any single charitable contribution over $250 requires a written acknowledgment from the organization. Please provide receipts.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-22T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0010",
+    "returnId": "return-0001",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "firm",
+    "assignedTo": "user-0002",
+    "dueDate": "2026-09-05T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-13T12:00:00.000Z"
+  },
+  {
+    "id": "item-0011",
+    "returnId": "return-0003",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-29T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0012",
+    "returnId": "return-0003",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-22T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0013",
+    "returnId": "return-0003",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "firm",
+    "assignedTo": "user-0005",
+    "dueDate": "2026-08-28T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0014",
+    "returnId": "return-0004",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-23T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-08-04T12:00:00.000Z"
+  },
+  {
+    "id": "item-0015",
+    "returnId": "return-0005",
+    "title": "Clarify home office square footage",
+    "description": "To calculate the home office deduction we need the square footage used exclusively for business, and the total square footage of the home.",
+    "owner": "firm",
+    "assignedTo": "user-0008",
+    "dueDate": "2026-08-24T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0056"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0016",
+    "returnId": "return-0006",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-03T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0017",
+    "returnId": "return-0006",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "firm",
+    "assignedTo": "user-0005",
+    "dueDate": "2026-09-06T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0018",
+    "returnId": "return-0006",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "firm",
+    "assignedTo": "user-0005",
+    "dueDate": "2026-08-28T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0019",
+    "returnId": "return-0007",
+    "title": "Clarify home office square footage",
+    "description": "To calculate the home office deduction we need the square footage used exclusively for business, and the total square footage of the home.",
+    "owner": "firm",
+    "assignedTo": "user-0003",
+    "dueDate": "2026-08-18T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0020",
+    "returnId": "return-0008",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-06T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-23T12:00:00.000Z"
+  },
+  {
+    "id": "item-0021",
+    "returnId": "return-0008",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-13T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0082"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0022",
+    "returnId": "return-0008",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "firm",
+    "assignedTo": "user-0002",
+    "dueDate": "2026-08-22T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0078"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0023",
+    "returnId": "return-0010",
+    "title": "Confirm estimated tax payments",
+    "description": "Please confirm the dates and amounts of any estimated tax payments made during the year.",
+    "owner": "firm",
+    "assignedTo": "user-0006",
+    "dueDate": "2026-08-07T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0095"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0024",
+    "returnId": "return-0010",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "firm",
+    "assignedTo": "user-0006",
+    "dueDate": "2026-08-08T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-08-03T12:00:00.000Z"
+  },
+  {
+    "id": "item-0025",
+    "returnId": "return-0010",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "firm",
+    "assignedTo": "user-0006",
+    "dueDate": "2026-07-25T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-30T12:00:00.000Z"
+  },
+  {
+    "id": "item-0026",
+    "returnId": "return-0010",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-25T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-16T12:00:00.000Z"
+  },
+  {
+    "id": "item-0027",
+    "returnId": "return-0010",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "firm",
+    "assignedTo": "user-0006",
+    "dueDate": "2026-08-07T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": "2026-08-05T12:00:00.000Z"
+  },
+  {
+    "id": "item-0028",
+    "returnId": "return-0011",
+    "title": "Confirm estimated tax payments",
+    "description": "Please confirm the dates and amounts of any estimated tax payments made during the year.",
+    "owner": "firm",
+    "assignedTo": "user-0007",
+    "dueDate": "2026-07-24T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-28T12:00:00.000Z"
+  },
+  {
+    "id": "item-0029",
+    "returnId": "return-0013",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-20T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-28T12:00:00.000Z"
+  },
+  {
+    "id": "item-0030",
+    "returnId": "return-0013",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-08T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-08-01T12:00:00.000Z"
+  },
+  {
+    "id": "item-0031",
+    "returnId": "return-0013",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-01T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0115"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0032",
+    "returnId": "return-0013",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-08T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0033",
+    "returnId": "return-0013",
+    "title": "Confirm estimated tax payments",
+    "description": "Please confirm the dates and amounts of any estimated tax payments made during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-18T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0121"
+      }
+    ],
+    "resolvedAt": "2026-07-27T12:00:00.000Z"
+  },
+  {
+    "id": "item-0034",
+    "returnId": "return-0014",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-29T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0126"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0035",
+    "returnId": "return-0015",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "firm",
+    "assignedTo": "user-0009",
+    "dueDate": "2026-08-22T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-13T12:00:00.000Z"
+  },
+  {
+    "id": "item-0036",
+    "returnId": "return-0015",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-27T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0037",
+    "returnId": "return-0016",
+    "title": "Provide charitable contribution receipts",
+    "description": "Any single charitable contribution over $250 requires a written acknowledgment from the organization. Please provide receipts.",
+    "owner": "firm",
+    "assignedTo": "user-0005",
+    "dueDate": "2026-08-22T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0135"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0038",
+    "returnId": "return-0017",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "firm",
+    "assignedTo": "user-nadia-osei",
+    "dueDate": "2026-08-31T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0140"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0039",
+    "returnId": "return-0017",
+    "title": "Upload Form 1095-A",
+    "description": "Marketplace health insurance was indicated on the questionnaire. Please upload Form 1095-A to reconcile the premium tax credit.",
+    "owner": "firm",
+    "assignedTo": "user-nadia-osei",
+    "dueDate": "2026-09-04T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0143"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0040",
+    "returnId": "return-0018",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "firm",
+    "assignedTo": "user-nadia-osei",
+    "dueDate": "2026-08-25T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-29T12:00:00.000Z"
+  },
+  {
+    "id": "item-0041",
+    "returnId": "return-0019",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-11T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0153"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0042",
+    "returnId": "return-0019",
+    "title": "Clarify home office square footage",
+    "description": "To calculate the home office deduction we need the square footage used exclusively for business, and the total square footage of the home.",
+    "owner": "firm",
+    "assignedTo": "user-0009",
+    "dueDate": "2026-07-30T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0043",
+    "returnId": "return-0019",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-29T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-17T12:00:00.000Z"
+  },
+  {
+    "id": "item-0044",
+    "returnId": "return-0019",
+    "title": "Clarify home office square footage",
+    "description": "To calculate the home office deduction we need the square footage used exclusively for business, and the total square footage of the home.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-31T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-30T12:00:00.000Z"
+  },
+  {
+    "id": "item-0045",
+    "returnId": "return-0019",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-26T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0046",
+    "returnId": "return-0021",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-09T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-21T12:00:00.000Z"
+  },
+  {
+    "id": "item-0047",
+    "returnId": "return-0021",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-28T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0048",
+    "returnId": "return-0021",
+    "title": "Upload Form 1095-A",
+    "description": "Marketplace health insurance was indicated on the questionnaire. Please upload Form 1095-A to reconcile the premium tax credit.",
+    "owner": "firm",
+    "assignedTo": "user-0003",
+    "dueDate": "2026-07-30T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0049",
+    "returnId": "return-0022",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-17T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-08-06T12:00:00.000Z"
+  },
+  {
+    "id": "item-0050",
+    "returnId": "return-0022",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "firm",
+    "assignedTo": "user-0005",
+    "dueDate": "2026-08-21T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-15T12:00:00.000Z"
+  },
+  {
+    "id": "item-0051",
+    "returnId": "return-0022",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "firm",
+    "assignedTo": "user-0005",
+    "dueDate": "2026-08-21T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0177"
+      }
+    ],
+    "resolvedAt": "2026-07-23T12:00:00.000Z"
+  },
+  {
+    "id": "item-0052",
+    "returnId": "return-0022",
+    "title": "Confirm estimated tax payments",
+    "description": "Please confirm the dates and amounts of any estimated tax payments made during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-25T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0053",
+    "returnId": "return-0022",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-30T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0177"
+      }
+    ],
+    "resolvedAt": "2026-07-21T12:00:00.000Z"
+  },
+  {
+    "id": "item-0054",
+    "returnId": "return-0025",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-20T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-19T12:00:00.000Z"
+  },
+  {
+    "id": "item-0055",
+    "returnId": "return-0025",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-17T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0056",
+    "returnId": "return-0025",
+    "title": "Provide charitable contribution receipts",
+    "description": "Any single charitable contribution over $250 requires a written acknowledgment from the organization. Please provide receipts.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-12T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0057",
+    "returnId": "return-0026",
+    "title": "Provide charitable contribution receipts",
+    "description": "Any single charitable contribution over $250 requires a written acknowledgment from the organization. Please provide receipts.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-14T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0211"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0058",
+    "returnId": "return-0027",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-27T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0059",
+    "returnId": "return-0027",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "firm",
+    "assignedTo": "user-0006",
+    "dueDate": "2026-08-09T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0220"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0060",
+    "returnId": "return-0027",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-04T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-23T12:00:00.000Z"
+  },
+  {
+    "id": "item-0061",
+    "returnId": "return-0027",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-21T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0062",
+    "returnId": "return-0027",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "firm",
+    "assignedTo": "user-0006",
+    "dueDate": "2026-07-28T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0219"
+      }
+    ],
+    "resolvedAt": "2026-07-21T12:00:00.000Z"
+  },
+  {
+    "id": "item-0063",
+    "returnId": "return-0029",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-21T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-21T12:00:00.000Z"
+  },
+  {
+    "id": "item-0064",
+    "returnId": "return-0030",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-31T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0240"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0065",
+    "returnId": "return-0031",
+    "title": "Confirm estimated tax payments",
+    "description": "Please confirm the dates and amounts of any estimated tax payments made during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-06T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0248"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0066",
+    "returnId": "return-0031",
+    "title": "Clarify home office square footage",
+    "description": "To calculate the home office deduction we need the square footage used exclusively for business, and the total square footage of the home.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-05T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0067",
+    "returnId": "return-0031",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-01T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0249"
+      }
+    ],
+    "resolvedAt": "2026-08-05T12:00:00.000Z"
+  },
+  {
+    "id": "item-0068",
+    "returnId": "return-0031",
+    "title": "Upload Form 1095-A",
+    "description": "Marketplace health insurance was indicated on the questionnaire. Please upload Form 1095-A to reconcile the premium tax credit.",
+    "owner": "firm",
+    "assignedTo": "user-0002",
+    "dueDate": "2026-07-20T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0251"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0069",
+    "returnId": "return-0032",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-04T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0070",
+    "returnId": "return-0032",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-27T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0255"
+      }
+    ],
+    "resolvedAt": "2026-07-27T12:00:00.000Z"
+  },
+  {
+    "id": "item-0071",
+    "returnId": "return-0032",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-20T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0072",
+    "returnId": "return-0033",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-29T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0257"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0073",
+    "returnId": "return-0033",
+    "title": "Confirm estimated tax payments",
+    "description": "Please confirm the dates and amounts of any estimated tax payments made during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-29T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0074",
+    "returnId": "return-0033",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "firm",
+    "assignedTo": "user-0008",
+    "dueDate": "2026-07-23T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-08-01T12:00:00.000Z"
+  },
+  {
+    "id": "item-0075",
+    "returnId": "return-0035",
+    "title": "Provide charitable contribution receipts",
+    "description": "Any single charitable contribution over $250 requires a written acknowledgment from the organization. Please provide receipts.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-05T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0269"
+      }
+    ],
+    "resolvedAt": "2026-07-25T12:00:00.000Z"
+  },
+  {
+    "id": "item-0076",
+    "returnId": "return-0035",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "firm",
+    "assignedTo": "user-nadia-osei",
+    "dueDate": "2026-08-05T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0077",
+    "returnId": "return-0036",
+    "title": "Provide charitable contribution receipts",
+    "description": "Any single charitable contribution over $250 requires a written acknowledgment from the organization. Please provide receipts.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-03T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0078",
+    "returnId": "return-0036",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-08T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0270"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0079",
+    "returnId": "return-0037",
+    "title": "Clarify home office square footage",
+    "description": "To calculate the home office deduction we need the square footage used exclusively for business, and the total square footage of the home.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-21T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0080",
+    "returnId": "return-0037",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-04T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0275"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0081",
+    "returnId": "return-0038",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "firm",
+    "assignedTo": "user-nadia-osei",
+    "dueDate": "2026-08-21T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0283"
+      }
+    ],
+    "resolvedAt": "2026-07-26T12:00:00.000Z"
+  },
+  {
+    "id": "item-0082",
+    "returnId": "return-0038",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "firm",
+    "assignedTo": "user-nadia-osei",
+    "dueDate": "2026-07-28T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0083",
+    "returnId": "return-0038",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-05T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-16T12:00:00.000Z"
+  },
+  {
+    "id": "item-0084",
+    "returnId": "return-0038",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "firm",
+    "assignedTo": "user-nadia-osei",
+    "dueDate": "2026-08-29T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0283"
+      }
+    ],
+    "resolvedAt": "2026-07-18T12:00:00.000Z"
+  },
+  {
+    "id": "item-0085",
+    "returnId": "return-0038",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-16T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0086",
+    "returnId": "return-0039",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "firm",
+    "assignedTo": "user-0007",
+    "dueDate": "2026-08-26T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0087",
+    "returnId": "return-0039",
+    "title": "Confirm estimated tax payments",
+    "description": "Please confirm the dates and amounts of any estimated tax payments made during the year.",
+    "owner": "firm",
+    "assignedTo": "user-0007",
+    "dueDate": "2026-07-31T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0287"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0088",
+    "returnId": "return-0039",
+    "title": "Provide charitable contribution receipts",
+    "description": "Any single charitable contribution over $250 requires a written acknowledgment from the organization. Please provide receipts.",
+    "owner": "firm",
+    "assignedTo": "user-0007",
+    "dueDate": "2026-07-30T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0285"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0089",
+    "returnId": "return-0040",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-05T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0291"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0090",
+    "returnId": "return-0040",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "firm",
+    "assignedTo": "user-0008",
+    "dueDate": "2026-08-23T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-14T12:00:00.000Z"
+  },
+  {
+    "id": "item-0091",
+    "returnId": "return-0040",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-19T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0298"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0092",
+    "returnId": "return-0041",
+    "title": "Clarify home office square footage",
+    "description": "To calculate the home office deduction we need the square footage used exclusively for business, and the total square footage of the home.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-23T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0306"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0093",
+    "returnId": "return-0042",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-09T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0094",
+    "returnId": "return-0043",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-02T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0318"
+      }
+    ],
+    "resolvedAt": "2026-07-20T12:00:00.000Z"
+  },
+  {
+    "id": "item-0095",
+    "returnId": "return-0043",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "firm",
+    "assignedTo": "user-0007",
+    "dueDate": "2026-08-09T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0096",
+    "returnId": "return-0043",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "firm",
+    "assignedTo": "user-0007",
+    "dueDate": "2026-08-19T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0320"
+      }
+    ],
+    "resolvedAt": "2026-07-21T12:00:00.000Z"
+  },
+  {
+    "id": "item-0097",
+    "returnId": "return-0043",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-20T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0320"
+      }
+    ],
+    "resolvedAt": "2026-07-16T12:00:00.000Z"
+  },
+  {
+    "id": "item-0098",
+    "returnId": "return-0044",
+    "title": "Verify direct deposit information",
+    "description": "Please confirm the bank routing and account number for any refund direct deposit.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-02T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0339"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0099",
+    "returnId": "return-0044",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "firm",
+    "assignedTo": "user-0009",
+    "dueDate": "2026-08-13T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-17T12:00:00.000Z"
+  },
+  {
+    "id": "item-0100",
+    "returnId": "return-0044",
+    "title": "Clarify home office square footage",
+    "description": "To calculate the home office deduction we need the square footage used exclusively for business, and the total square footage of the home.",
+    "owner": "firm",
+    "assignedTo": "user-0009",
+    "dueDate": "2026-08-12T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0336"
+      }
+    ],
+    "resolvedAt": "2026-07-14T12:00:00.000Z"
+  },
+  {
+    "id": "item-0101",
+    "returnId": "return-0044",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-02T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0102",
+    "returnId": "return-0044",
+    "title": "Provide prior-year return for carryover verification",
+    "description": "A capital loss carryover was indicated. Please provide last year's Schedule D to verify the carryover amount.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-22T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0335"
+      }
+    ],
+    "resolvedAt": "2026-07-14T12:00:00.000Z"
+  },
+  {
+    "id": "item-0103",
+    "returnId": "return-0046",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-11T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0351"
+      }
+    ],
+    "resolvedAt": "2026-08-05T12:00:00.000Z"
+  },
+  {
+    "id": "item-0104",
+    "returnId": "return-0047",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "firm",
+    "assignedTo": "user-0008",
+    "dueDate": "2026-08-16T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0105",
+    "returnId": "return-0047",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-25T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0106",
+    "returnId": "return-0047",
+    "title": "Upload Form 1095-A",
+    "description": "Marketplace health insurance was indicated on the questionnaire. Please upload Form 1095-A to reconcile the premium tax credit.",
+    "owner": "firm",
+    "assignedTo": "user-0008",
+    "dueDate": "2026-08-09T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0357"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0107",
+    "returnId": "return-0047",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "firm",
+    "assignedTo": "user-0008",
+    "dueDate": "2026-07-23T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": "2026-08-02T12:00:00.000Z"
+  },
+  {
+    "id": "item-0108",
+    "returnId": "return-0047",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-10T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0109",
+    "returnId": "return-0048",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "firm",
+    "assignedTo": "user-0001",
+    "dueDate": "2026-08-21T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-22T12:00:00.000Z"
+  },
+  {
+    "id": "item-0110",
+    "returnId": "return-0050",
+    "title": "Sign engagement letter",
+    "description": "Please review and sign the engagement letter so we can begin preparing your return.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-01T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0111",
+    "returnId": "return-0050",
+    "title": "Upload missing W-2",
+    "description": "We're missing a W-2 that shows up as a possible additional employer on last year's return. Please upload it or confirm you no longer worked there.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-28T12:00:00.000Z",
+    "severity": "low",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0383"
+      }
+    ],
+    "resolvedAt": "2026-07-15T12:00:00.000Z"
+  },
+  {
+    "id": "item-0112",
+    "returnId": "return-0050",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-02T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0382"
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0113",
+    "returnId": "return-0051",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-12T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": "2026-07-21T12:00:00.000Z"
+  },
+  {
+    "id": "item-0114",
+    "returnId": "return-0051",
+    "title": "Confirm health savings account contributions",
+    "description": "Please confirm total HSA contributions made directly (outside of payroll) during the year.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-09-06T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0115",
+    "returnId": "return-0051",
+    "title": "Confirm dependent's Social Security number",
+    "description": "The SSN on file for a claimed dependent doesn't match IRS records. Please confirm the correct number.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-05T12:00:00.000Z",
+    "severity": "high",
+    "linkedObjects": [],
+    "resolvedAt": null
+  },
+  {
+    "id": "item-0116",
+    "returnId": "return-0053",
+    "title": "Provide childcare provider's EIN",
+    "description": "The Child and Dependent Care Credit requires the care provider's EIN or SSN. Please provide it.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-08-13T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [
+      {
+        "type": "document",
+        "id": "doc-0404"
+      }
+    ],
+    "resolvedAt": "2026-08-03T12:00:00.000Z"
+  },
+  {
+    "id": "item-0117",
+    "returnId": "return-0054",
+    "title": "Clarify business mileage log",
+    "description": "Vehicle expenses were claimed as a business deduction. Please provide a mileage log or total business miles driven.",
+    "owner": "client",
+    "assignedTo": null,
+    "dueDate": "2026-07-29T12:00:00.000Z",
+    "severity": "medium",
+    "linkedObjects": [],
+    "resolvedAt": null
+  }
+]

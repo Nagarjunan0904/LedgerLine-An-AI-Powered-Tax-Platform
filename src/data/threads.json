@@ -1,0 +1,350 @@
+[
+  {
+    "id": "thread-0001",
+    "scope": {
+      "type": "field",
+      "id": "field-ellery-sch-b-interest"
+    },
+    "visibility": "internal",
+    "participants": [
+      "user-nadia-osei",
+      "user-0005"
+    ],
+    "messages": [
+      {
+        "id": "msg-0001",
+        "threadId": "thread-0001",
+        "authorId": "user-nadia-osei",
+        "body": "The AI read First Capital's 1099-INT as $842.10 but the actual box 1 is $824.10 — digits got transposed. Fixed and verified.",
+        "sentAt": "2026-07-12T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0002",
+        "threadId": "thread-0001",
+        "authorId": "user-0005",
+        "body": "Good catch. Worth flagging that this was 86% confidence — not exactly a low-confidence miss.",
+        "sentAt": "2026-07-12T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": "2026-07-13T12:00:00.000Z"
+  },
+  {
+    "id": "thread-0002",
+    "scope": {
+      "type": "item",
+      "id": "item-ellery-conflicting-1099int"
+    },
+    "visibility": "client-visible",
+    "participants": [
+      "user-nadia-osei",
+      "user-marcus-ellery"
+    ],
+    "messages": [
+      {
+        "id": "msg-0003",
+        "threadId": "thread-0002",
+        "authorId": "user-nadia-osei",
+        "body": "We received two 1099-INT forms from Regional Community Bank with different amounts ($412.50 and $458.90). Do you know if one is a corrected reissue?",
+        "sentAt": "2026-07-27T12:00:00.000Z",
+        "isRequest": true
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "thread-0003",
+    "scope": {
+      "type": "return",
+      "id": "return-voss-2025"
+    },
+    "visibility": "internal",
+    "participants": [
+      "user-0004",
+      "user-nadia-osei"
+    ],
+    "messages": [
+      {
+        "id": "msg-0004",
+        "threadId": "thread-0003",
+        "authorId": "user-0004",
+        "body": "Still waiting on the K-1 from Voss Consulting LLC — this return can't move past preparation without it.",
+        "sentAt": "2026-07-30T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0005",
+        "threadId": "thread-0003",
+        "authorId": "user-nadia-osei",
+        "body": "Flagged. Let me know if you want me to send a follow-up to the client.",
+        "sentAt": "2026-07-31T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "thread-0004",
+    "scope": {
+      "type": "return",
+      "id": "return-whitfield-2024"
+    },
+    "visibility": "client-visible",
+    "participants": [
+      "user-0003",
+      "user-desmond-whitfield"
+    ],
+    "messages": [
+      {
+        "id": "msg-0006",
+        "threadId": "thread-0004",
+        "authorId": "user-0003",
+        "body": "Your return was accepted by the IRS today. You should see your refund within 2-3 weeks.",
+        "sentAt": "2025-03-30T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": "2025-03-31T12:00:00.000Z"
+  },
+  {
+    "id": "thread-0005",
+    "scope": {
+      "type": "return",
+      "id": "return-bloom-2025"
+    },
+    "visibility": "client-visible",
+    "participants": [
+      "user-0002",
+      "user-renata-bloom"
+    ],
+    "messages": [
+      {
+        "id": "msg-0007",
+        "threadId": "thread-0005",
+        "authorId": "user-0002",
+        "body": "Your return is ready to sign — everything's been reviewed. Let us know if you have any questions before signing.",
+        "sentAt": "2026-08-03T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0008",
+        "threadId": "thread-0005",
+        "authorId": "user-renata-bloom",
+        "body": "Looks good, signing now. Thanks!",
+        "sentAt": "2026-08-04T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": "2026-08-05T12:00:00.000Z"
+  },
+  {
+    "id": "thread-0006",
+    "scope": {
+      "type": "return",
+      "id": "return-0047"
+    },
+    "visibility": "internal",
+    "participants": [
+      "user-0008",
+      "user-0010"
+    ],
+    "messages": [
+      {
+        "id": "msg-0009",
+        "threadId": "thread-0006",
+        "authorId": "user-0008",
+        "body": "Uterque concido stipes culpa aptus. Vespillo voluptatum audentia supplanto ascisco patruus tenax versus uterque una.",
+        "sentAt": "2026-07-26T12:00:00.000Z",
+        "isRequest": true
+      },
+      {
+        "id": "msg-0010",
+        "threadId": "thread-0006",
+        "authorId": "user-0010",
+        "body": "Demulceo assentator suggero veritatis voluntarius torrens. Adhaero adeptio ducimus cuius denego certus beatus.",
+        "sentAt": "2026-08-01T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0011",
+        "threadId": "thread-0006",
+        "authorId": "user-0010",
+        "body": "Cubicularis adsuesco appositus trans accusantium dolorum statua. Auxilium deripio somniculosus.",
+        "sentAt": "2026-08-03T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "thread-0007",
+    "scope": {
+      "type": "return",
+      "id": "return-0033"
+    },
+    "visibility": "internal",
+    "participants": [
+      "user-0008",
+      "user-0003"
+    ],
+    "messages": [
+      {
+        "id": "msg-0012",
+        "threadId": "thread-0007",
+        "authorId": "user-0008",
+        "body": "Cogo bellicus rem tamisium spero. Decipio consuasor xiphias peior iste congregatio venustas.",
+        "sentAt": "2026-08-05T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": "2026-08-06T12:00:00.000Z"
+  },
+  {
+    "id": "thread-0008",
+    "scope": {
+      "type": "return",
+      "id": "return-0032"
+    },
+    "visibility": "client-visible",
+    "participants": [
+      "user-0011",
+      "user-0043"
+    ],
+    "messages": [
+      {
+        "id": "msg-0013",
+        "threadId": "thread-0008",
+        "authorId": "user-0043",
+        "body": "Ademptio vulnero denique similique via stultus audacia stella decens colo.",
+        "sentAt": "2026-08-05T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0014",
+        "threadId": "thread-0008",
+        "authorId": "user-0011",
+        "body": "Compono vinco valens vulnus astrum contabesco suscipio conculco.",
+        "sentAt": "2026-08-03T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": "2026-08-04T12:00:00.000Z"
+  },
+  {
+    "id": "thread-0009",
+    "scope": {
+      "type": "return",
+      "id": "return-0006"
+    },
+    "visibility": "internal",
+    "participants": [
+      "user-0005",
+      "user-0008"
+    ],
+    "messages": [
+      {
+        "id": "msg-0015",
+        "threadId": "thread-0009",
+        "authorId": "user-0005",
+        "body": "Ars tracto in balbus curto deputo turbo quia.",
+        "sentAt": "2026-08-01T12:00:00.000Z",
+        "isRequest": true
+      },
+      {
+        "id": "msg-0016",
+        "threadId": "thread-0009",
+        "authorId": "user-0008",
+        "body": "Aliqua valetudo magnam tamdiu laborum centum. Cometes aestus amiculum annus catena volup summopere.",
+        "sentAt": "2026-08-05T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": null
+  },
+  {
+    "id": "thread-0010",
+    "scope": {
+      "type": "return",
+      "id": "return-0054"
+    },
+    "visibility": "internal",
+    "participants": [
+      "user-0011",
+      "user-0011"
+    ],
+    "messages": [
+      {
+        "id": "msg-0017",
+        "threadId": "thread-0010",
+        "authorId": "user-0011",
+        "body": "Ad canis tremo aro voco. Umquam campana angelus.",
+        "sentAt": "2026-08-01T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0018",
+        "threadId": "thread-0010",
+        "authorId": "user-0011",
+        "body": "Certus ea carmen dicta incidunt omnis cognatus.",
+        "sentAt": "2026-08-03T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0019",
+        "threadId": "thread-0010",
+        "authorId": "user-0011",
+        "body": "Demergo tepidus clementia sollers capillus copiose suppellex. A cumque eos cursim ut sursum.",
+        "sentAt": "2026-08-06T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": "2026-08-07T12:00:00.000Z"
+  },
+  {
+    "id": "thread-0011",
+    "scope": {
+      "type": "return",
+      "id": "return-0035"
+    },
+    "visibility": "internal",
+    "participants": [
+      "user-nadia-osei",
+      "user-nadia-osei"
+    ],
+    "messages": [
+      {
+        "id": "msg-0020",
+        "threadId": "thread-0011",
+        "authorId": "user-nadia-osei",
+        "body": "Dolor ait creta.",
+        "sentAt": "2026-08-05T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": "2026-08-06T12:00:00.000Z"
+  },
+  {
+    "id": "thread-0012",
+    "scope": {
+      "type": "return",
+      "id": "return-0044"
+    },
+    "visibility": "internal",
+    "participants": [
+      "user-0009",
+      "user-0003"
+    ],
+    "messages": [
+      {
+        "id": "msg-0021",
+        "threadId": "thread-0012",
+        "authorId": "user-0009",
+        "body": "Minima ascit addo terebro volubilis acidus.",
+        "sentAt": "2026-08-06T12:00:00.000Z",
+        "isRequest": false
+      }
+    ],
+    "resolvedAt": null
+  }
+]

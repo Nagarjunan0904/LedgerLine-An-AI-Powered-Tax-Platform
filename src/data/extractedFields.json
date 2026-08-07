@@ -1,0 +1,4972 @@
+[
+  {
+    "id": "ext-ellery-w2-acme-box1",
+    "documentId": "doc-ellery-w2-acme",
+    "page": 1,
+    "bbox": {
+      "x": 0.62,
+      "y": 0.21,
+      "w": 0.3,
+      "h": 0.045
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$96,400.00",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-ellery-w2-belmont-box1",
+    "documentId": "doc-ellery-w2-belmont",
+    "page": 1,
+    "bbox": {
+      "x": 0.62,
+      "y": 0.22,
+      "w": 0.3,
+      "h": 0.045
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$61,300.00",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-ellery-w2-corvid-box1",
+    "documentId": "doc-ellery-w2-corvid",
+    "page": 1,
+    "bbox": {
+      "x": 0.62,
+      "y": 0.23,
+      "w": 0.3,
+      "h": 0.045
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$26,500.00",
+    "confidence": 0.71
+  },
+  {
+    "id": "ext-ellery-1099int-firstcap-box1",
+    "documentId": "doc-ellery-1099int-firstcap",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.34,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$842.10",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-ellery-1099int-regional-a-box1",
+    "documentId": "doc-ellery-1099int-regional-a",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.34,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$412.50",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-ellery-1099int-regional-b-box1",
+    "documentId": "doc-ellery-1099int-regional-b",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.35,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$458.90",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-ellery-1099b-handwritten-basis",
+    "documentId": "doc-ellery-1099b-handwritten",
+    "page": 2,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.61,
+      "w": 0.18,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$1,24_?.__ (handwritten, partially illegible)",
+    "confidence": 0.44
+  },
+  {
+    "id": "ext-0001",
+    "documentId": "doc-0001",
+    "page": 1,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.28,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$1,904.00",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0002",
+    "documentId": "doc-0004",
+    "page": 1,
+    "bbox": {
+      "x": 0.62,
+      "y": 0.22,
+      "w": 0.3,
+      "h": 0.045
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$112,900.00",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0003",
+    "documentId": "doc-0005",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.34,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$318.40",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0004",
+    "documentId": "doc-0011",
+    "page": 2,
+    "bbox": {
+      "x": 0.11,
+      "y": 0.32,
+      "w": 0.35,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$7,637.29",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0005",
+    "documentId": "doc-0012",
+    "page": 2,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.25,
+      "w": 0.15,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$27,675.62",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0006",
+    "documentId": "doc-0013",
+    "page": 1,
+    "bbox": {
+      "x": 0.17,
+      "y": 0.26,
+      "w": 0.24,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,339.63",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0007",
+    "documentId": "doc-0014",
+    "page": 1,
+    "bbox": {
+      "x": 0.23,
+      "y": 0.78,
+      "w": 0.25,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$202,295.86",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0008",
+    "documentId": "doc-0015",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.68,
+      "w": 0.35,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$186,712.99",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0009",
+    "documentId": "doc-0016",
+    "page": 1,
+    "bbox": {
+      "x": 0.29,
+      "y": 0.23,
+      "w": 0.21,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$16,599.02",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0010",
+    "documentId": "doc-0017",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.34,
+      "w": 0.28,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$54,371.54",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0011",
+    "documentId": "doc-0019",
+    "page": 3,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.85,
+      "w": 0.34,
+      "h": 0.02
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$52,269.70",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0012",
+    "documentId": "doc-0020",
+    "page": 1,
+    "bbox": {
+      "x": 0.6,
+      "y": 0.3,
+      "w": 0.15,
+      "h": 0.03
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$3,614.84",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0013",
+    "documentId": "doc-0021",
+    "page": 1,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.47,
+      "w": 0.26,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$10,360.08",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0014",
+    "documentId": "doc-0022",
+    "page": 1,
+    "bbox": {
+      "x": 0.19,
+      "y": 0.8,
+      "w": 0.19,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$115,695.39",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0015",
+    "documentId": "doc-0023",
+    "page": 1,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.26,
+      "w": 0.19,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$48,407.63",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0016",
+    "documentId": "doc-0025",
+    "page": 1,
+    "bbox": {
+      "x": 0.08,
+      "y": 0.8,
+      "w": 0.17,
+      "h": 0.04
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$30,879.45",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0017",
+    "documentId": "doc-0026",
+    "page": 1,
+    "bbox": {
+      "x": 0.57,
+      "y": 0.81,
+      "w": 0.25,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,586.45",
+    "confidence": 0.45
+  },
+  {
+    "id": "ext-0018",
+    "documentId": "doc-0027",
+    "page": 1,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.52,
+      "w": 0.25,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$21,641.18",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0019",
+    "documentId": "doc-0028",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.22,
+      "w": 0.23,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$5,447.76",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0020",
+    "documentId": "doc-0031",
+    "page": 1,
+    "bbox": {
+      "x": 0.13,
+      "y": 0.12,
+      "w": 0.34,
+      "h": 0.03
+    },
+    "label": "Reported amount",
+    "rawValue": "$5,562.05",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0021",
+    "documentId": "doc-0032",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.45,
+      "w": 0.2,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$4,483.97",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0022",
+    "documentId": "doc-0033",
+    "page": 1,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.42,
+      "w": 0.28,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,954.38",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0023",
+    "documentId": "doc-0034",
+    "page": 1,
+    "bbox": {
+      "x": 0.09,
+      "y": 0.5,
+      "w": 0.2,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,670.45",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0024",
+    "documentId": "doc-0035",
+    "page": 1,
+    "bbox": {
+      "x": 0.29,
+      "y": 0.38,
+      "w": 0.33,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$25,448.05",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0025",
+    "documentId": "doc-0036",
+    "page": 1,
+    "bbox": {
+      "x": 0.2,
+      "y": 0.22,
+      "w": 0.2,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,814.58",
+    "confidence": 0.47
+  },
+  {
+    "id": "ext-0026",
+    "documentId": "doc-0037",
+    "page": 1,
+    "bbox": {
+      "x": 0.4,
+      "y": 0.52,
+      "w": 0.34,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$37,177.35",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0027",
+    "documentId": "doc-0038",
+    "page": 1,
+    "bbox": {
+      "x": 0.21,
+      "y": 0.58,
+      "w": 0.31,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$73,183.80",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0028",
+    "documentId": "doc-0039",
+    "page": 1,
+    "bbox": {
+      "x": 0.38,
+      "y": 0.32,
+      "w": 0.32,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$182,856.01",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0029",
+    "documentId": "doc-0040",
+    "page": 1,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.65,
+      "w": 0.24,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$37.87",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0030",
+    "documentId": "doc-0042",
+    "page": 1,
+    "bbox": {
+      "x": 0.34,
+      "y": 0.28,
+      "w": 0.34,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$15,767.63",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0031",
+    "documentId": "doc-0044",
+    "page": 1,
+    "bbox": {
+      "x": 0.33,
+      "y": 0.45,
+      "w": 0.19,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$26,281.64",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0032",
+    "documentId": "doc-0045",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.5,
+      "w": 0.18,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$143,598.29",
+    "confidence": 0.42
+  },
+  {
+    "id": "ext-0033",
+    "documentId": "doc-0048",
+    "page": 1,
+    "bbox": {
+      "x": 0.45,
+      "y": 0.77,
+      "w": 0.2,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$107,414.61",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0034",
+    "documentId": "doc-0049",
+    "page": 2,
+    "bbox": {
+      "x": 0.22,
+      "y": 0.63,
+      "w": 0.24,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$28,110.28",
+    "confidence": 0.51
+  },
+  {
+    "id": "ext-0035",
+    "documentId": "doc-0050",
+    "page": 2,
+    "bbox": {
+      "x": 0.1,
+      "y": 0.31,
+      "w": 0.26,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$3,818.43",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0036",
+    "documentId": "doc-0052",
+    "page": 1,
+    "bbox": {
+      "x": 0.41,
+      "y": 0.3,
+      "w": 0.35,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$361.02",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0037",
+    "documentId": "doc-0053",
+    "page": 1,
+    "bbox": {
+      "x": 0.27,
+      "y": 0.61,
+      "w": 0.21,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$182,330.16",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0038",
+    "documentId": "doc-0054",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.24,
+      "w": 0.31,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$183,147.27",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0039",
+    "documentId": "doc-0055",
+    "page": 1,
+    "bbox": {
+      "x": 0.17,
+      "y": 0.21,
+      "w": 0.2,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$2,089.33",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0040",
+    "documentId": "doc-0056",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.35,
+      "w": 0.25,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$27,172.06",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0041",
+    "documentId": "doc-0057",
+    "page": 1,
+    "bbox": {
+      "x": 0.28,
+      "y": 0.17,
+      "w": 0.33,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$5,415.85",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0042",
+    "documentId": "doc-0058",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.16,
+      "w": 0.25,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,575.71",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0043",
+    "documentId": "doc-0059",
+    "page": 1,
+    "bbox": {
+      "x": 0.41,
+      "y": 0.78,
+      "w": 0.25,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$1,238.26",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0044",
+    "documentId": "doc-0060",
+    "page": 1,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.11,
+      "w": 0.29,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,663.03",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0045",
+    "documentId": "doc-0061",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.55,
+      "w": 0.29,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$125,281.89",
+    "confidence": 0.48
+  },
+  {
+    "id": "ext-0046",
+    "documentId": "doc-0063",
+    "page": 1,
+    "bbox": {
+      "x": 0.29,
+      "y": 0.59,
+      "w": 0.29,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$2,373.62",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0047",
+    "documentId": "doc-0064",
+    "page": 1,
+    "bbox": {
+      "x": 0.45,
+      "y": 0.84,
+      "w": 0.25,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$48,795.92",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0048",
+    "documentId": "doc-0065",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.74,
+      "w": 0.27,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,183.10",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0049",
+    "documentId": "doc-0066",
+    "page": 2,
+    "bbox": {
+      "x": 0.5,
+      "y": 0.15,
+      "w": 0.24,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$3,329.29",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0050",
+    "documentId": "doc-0067",
+    "page": 1,
+    "bbox": {
+      "x": 0.23,
+      "y": 0.82,
+      "w": 0.18,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$3,165.93",
+    "confidence": 0.57
+  },
+  {
+    "id": "ext-0051",
+    "documentId": "doc-0068",
+    "page": 1,
+    "bbox": {
+      "x": 0.13,
+      "y": 0.25,
+      "w": 0.32,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$519.58",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0052",
+    "documentId": "doc-0069",
+    "page": 1,
+    "bbox": {
+      "x": 0.37,
+      "y": 0.63,
+      "w": 0.21,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$5,623.82",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0053",
+    "documentId": "doc-0070",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.22,
+      "w": 0.15,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$41,863.95",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0054",
+    "documentId": "doc-0071",
+    "page": 1,
+    "bbox": {
+      "x": 0.24,
+      "y": 0.23,
+      "w": 0.2,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$101.98",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0055",
+    "documentId": "doc-0072",
+    "page": 2,
+    "bbox": {
+      "x": 0.16,
+      "y": 0.73,
+      "w": 0.32,
+      "h": 0.05
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$42,197.67",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0056",
+    "documentId": "doc-0075",
+    "page": 1,
+    "bbox": {
+      "x": 0.38,
+      "y": 0.61,
+      "w": 0.31,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$1,203.14",
+    "confidence": 0.52
+  },
+  {
+    "id": "ext-0057",
+    "documentId": "doc-0076",
+    "page": 1,
+    "bbox": {
+      "x": 0.11,
+      "y": 0.62,
+      "w": 0.35,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$5,776.45",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0058",
+    "documentId": "doc-0078",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.63,
+      "w": 0.24,
+      "h": 0.04
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "-$4,185.29",
+    "confidence": 0.63
+  },
+  {
+    "id": "ext-0059",
+    "documentId": "doc-0079",
+    "page": 1,
+    "bbox": {
+      "x": 0.5,
+      "y": 0.46,
+      "w": 0.18,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$135,776.62",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0060",
+    "documentId": "doc-0081",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.32,
+      "w": 0.18,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$4,037.39",
+    "confidence": 0.79
+  },
+  {
+    "id": "ext-0061",
+    "documentId": "doc-0082",
+    "page": 2,
+    "bbox": {
+      "x": 0.28,
+      "y": 0.17,
+      "w": 0.31,
+      "h": 0.02
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$53,584.57",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0062",
+    "documentId": "doc-0083",
+    "page": 2,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.43,
+      "w": 0.29,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$7,312.67",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0063",
+    "documentId": "doc-0085",
+    "page": 1,
+    "bbox": {
+      "x": 0.21,
+      "y": 0.58,
+      "w": 0.23,
+      "h": 0.03
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$6,260.36",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0064",
+    "documentId": "doc-0086",
+    "page": 1,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.15,
+      "w": 0.29,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$88,366.70",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0065",
+    "documentId": "doc-0087",
+    "page": 1,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.19,
+      "w": 0.33,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$21,218.57",
+    "confidence": 0.57
+  },
+  {
+    "id": "ext-0066",
+    "documentId": "doc-0088",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.67,
+      "w": 0.2,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,150.56",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0067",
+    "documentId": "doc-0089",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.13,
+      "w": 0.31,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$1,195.81",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0068",
+    "documentId": "doc-0090",
+    "page": 1,
+    "bbox": {
+      "x": 0.33,
+      "y": 0.68,
+      "w": 0.22,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$4,241.42",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0069",
+    "documentId": "doc-0091",
+    "page": 1,
+    "bbox": {
+      "x": 0.19,
+      "y": 0.25,
+      "w": 0.29,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$20,051.99",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0070",
+    "documentId": "doc-0092",
+    "page": 1,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.76,
+      "w": 0.15,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$2,386.35",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0071",
+    "documentId": "doc-0093",
+    "page": 1,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.72,
+      "w": 0.29,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$208,922.30",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0072",
+    "documentId": "doc-0094",
+    "page": 2,
+    "bbox": {
+      "x": 0.34,
+      "y": 0.59,
+      "w": 0.25,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$34,690.64",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0073",
+    "documentId": "doc-0095",
+    "page": 1,
+    "bbox": {
+      "x": 0.46,
+      "y": 0.34,
+      "w": 0.2,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$2,817.41",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0074",
+    "documentId": "doc-0096",
+    "page": 1,
+    "bbox": {
+      "x": 0.45,
+      "y": 0.21,
+      "w": 0.22,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$15,180.41",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0075",
+    "documentId": "doc-0097",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.23,
+      "w": 0.2,
+      "h": 0.02
+    },
+    "label": "Reported amount",
+    "rawValue": "$622.79",
+    "confidence": 0.71
+  },
+  {
+    "id": "ext-0076",
+    "documentId": "doc-0098",
+    "page": 3,
+    "bbox": {
+      "x": 0.27,
+      "y": 0.69,
+      "w": 0.2,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$2,033.73",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0077",
+    "documentId": "doc-0099",
+    "page": 1,
+    "bbox": {
+      "x": 0.25,
+      "y": 0.82,
+      "w": 0.24,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$403.61",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0078",
+    "documentId": "doc-0101",
+    "page": 3,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.14,
+      "w": 0.2,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$24,509.87",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0079",
+    "documentId": "doc-0102",
+    "page": 1,
+    "bbox": {
+      "x": 0.23,
+      "y": 0.82,
+      "w": 0.34,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "-$5,132.83",
+    "confidence": 0.65
+  },
+  {
+    "id": "ext-0080",
+    "documentId": "doc-0103",
+    "page": 1,
+    "bbox": {
+      "x": 0.26,
+      "y": 0.84,
+      "w": 0.19,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$15,226.99",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0081",
+    "documentId": "doc-0105",
+    "page": 1,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.68,
+      "w": 0.16,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$1,143.57",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0082",
+    "documentId": "doc-0107",
+    "page": 1,
+    "bbox": {
+      "x": 0.19,
+      "y": 0.59,
+      "w": 0.35,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$519.86",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0083",
+    "documentId": "doc-0108",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.8,
+      "w": 0.2,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$3,067.57",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0084",
+    "documentId": "doc-0109",
+    "page": 1,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.23,
+      "w": 0.24,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$775.95",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0085",
+    "documentId": "doc-0110",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.76,
+      "w": 0.31,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$146,147.68",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0086",
+    "documentId": "doc-0112",
+    "page": 1,
+    "bbox": {
+      "x": 0.37,
+      "y": 0.78,
+      "w": 0.29,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$41,593.76",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0087",
+    "documentId": "doc-0113",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.46,
+      "w": 0.31,
+      "h": 0.05
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$2,047.79",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0088",
+    "documentId": "doc-0114",
+    "page": 3,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.74,
+      "w": 0.18,
+      "h": 0.04
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$55,429.65",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0089",
+    "documentId": "doc-0115",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.36,
+      "w": 0.2,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$4,666.75",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0090",
+    "documentId": "doc-0116",
+    "page": 1,
+    "bbox": {
+      "x": 0.57,
+      "y": 0.32,
+      "w": 0.28,
+      "h": 0.04
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$38,562.22",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0091",
+    "documentId": "doc-0117",
+    "page": 1,
+    "bbox": {
+      "x": 0.23,
+      "y": 0.13,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$3,647.77",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0092",
+    "documentId": "doc-0118",
+    "page": 1,
+    "bbox": {
+      "x": 0.41,
+      "y": 0.2,
+      "w": 0.34,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$93,437.43",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0093",
+    "documentId": "doc-0119",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.72,
+      "w": 0.28,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$639.96",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0094",
+    "documentId": "doc-0121",
+    "page": 1,
+    "bbox": {
+      "x": 0.57,
+      "y": 0.4,
+      "w": 0.31,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$126,475.95",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0095",
+    "documentId": "doc-0122",
+    "page": 2,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.45,
+      "w": 0.16,
+      "h": 0.04
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "-$1,738.83",
+    "confidence": 0.57
+  },
+  {
+    "id": "ext-0096",
+    "documentId": "doc-0123",
+    "page": 1,
+    "bbox": {
+      "x": 0.32,
+      "y": 0.83,
+      "w": 0.16,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$99,029.71",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0097",
+    "documentId": "doc-0124",
+    "page": 1,
+    "bbox": {
+      "x": 0.32,
+      "y": 0.14,
+      "w": 0.28,
+      "h": 0.03
+    },
+    "label": "Reported amount",
+    "rawValue": "$1,749.19",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0098",
+    "documentId": "doc-0125",
+    "page": 1,
+    "bbox": {
+      "x": 0.29,
+      "y": 0.15,
+      "w": 0.26,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$5,129.45",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0099",
+    "documentId": "doc-0126",
+    "page": 2,
+    "bbox": {
+      "x": 0.6,
+      "y": 0.73,
+      "w": 0.28,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$3,972.53",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0100",
+    "documentId": "doc-0127",
+    "page": 1,
+    "bbox": {
+      "x": 0.32,
+      "y": 0.61,
+      "w": 0.23,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$4,349.67",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0101",
+    "documentId": "doc-0128",
+    "page": 1,
+    "bbox": {
+      "x": 0.37,
+      "y": 0.18,
+      "w": 0.34,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,539.61",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0102",
+    "documentId": "doc-0130",
+    "page": 2,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.28,
+      "w": 0.32,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$34,278.40",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0103",
+    "documentId": "doc-0131",
+    "page": 1,
+    "bbox": {
+      "x": 0.51,
+      "y": 0.46,
+      "w": 0.33,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$3,706.21",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0104",
+    "documentId": "doc-0132",
+    "page": 1,
+    "bbox": {
+      "x": 0.51,
+      "y": 0.71,
+      "w": 0.16,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$58,400.00",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0105",
+    "documentId": "doc-0133",
+    "page": 1,
+    "bbox": {
+      "x": 0.54,
+      "y": 0.29,
+      "w": 0.25,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$497.98",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0106",
+    "documentId": "doc-0134",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.25,
+      "w": 0.26,
+      "h": 0.02
+    },
+    "label": "Reported amount",
+    "rawValue": "$212.25",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0107",
+    "documentId": "doc-0135",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.53,
+      "w": 0.29,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$152,220.64",
+    "confidence": 0.56
+  },
+  {
+    "id": "ext-0108",
+    "documentId": "doc-0136",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.79,
+      "w": 0.18,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$206,676.04",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0109",
+    "documentId": "doc-0137",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.41,
+      "w": 0.32,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$4,869.70",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0110",
+    "documentId": "doc-0138",
+    "page": 1,
+    "bbox": {
+      "x": 0.09,
+      "y": 0.25,
+      "w": 0.21,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,233.02",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0111",
+    "documentId": "doc-0139",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.85,
+      "w": 0.35,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$437.52",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0112",
+    "documentId": "doc-0141",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.72,
+      "w": 0.3,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$150,244.84",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0113",
+    "documentId": "doc-0142",
+    "page": 1,
+    "bbox": {
+      "x": 0.19,
+      "y": 0.56,
+      "w": 0.18,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$3,042.14",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0114",
+    "documentId": "doc-0143",
+    "page": 1,
+    "bbox": {
+      "x": 0.13,
+      "y": 0.11,
+      "w": 0.15,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$3,170.18",
+    "confidence": 0.74
+  },
+  {
+    "id": "ext-0115",
+    "documentId": "doc-0144",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.45,
+      "w": 0.27,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$758.16",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0116",
+    "documentId": "doc-0145",
+    "page": 1,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.79,
+      "w": 0.28,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,090.56",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0117",
+    "documentId": "doc-0147",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.51,
+      "w": 0.18,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$708.23",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0118",
+    "documentId": "doc-0148",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.69,
+      "w": 0.31,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$1,654.91",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0119",
+    "documentId": "doc-0149",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.55,
+      "w": 0.29,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$482.58",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0120",
+    "documentId": "doc-0150",
+    "page": 1,
+    "bbox": {
+      "x": 0.27,
+      "y": 0.66,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,809.26",
+    "confidence": 0.59
+  },
+  {
+    "id": "ext-0121",
+    "documentId": "doc-0151",
+    "page": 2,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.11,
+      "w": 0.19,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$42,318.71",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0122",
+    "documentId": "doc-0152",
+    "page": 1,
+    "bbox": {
+      "x": 0.47,
+      "y": 0.71,
+      "w": 0.32,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$13,646.17",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0123",
+    "documentId": "doc-0153",
+    "page": 1,
+    "bbox": {
+      "x": 0.25,
+      "y": 0.43,
+      "w": 0.3,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$29,303.75",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0124",
+    "documentId": "doc-0155",
+    "page": 1,
+    "bbox": {
+      "x": 0.25,
+      "y": 0.32,
+      "w": 0.23,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$21,317.03",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0125",
+    "documentId": "doc-0156",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.29,
+      "w": 0.25,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$184.80",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0126",
+    "documentId": "doc-0157",
+    "page": 1,
+    "bbox": {
+      "x": 0.08,
+      "y": 0.48,
+      "w": 0.34,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,083.70",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0127",
+    "documentId": "doc-0158",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.13,
+      "w": 0.18,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$187,912.67",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0128",
+    "documentId": "doc-0159",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.32,
+      "w": 0.32,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$34,599.01",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0129",
+    "documentId": "doc-0160",
+    "page": 1,
+    "bbox": {
+      "x": 0.6,
+      "y": 0.69,
+      "w": 0.32,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$981.04",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0130",
+    "documentId": "doc-0163",
+    "page": 1,
+    "bbox": {
+      "x": 0.47,
+      "y": 0.36,
+      "w": 0.2,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$340.21",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0131",
+    "documentId": "doc-0164",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.41,
+      "w": 0.16,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$3,799.73",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0132",
+    "documentId": "doc-0165",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.51,
+      "w": 0.33,
+      "h": 0.02
+    },
+    "label": "Reported amount",
+    "rawValue": "$7,528.95",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0133",
+    "documentId": "doc-0166",
+    "page": 1,
+    "bbox": {
+      "x": 0.37,
+      "y": 0.48,
+      "w": 0.25,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$4,314.85",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0134",
+    "documentId": "doc-0167",
+    "page": 1,
+    "bbox": {
+      "x": 0.14,
+      "y": 0.62,
+      "w": 0.19,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,563.79",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0135",
+    "documentId": "doc-0169",
+    "page": 2,
+    "bbox": {
+      "x": 0.21,
+      "y": 0.63,
+      "w": 0.2,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$27,406.97",
+    "confidence": 0.74
+  },
+  {
+    "id": "ext-0136",
+    "documentId": "doc-0170",
+    "page": 3,
+    "bbox": {
+      "x": 0.22,
+      "y": 0.66,
+      "w": 0.23,
+      "h": 0.05
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$43,602.93",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0137",
+    "documentId": "doc-0171",
+    "page": 1,
+    "bbox": {
+      "x": 0.45,
+      "y": 0.55,
+      "w": 0.32,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,569.60",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0138",
+    "documentId": "doc-0172",
+    "page": 1,
+    "bbox": {
+      "x": 0.23,
+      "y": 0.35,
+      "w": 0.33,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$50,810.26",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0139",
+    "documentId": "doc-0173",
+    "page": 1,
+    "bbox": {
+      "x": 0.18,
+      "y": 0.71,
+      "w": 0.23,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$2,493.80",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0140",
+    "documentId": "doc-0174",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.7,
+      "w": 0.2,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$73,056.80",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0141",
+    "documentId": "doc-0176",
+    "page": 2,
+    "bbox": {
+      "x": 0.2,
+      "y": 0.34,
+      "w": 0.26,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$23,435.33",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0142",
+    "documentId": "doc-0177",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.63,
+      "w": 0.33,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$111,684.38",
+    "confidence": 0.77
+  },
+  {
+    "id": "ext-0143",
+    "documentId": "doc-0178",
+    "page": 1,
+    "bbox": {
+      "x": 0.47,
+      "y": 0.84,
+      "w": 0.27,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,716.73",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0144",
+    "documentId": "doc-0179",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.56,
+      "w": 0.32,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$17,256.61",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0145",
+    "documentId": "doc-0181",
+    "page": 1,
+    "bbox": {
+      "x": 0.51,
+      "y": 0.44,
+      "w": 0.27,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,027.92",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0146",
+    "documentId": "doc-0182",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.2,
+      "w": 0.15,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$52,007.66",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0147",
+    "documentId": "doc-0183",
+    "page": 1,
+    "bbox": {
+      "x": 0.17,
+      "y": 0.15,
+      "w": 0.25,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$42,812.22",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0148",
+    "documentId": "doc-0184",
+    "page": 1,
+    "bbox": {
+      "x": 0.33,
+      "y": 0.19,
+      "w": 0.24,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$4,090.98",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0149",
+    "documentId": "doc-0185",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.35,
+      "w": 0.33,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$1,131.92",
+    "confidence": 0.5
+  },
+  {
+    "id": "ext-0150",
+    "documentId": "doc-0186",
+    "page": 1,
+    "bbox": {
+      "x": 0.47,
+      "y": 0.62,
+      "w": 0.22,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$54,240.89",
+    "confidence": 0.49
+  },
+  {
+    "id": "ext-0151",
+    "documentId": "doc-0187",
+    "page": 1,
+    "bbox": {
+      "x": 0.38,
+      "y": 0.15,
+      "w": 0.18,
+      "h": 0.02
+    },
+    "label": "Reported amount",
+    "rawValue": "$1,856.64",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0152",
+    "documentId": "doc-0188",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.36,
+      "w": 0.27,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$58,548.89",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0153",
+    "documentId": "doc-0189",
+    "page": 1,
+    "bbox": {
+      "x": 0.2,
+      "y": 0.71,
+      "w": 0.18,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$788.67",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0154",
+    "documentId": "doc-0190",
+    "page": 1,
+    "bbox": {
+      "x": 0.4,
+      "y": 0.41,
+      "w": 0.19,
+      "h": 0.03
+    },
+    "label": "Reported amount",
+    "rawValue": "$6,700.68",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0155",
+    "documentId": "doc-0191",
+    "page": 1,
+    "bbox": {
+      "x": 0.2,
+      "y": 0.35,
+      "w": 0.19,
+      "h": 0.03
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$12,561.50",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0156",
+    "documentId": "doc-0192",
+    "page": 1,
+    "bbox": {
+      "x": 0.34,
+      "y": 0.21,
+      "w": 0.18,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$15,878.22",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0157",
+    "documentId": "doc-0193",
+    "page": 1,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.8,
+      "w": 0.27,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$175,832.25",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0158",
+    "documentId": "doc-0195",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.74,
+      "w": 0.33,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$3,813.75",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0159",
+    "documentId": "doc-0196",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.27,
+      "w": 0.19,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$4,104.22",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0160",
+    "documentId": "doc-0197",
+    "page": 1,
+    "bbox": {
+      "x": 0.08,
+      "y": 0.83,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$45,914.06",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0161",
+    "documentId": "doc-0198",
+    "page": 1,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.36,
+      "w": 0.34,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$3,074.47",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0162",
+    "documentId": "doc-0199",
+    "page": 1,
+    "bbox": {
+      "x": 0.21,
+      "y": 0.15,
+      "w": 0.3,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$32,664.27",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0163",
+    "documentId": "doc-0200",
+    "page": 1,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.41,
+      "w": 0.28,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$32,402.94",
+    "confidence": 0.75
+  },
+  {
+    "id": "ext-0164",
+    "documentId": "doc-0201",
+    "page": 2,
+    "bbox": {
+      "x": 0.37,
+      "y": 0.15,
+      "w": 0.32,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$15,297.25",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0165",
+    "documentId": "doc-0202",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.49,
+      "w": 0.15,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$155,713.37",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0166",
+    "documentId": "doc-0203",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.53,
+      "w": 0.17,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$2,946.63",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0167",
+    "documentId": "doc-0204",
+    "page": 1,
+    "bbox": {
+      "x": 0.09,
+      "y": 0.66,
+      "w": 0.34,
+      "h": 0.05
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "-$1,784.78",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0168",
+    "documentId": "doc-0206",
+    "page": 1,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.82,
+      "w": 0.29,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$17,801.87",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0169",
+    "documentId": "doc-0207",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.42,
+      "w": 0.28,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$7,297.19",
+    "confidence": 0.73
+  },
+  {
+    "id": "ext-0170",
+    "documentId": "doc-0208",
+    "page": 1,
+    "bbox": {
+      "x": 0.38,
+      "y": 0.59,
+      "w": 0.23,
+      "h": 0.02
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "-$2,510.87",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0171",
+    "documentId": "doc-0209",
+    "page": 1,
+    "bbox": {
+      "x": 0.4,
+      "y": 0.38,
+      "w": 0.23,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,856.15",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0172",
+    "documentId": "doc-0210",
+    "page": 1,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.12,
+      "w": 0.35,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$54,714.33",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0173",
+    "documentId": "doc-0211",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.8,
+      "w": 0.17,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$496.52",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0174",
+    "documentId": "doc-0212",
+    "page": 1,
+    "bbox": {
+      "x": 0.34,
+      "y": 0.69,
+      "w": 0.31,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$13,315.69",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0175",
+    "documentId": "doc-0213",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.32,
+      "w": 0.24,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$4,861.80",
+    "confidence": 0.62
+  },
+  {
+    "id": "ext-0176",
+    "documentId": "doc-0214",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.39,
+      "w": 0.33,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$872.05",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0177",
+    "documentId": "doc-0215",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.83,
+      "w": 0.24,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,768.79",
+    "confidence": 0.72
+  },
+  {
+    "id": "ext-0178",
+    "documentId": "doc-0216",
+    "page": 3,
+    "bbox": {
+      "x": 0.29,
+      "y": 0.7,
+      "w": 0.18,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$40,519.46",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0179",
+    "documentId": "doc-0217",
+    "page": 1,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.13,
+      "w": 0.32,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$29,387.09",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0180",
+    "documentId": "doc-0218",
+    "page": 1,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.43,
+      "w": 0.29,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$4,019.06",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0181",
+    "documentId": "doc-0219",
+    "page": 1,
+    "bbox": {
+      "x": 0.42,
+      "y": 0.69,
+      "w": 0.16,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$206,835.08",
+    "confidence": 0.69
+  },
+  {
+    "id": "ext-0182",
+    "documentId": "doc-0221",
+    "page": 1,
+    "bbox": {
+      "x": 0.34,
+      "y": 0.3,
+      "w": 0.35,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$921.76",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0183",
+    "documentId": "doc-0222",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.82,
+      "w": 0.16,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,801.65",
+    "confidence": 0.77
+  },
+  {
+    "id": "ext-0184",
+    "documentId": "doc-0225",
+    "page": 1,
+    "bbox": {
+      "x": 0.45,
+      "y": 0.24,
+      "w": 0.35,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$131,956.43",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0185",
+    "documentId": "doc-0227",
+    "page": 1,
+    "bbox": {
+      "x": 0.47,
+      "y": 0.74,
+      "w": 0.3,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$21,754.73",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0186",
+    "documentId": "doc-0228",
+    "page": 1,
+    "bbox": {
+      "x": 0.23,
+      "y": 0.27,
+      "w": 0.24,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$665.56",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0187",
+    "documentId": "doc-0229",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.28,
+      "w": 0.32,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$124,848.01",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0188",
+    "documentId": "doc-0230",
+    "page": 3,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.65,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$32,606.36",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0189",
+    "documentId": "doc-0231",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.37,
+      "w": 0.15,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$15,102.44",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0190",
+    "documentId": "doc-0232",
+    "page": 1,
+    "bbox": {
+      "x": 0.51,
+      "y": 0.26,
+      "w": 0.22,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,596.89",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0191",
+    "documentId": "doc-0233",
+    "page": 2,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.8,
+      "w": 0.15,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$18,702.82",
+    "confidence": 0.59
+  },
+  {
+    "id": "ext-0192",
+    "documentId": "doc-0234",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.18,
+      "w": 0.21,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$85,197.77",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0193",
+    "documentId": "doc-0235",
+    "page": 1,
+    "bbox": {
+      "x": 0.35,
+      "y": 0.75,
+      "w": 0.16,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$1,167.45",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0194",
+    "documentId": "doc-0236",
+    "page": 2,
+    "bbox": {
+      "x": 0.5,
+      "y": 0.75,
+      "w": 0.26,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$38,523.59",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0195",
+    "documentId": "doc-0237",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.33,
+      "w": 0.28,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$71,605.34",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0196",
+    "documentId": "doc-0238",
+    "page": 1,
+    "bbox": {
+      "x": 0.17,
+      "y": 0.59,
+      "w": 0.17,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,622.98",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0197",
+    "documentId": "doc-0239",
+    "page": 1,
+    "bbox": {
+      "x": 0.09,
+      "y": 0.39,
+      "w": 0.22,
+      "h": 0.03
+    },
+    "label": "Reported amount",
+    "rawValue": "$3,542.17",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0198",
+    "documentId": "doc-0240",
+    "page": 1,
+    "bbox": {
+      "x": 0.29,
+      "y": 0.5,
+      "w": 0.23,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$54,882.96",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0199",
+    "documentId": "doc-0241",
+    "page": 1,
+    "bbox": {
+      "x": 0.4,
+      "y": 0.13,
+      "w": 0.25,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$1,867.08",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0200",
+    "documentId": "doc-0242",
+    "page": 1,
+    "bbox": {
+      "x": 0.57,
+      "y": 0.37,
+      "w": 0.33,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$45,036.41",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0201",
+    "documentId": "doc-0243",
+    "page": 1,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.1,
+      "w": 0.16,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$1,867.74",
+    "confidence": 0.73
+  },
+  {
+    "id": "ext-0202",
+    "documentId": "doc-0244",
+    "page": 1,
+    "bbox": {
+      "x": 0.28,
+      "y": 0.13,
+      "w": 0.27,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$1,482.25",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0203",
+    "documentId": "doc-0245",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.42,
+      "w": 0.34,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$10.24",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0204",
+    "documentId": "doc-0248",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.28,
+      "w": 0.29,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$711.88",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0205",
+    "documentId": "doc-0249",
+    "page": 1,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.71,
+      "w": 0.16,
+      "h": 0.05
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$13,073.67",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0206",
+    "documentId": "doc-0250",
+    "page": 1,
+    "bbox": {
+      "x": 0.46,
+      "y": 0.74,
+      "w": 0.29,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$853.20",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0207",
+    "documentId": "doc-0251",
+    "page": 1,
+    "bbox": {
+      "x": 0.14,
+      "y": 0.31,
+      "w": 0.26,
+      "h": 0.02
+    },
+    "label": "Reported amount",
+    "rawValue": "$1,716.80",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0208",
+    "documentId": "doc-0252",
+    "page": 1,
+    "bbox": {
+      "x": 0.1,
+      "y": 0.4,
+      "w": 0.33,
+      "h": 0.05
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$13,101.95",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0209",
+    "documentId": "doc-0254",
+    "page": 2,
+    "bbox": {
+      "x": 0.22,
+      "y": 0.39,
+      "w": 0.32,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$6,056.33",
+    "confidence": 0.73
+  },
+  {
+    "id": "ext-0210",
+    "documentId": "doc-0255",
+    "page": 1,
+    "bbox": {
+      "x": 0.22,
+      "y": 0.11,
+      "w": 0.24,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$28,589.77",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0211",
+    "documentId": "doc-0256",
+    "page": 1,
+    "bbox": {
+      "x": 0.42,
+      "y": 0.62,
+      "w": 0.24,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$111,940.09",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0212",
+    "documentId": "doc-0257",
+    "page": 1,
+    "bbox": {
+      "x": 0.47,
+      "y": 0.65,
+      "w": 0.34,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$1,220.48",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0213",
+    "documentId": "doc-0258",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.42,
+      "w": 0.33,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$537.42",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0214",
+    "documentId": "doc-0259",
+    "page": 1,
+    "bbox": {
+      "x": 0.28,
+      "y": 0.36,
+      "w": 0.18,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$49,194.01",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0215",
+    "documentId": "doc-0260",
+    "page": 1,
+    "bbox": {
+      "x": 0.42,
+      "y": 0.78,
+      "w": 0.35,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$833.67",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0216",
+    "documentId": "doc-0261",
+    "page": 1,
+    "bbox": {
+      "x": 0.11,
+      "y": 0.23,
+      "w": 0.26,
+      "h": 0.02
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$21,563.36",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0217",
+    "documentId": "doc-0263",
+    "page": 1,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.75,
+      "w": 0.28,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$530.01",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0218",
+    "documentId": "doc-0264",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.19,
+      "w": 0.18,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$210.34",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0219",
+    "documentId": "doc-0265",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.72,
+      "w": 0.32,
+      "h": 0.05
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$21,161.53",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0220",
+    "documentId": "doc-0266",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.54,
+      "w": 0.25,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$12,505.97",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0221",
+    "documentId": "doc-0267",
+    "page": 1,
+    "bbox": {
+      "x": 0.11,
+      "y": 0.71,
+      "w": 0.34,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,108.64",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0222",
+    "documentId": "doc-0268",
+    "page": 1,
+    "bbox": {
+      "x": 0.18,
+      "y": 0.49,
+      "w": 0.28,
+      "h": 0.03
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$16,178.43",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0223",
+    "documentId": "doc-0270",
+    "page": 1,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.15,
+      "w": 0.16,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$3,477.72",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0224",
+    "documentId": "doc-0271",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.16,
+      "w": 0.15,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,462.81",
+    "confidence": 0.73
+  },
+  {
+    "id": "ext-0225",
+    "documentId": "doc-0272",
+    "page": 1,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.38,
+      "w": 0.3,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$30,619.82",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0226",
+    "documentId": "doc-0273",
+    "page": 3,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.56,
+      "w": 0.24,
+      "h": 0.05
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$20,040.72",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0227",
+    "documentId": "doc-0274",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.31,
+      "w": 0.27,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$19,735.23",
+    "confidence": 0.79
+  },
+  {
+    "id": "ext-0228",
+    "documentId": "doc-0275",
+    "page": 1,
+    "bbox": {
+      "x": 0.13,
+      "y": 0.58,
+      "w": 0.26,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$183,921.39",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0229",
+    "documentId": "doc-0277",
+    "page": 1,
+    "bbox": {
+      "x": 0.26,
+      "y": 0.57,
+      "w": 0.35,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,180.98",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0230",
+    "documentId": "doc-0278",
+    "page": 1,
+    "bbox": {
+      "x": 0.48,
+      "y": 0.77,
+      "w": 0.29,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$3,001.40",
+    "confidence": 0.77
+  },
+  {
+    "id": "ext-0231",
+    "documentId": "doc-0279",
+    "page": 1,
+    "bbox": {
+      "x": 0.57,
+      "y": 0.28,
+      "w": 0.33,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$2,814.70",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0232",
+    "documentId": "doc-0280",
+    "page": 1,
+    "bbox": {
+      "x": 0.26,
+      "y": 0.8,
+      "w": 0.27,
+      "h": 0.02
+    },
+    "label": "Reported amount",
+    "rawValue": "$7,620.09",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0233",
+    "documentId": "doc-0281",
+    "page": 1,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.35,
+      "w": 0.35,
+      "h": 0.04
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$5,433.09",
+    "confidence": 0.59
+  },
+  {
+    "id": "ext-0234",
+    "documentId": "doc-0282",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.81,
+      "w": 0.17,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,642.54",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0235",
+    "documentId": "doc-0283",
+    "page": 1,
+    "bbox": {
+      "x": 0.6,
+      "y": 0.14,
+      "w": 0.17,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$981.11",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0236",
+    "documentId": "doc-0284",
+    "page": 1,
+    "bbox": {
+      "x": 0.5,
+      "y": 0.6,
+      "w": 0.26,
+      "h": 0.04
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$35,914.99",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0237",
+    "documentId": "doc-0285",
+    "page": 1,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.48,
+      "w": 0.16,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$4,014.44",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0238",
+    "documentId": "doc-0286",
+    "page": 1,
+    "bbox": {
+      "x": 0.14,
+      "y": 0.1,
+      "w": 0.26,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$2,776.84",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0239",
+    "documentId": "doc-0287",
+    "page": 1,
+    "bbox": {
+      "x": 0.18,
+      "y": 0.53,
+      "w": 0.16,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,509.15",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0240",
+    "documentId": "doc-0288",
+    "page": 1,
+    "bbox": {
+      "x": 0.32,
+      "y": 0.85,
+      "w": 0.22,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$3,638.04",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0241",
+    "documentId": "doc-0289",
+    "page": 1,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.43,
+      "w": 0.19,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,756.80",
+    "confidence": 0.53
+  },
+  {
+    "id": "ext-0242",
+    "documentId": "doc-0290",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.74,
+      "w": 0.34,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,944.97",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0243",
+    "documentId": "doc-0291",
+    "page": 1,
+    "bbox": {
+      "x": 0.17,
+      "y": 0.31,
+      "w": 0.21,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,700.46",
+    "confidence": 0.62
+  },
+  {
+    "id": "ext-0244",
+    "documentId": "doc-0292",
+    "page": 1,
+    "bbox": {
+      "x": 0.2,
+      "y": 0.66,
+      "w": 0.28,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$12,172.34",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0245",
+    "documentId": "doc-0293",
+    "page": 1,
+    "bbox": {
+      "x": 0.19,
+      "y": 0.42,
+      "w": 0.31,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$544.71",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0246",
+    "documentId": "doc-0294",
+    "page": 1,
+    "bbox": {
+      "x": 0.6,
+      "y": 0.26,
+      "w": 0.21,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$6,956.45",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0247",
+    "documentId": "doc-0295",
+    "page": 1,
+    "bbox": {
+      "x": 0.33,
+      "y": 0.6,
+      "w": 0.29,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$1,168.01",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0248",
+    "documentId": "doc-0296",
+    "page": 1,
+    "bbox": {
+      "x": 0.28,
+      "y": 0.47,
+      "w": 0.27,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,093.14",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0249",
+    "documentId": "doc-0297",
+    "page": 1,
+    "bbox": {
+      "x": 0.42,
+      "y": 0.72,
+      "w": 0.23,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,191.82",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0250",
+    "documentId": "doc-0298",
+    "page": 1,
+    "bbox": {
+      "x": 0.24,
+      "y": 0.67,
+      "w": 0.21,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$555.37",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0251",
+    "documentId": "doc-0299",
+    "page": 1,
+    "bbox": {
+      "x": 0.08,
+      "y": 0.29,
+      "w": 0.28,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$175,748.79",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0252",
+    "documentId": "doc-0300",
+    "page": 3,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.28,
+      "w": 0.3,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$2,723.14",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0253",
+    "documentId": "doc-0301",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.78,
+      "w": 0.35,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$9,318.71",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0254",
+    "documentId": "doc-0303",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.11,
+      "w": 0.23,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$1,425.91",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0255",
+    "documentId": "doc-0304",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.68,
+      "w": 0.22,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$3,647.87",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0256",
+    "documentId": "doc-0305",
+    "page": 1,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.77,
+      "w": 0.25,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$471.29",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0257",
+    "documentId": "doc-0306",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.44,
+      "w": 0.3,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$9,024.92",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0258",
+    "documentId": "doc-0307",
+    "page": 1,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.38,
+      "w": 0.2,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$2,725.80",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0259",
+    "documentId": "doc-0310",
+    "page": 1,
+    "bbox": {
+      "x": 0.27,
+      "y": 0.15,
+      "w": 0.27,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$5,309.94",
+    "confidence": 0.73
+  },
+  {
+    "id": "ext-0260",
+    "documentId": "doc-0311",
+    "page": 3,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.69,
+      "w": 0.3,
+      "h": 0.02
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$12,744.07",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0261",
+    "documentId": "doc-0312",
+    "page": 1,
+    "bbox": {
+      "x": 0.42,
+      "y": 0.73,
+      "w": 0.17,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$108,403.84",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0262",
+    "documentId": "doc-0313",
+    "page": 1,
+    "bbox": {
+      "x": 0.21,
+      "y": 0.64,
+      "w": 0.16,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$817.50",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0263",
+    "documentId": "doc-0314",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.67,
+      "w": 0.2,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$59,770.53",
+    "confidence": 0.7
+  },
+  {
+    "id": "ext-0264",
+    "documentId": "doc-0315",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.85,
+      "w": 0.16,
+      "h": 0.02
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$3,241.49",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0265",
+    "documentId": "doc-0316",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.26,
+      "w": 0.31,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$7,029.67",
+    "confidence": 0.6
+  },
+  {
+    "id": "ext-0266",
+    "documentId": "doc-0317",
+    "page": 1,
+    "bbox": {
+      "x": 0.47,
+      "y": 0.29,
+      "w": 0.15,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$102,190.84",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0267",
+    "documentId": "doc-0318",
+    "page": 1,
+    "bbox": {
+      "x": 0.48,
+      "y": 0.22,
+      "w": 0.33,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$20,417.43",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0268",
+    "documentId": "doc-0319",
+    "page": 2,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.67,
+      "w": 0.28,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$936.11",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0269",
+    "documentId": "doc-0321",
+    "page": 1,
+    "bbox": {
+      "x": 0.19,
+      "y": 0.12,
+      "w": 0.24,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$195,461.96",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0270",
+    "documentId": "doc-0322",
+    "page": 1,
+    "bbox": {
+      "x": 0.24,
+      "y": 0.19,
+      "w": 0.32,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$618.69",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0271",
+    "documentId": "doc-0323",
+    "page": 1,
+    "bbox": {
+      "x": 0.24,
+      "y": 0.28,
+      "w": 0.16,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,325.42",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0272",
+    "documentId": "doc-0324",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.51,
+      "w": 0.35,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,212.39",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0273",
+    "documentId": "doc-0325",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.28,
+      "w": 0.22,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$326.80",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0274",
+    "documentId": "doc-0326",
+    "page": 1,
+    "bbox": {
+      "x": 0.2,
+      "y": 0.1,
+      "w": 0.17,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$18,379.18",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0275",
+    "documentId": "doc-0327",
+    "page": 1,
+    "bbox": {
+      "x": 0.41,
+      "y": 0.81,
+      "w": 0.21,
+      "h": 0.03
+    },
+    "label": "Total amount",
+    "rawValue": "$651.90",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0276",
+    "documentId": "doc-0328",
+    "page": 1,
+    "bbox": {
+      "x": 0.17,
+      "y": 0.21,
+      "w": 0.35,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,960.07",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0277",
+    "documentId": "doc-0329",
+    "page": 1,
+    "bbox": {
+      "x": 0.23,
+      "y": 0.85,
+      "w": 0.15,
+      "h": 0.05
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$6,083.14",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0278",
+    "documentId": "doc-0330",
+    "page": 1,
+    "bbox": {
+      "x": 0.38,
+      "y": 0.39,
+      "w": 0.27,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$50,141.37",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0279",
+    "documentId": "doc-0331",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.62,
+      "w": 0.23,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$21,393.59",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0280",
+    "documentId": "doc-0333",
+    "page": 1,
+    "bbox": {
+      "x": 0.42,
+      "y": 0.51,
+      "w": 0.27,
+      "h": 0.04
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$4,294.08",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0281",
+    "documentId": "doc-0334",
+    "page": 1,
+    "bbox": {
+      "x": 0.09,
+      "y": 0.37,
+      "w": 0.3,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$3,521.90",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0282",
+    "documentId": "doc-0335",
+    "page": 1,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.17,
+      "w": 0.3,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,161.32",
+    "confidence": 0.45
+  },
+  {
+    "id": "ext-0283",
+    "documentId": "doc-0337",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.8,
+      "w": 0.25,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$2,327.05",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0284",
+    "documentId": "doc-0339",
+    "page": 2,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.14,
+      "w": 0.22,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$2,477.24",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0285",
+    "documentId": "doc-0341",
+    "page": 2,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.81,
+      "w": 0.31,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$23,265.06",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0286",
+    "documentId": "doc-0343",
+    "page": 2,
+    "bbox": {
+      "x": 0.17,
+      "y": 0.39,
+      "w": 0.18,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$3,645.31",
+    "confidence": 0.56
+  },
+  {
+    "id": "ext-0287",
+    "documentId": "doc-0345",
+    "page": 1,
+    "bbox": {
+      "x": 0.34,
+      "y": 0.17,
+      "w": 0.29,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$42,487.00",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0288",
+    "documentId": "doc-0346",
+    "page": 1,
+    "bbox": {
+      "x": 0.54,
+      "y": 0.11,
+      "w": 0.19,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$1,553.62",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0289",
+    "documentId": "doc-0347",
+    "page": 1,
+    "bbox": {
+      "x": 0.2,
+      "y": 0.29,
+      "w": 0.29,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$99,377.09",
+    "confidence": 0.73
+  },
+  {
+    "id": "ext-0290",
+    "documentId": "doc-0348",
+    "page": 1,
+    "bbox": {
+      "x": 0.23,
+      "y": 0.84,
+      "w": 0.2,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$87,252.41",
+    "confidence": 0.91
+  },
+  {
+    "id": "ext-0291",
+    "documentId": "doc-0350",
+    "page": 1,
+    "bbox": {
+      "x": 0.52,
+      "y": 0.54,
+      "w": 0.15,
+      "h": 0.03
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$3,524.42",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0292",
+    "documentId": "doc-0351",
+    "page": 1,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.45,
+      "w": 0.28,
+      "h": 0.05
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$2,447.21",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0293",
+    "documentId": "doc-0352",
+    "page": 1,
+    "bbox": {
+      "x": 0.24,
+      "y": 0.2,
+      "w": 0.24,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$139,884.68",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0294",
+    "documentId": "doc-0353",
+    "page": 1,
+    "bbox": {
+      "x": 0.13,
+      "y": 0.11,
+      "w": 0.25,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$838.56",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0295",
+    "documentId": "doc-0354",
+    "page": 1,
+    "bbox": {
+      "x": 0.47,
+      "y": 0.38,
+      "w": 0.19,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$120,758.78",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0296",
+    "documentId": "doc-0355",
+    "page": 1,
+    "bbox": {
+      "x": 0.39,
+      "y": 0.22,
+      "w": 0.32,
+      "h": 0.02
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,597.55",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0297",
+    "documentId": "doc-0356",
+    "page": 1,
+    "bbox": {
+      "x": 0.33,
+      "y": 0.35,
+      "w": 0.16,
+      "h": 0.02
+    },
+    "label": "Reported amount",
+    "rawValue": "$3,830.84",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0298",
+    "documentId": "doc-0357",
+    "page": 1,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.71,
+      "w": 0.19,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$1,790.14",
+    "confidence": 0.58
+  },
+  {
+    "id": "ext-0299",
+    "documentId": "doc-0358",
+    "page": 1,
+    "bbox": {
+      "x": 0.11,
+      "y": 0.4,
+      "w": 0.31,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$52,854.94",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0300",
+    "documentId": "doc-0359",
+    "page": 1,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.38,
+      "w": 0.18,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$978.42",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0301",
+    "documentId": "doc-0360",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.73,
+      "w": 0.15,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$168,076.48",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0302",
+    "documentId": "doc-0361",
+    "page": 1,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.77,
+      "w": 0.25,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$5,003.21",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0303",
+    "documentId": "doc-0362",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.18,
+      "w": 0.34,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,632.99",
+    "confidence": 0.96
+  },
+  {
+    "id": "ext-0304",
+    "documentId": "doc-0363",
+    "page": 1,
+    "bbox": {
+      "x": 0.1,
+      "y": 0.78,
+      "w": 0.26,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$949.00",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0305",
+    "documentId": "doc-0364",
+    "page": 1,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.66,
+      "w": 0.17,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$31,800.03",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0306",
+    "documentId": "doc-0365",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.14,
+      "w": 0.23,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$146.50",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0307",
+    "documentId": "doc-0366",
+    "page": 1,
+    "bbox": {
+      "x": 0.25,
+      "y": 0.64,
+      "w": 0.2,
+      "h": 0.05
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$158,901.44",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0308",
+    "documentId": "doc-0367",
+    "page": 1,
+    "bbox": {
+      "x": 0.11,
+      "y": 0.66,
+      "w": 0.15,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$17,407.19",
+    "confidence": 0.6
+  },
+  {
+    "id": "ext-0309",
+    "documentId": "doc-0368",
+    "page": 1,
+    "bbox": {
+      "x": 0.25,
+      "y": 0.66,
+      "w": 0.28,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$4,476.11",
+    "confidence": 0.67
+  },
+  {
+    "id": "ext-0310",
+    "documentId": "doc-0369",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.32,
+      "w": 0.29,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$1,199.34",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0311",
+    "documentId": "doc-0370",
+    "page": 1,
+    "bbox": {
+      "x": 0.41,
+      "y": 0.18,
+      "w": 0.31,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$2,357.14",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0312",
+    "documentId": "doc-0371",
+    "page": 2,
+    "bbox": {
+      "x": 0.24,
+      "y": 0.59,
+      "w": 0.19,
+      "h": 0.05
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$33,672.57",
+    "confidence": 0.72
+  },
+  {
+    "id": "ext-0313",
+    "documentId": "doc-0372",
+    "page": 1,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.47,
+      "w": 0.26,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$62,986.75",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0314",
+    "documentId": "doc-0373",
+    "page": 1,
+    "bbox": {
+      "x": 0.21,
+      "y": 0.18,
+      "w": 0.19,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$185,010.55",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0315",
+    "documentId": "doc-0374",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.78,
+      "w": 0.28,
+      "h": 0.02
+    },
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$5,049.37",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0316",
+    "documentId": "doc-0375",
+    "page": 1,
+    "bbox": {
+      "x": 0.37,
+      "y": 0.8,
+      "w": 0.3,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$173,280.58",
+    "confidence": 0.98
+  },
+  {
+    "id": "ext-0317",
+    "documentId": "doc-0376",
+    "page": 1,
+    "bbox": {
+      "x": 0.51,
+      "y": 0.1,
+      "w": 0.25,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$33,854.55",
+    "confidence": 0.93
+  },
+  {
+    "id": "ext-0318",
+    "documentId": "doc-0377",
+    "page": 1,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.59,
+      "w": 0.31,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$2,025.94",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0319",
+    "documentId": "doc-0379",
+    "page": 1,
+    "bbox": {
+      "x": 0.51,
+      "y": 0.29,
+      "w": 0.15,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$23,423.26",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0320",
+    "documentId": "doc-0380",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.44,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$3,265.94",
+    "confidence": 0.8
+  },
+  {
+    "id": "ext-0321",
+    "documentId": "doc-0381",
+    "page": 1,
+    "bbox": {
+      "x": 0.41,
+      "y": 0.33,
+      "w": 0.2,
+      "h": 0.03
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$6,426.57",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0322",
+    "documentId": "doc-0382",
+    "page": 1,
+    "bbox": {
+      "x": 0.53,
+      "y": 0.49,
+      "w": 0.28,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,060.51",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0323",
+    "documentId": "doc-0383",
+    "page": 1,
+    "bbox": {
+      "x": 0.43,
+      "y": 0.1,
+      "w": 0.33,
+      "h": 0.03
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$716.68",
+    "confidence": 0.46
+  },
+  {
+    "id": "ext-0324",
+    "documentId": "doc-0384",
+    "page": 1,
+    "bbox": {
+      "x": 0.18,
+      "y": 0.17,
+      "w": 0.26,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$39,749.55",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0325",
+    "documentId": "doc-0385",
+    "page": 1,
+    "bbox": {
+      "x": 0.57,
+      "y": 0.2,
+      "w": 0.17,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,065.49",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0326",
+    "documentId": "doc-0386",
+    "page": 1,
+    "bbox": {
+      "x": 0.08,
+      "y": 0.16,
+      "w": 0.23,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$1,651.69",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0327",
+    "documentId": "doc-0387",
+    "page": 2,
+    "bbox": {
+      "x": 0.2,
+      "y": 0.7,
+      "w": 0.31,
+      "h": 0.02
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$28,321.17",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0328",
+    "documentId": "doc-0388",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.17,
+      "w": 0.28,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,138.33",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0329",
+    "documentId": "doc-0390",
+    "page": 3,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.67,
+      "w": 0.32,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$490.25",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0330",
+    "documentId": "doc-0391",
+    "page": 1,
+    "bbox": {
+      "x": 0.14,
+      "y": 0.1,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,154.11",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0331",
+    "documentId": "doc-0392",
+    "page": 1,
+    "bbox": {
+      "x": 0.24,
+      "y": 0.19,
+      "w": 0.22,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$2,804.41",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0332",
+    "documentId": "doc-0393",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.17,
+      "w": 0.31,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$254.22",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0333",
+    "documentId": "doc-0394",
+    "page": 1,
+    "bbox": {
+      "x": 0.11,
+      "y": 0.4,
+      "w": 0.25,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$2,359.98",
+    "confidence": 0.53
+  },
+  {
+    "id": "ext-0334",
+    "documentId": "doc-0395",
+    "page": 1,
+    "bbox": {
+      "x": 0.27,
+      "y": 0.34,
+      "w": 0.22,
+      "h": 0.03
+    },
+    "label": "Reported amount",
+    "rawValue": "$2,568.84",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0335",
+    "documentId": "doc-0396",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.4,
+      "w": 0.2,
+      "h": 0.04
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$5,562.64",
+    "confidence": 0.82
+  },
+  {
+    "id": "ext-0336",
+    "documentId": "doc-0397",
+    "page": 1,
+    "bbox": {
+      "x": 0.27,
+      "y": 0.38,
+      "w": 0.22,
+      "h": 0.04
+    },
+    "label": "Reported amount",
+    "rawValue": "$4,134.52",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0337",
+    "documentId": "doc-0398",
+    "page": 1,
+    "bbox": {
+      "x": 0.36,
+      "y": 0.48,
+      "w": 0.15,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$1,966.61",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0338",
+    "documentId": "doc-0399",
+    "page": 3,
+    "bbox": {
+      "x": 0.12,
+      "y": 0.38,
+      "w": 0.17,
+      "h": 0.03
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$52,879.16",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0339",
+    "documentId": "doc-0400",
+    "page": 1,
+    "bbox": {
+      "x": 0.26,
+      "y": 0.49,
+      "w": 0.28,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,748.09",
+    "confidence": 0.53
+  },
+  {
+    "id": "ext-0340",
+    "documentId": "doc-0401",
+    "page": 1,
+    "bbox": {
+      "x": 0.16,
+      "y": 0.5,
+      "w": 0.2,
+      "h": 0.05
+    },
+    "label": "Reported amount",
+    "rawValue": "$478.08",
+    "confidence": 0.92
+  },
+  {
+    "id": "ext-0341",
+    "documentId": "doc-0402",
+    "page": 2,
+    "bbox": {
+      "x": 0.16,
+      "y": 0.23,
+      "w": 0.16,
+      "h": 0.04
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$27,216.37",
+    "confidence": 0.9
+  },
+  {
+    "id": "ext-0342",
+    "documentId": "doc-0403",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.53,
+      "w": 0.16,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$527.63",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0343",
+    "documentId": "doc-0405",
+    "page": 1,
+    "bbox": {
+      "x": 0.34,
+      "y": 0.45,
+      "w": 0.23,
+      "h": 0.02
+    },
+    "label": "Total amount",
+    "rawValue": "$3,132.16",
+    "confidence": 0.95
+  },
+  {
+    "id": "ext-0344",
+    "documentId": "doc-0406",
+    "page": 3,
+    "bbox": {
+      "x": 0.25,
+      "y": 0.32,
+      "w": 0.18,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$21,599.66",
+    "confidence": 0.99
+  },
+  {
+    "id": "ext-0345",
+    "documentId": "doc-0408",
+    "page": 1,
+    "bbox": {
+      "x": 0.17,
+      "y": 0.52,
+      "w": 0.35,
+      "h": 0.04
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$1,372.41",
+    "confidence": 0.81
+  },
+  {
+    "id": "ext-0346",
+    "documentId": "doc-0409",
+    "page": 1,
+    "bbox": {
+      "x": 0.57,
+      "y": 0.8,
+      "w": 0.17,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$760.62",
+    "confidence": 0.68
+  },
+  {
+    "id": "ext-0347",
+    "documentId": "doc-0410",
+    "page": 2,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.34,
+      "w": 0.17,
+      "h": 0.05
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$44,077.19",
+    "confidence": 0.86
+  },
+  {
+    "id": "ext-0348",
+    "documentId": "doc-0412",
+    "page": 1,
+    "bbox": {
+      "x": 0.54,
+      "y": 0.52,
+      "w": 0.33,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$94,540.55",
+    "confidence": 0.84
+  }
+]

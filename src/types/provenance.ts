@@ -1,4 +1,4 @@
-import type { UserRef } from './user'
+import type { UserRef } from './user.ts'
 
 export type TransformStep =
   | { op: 'direct'; sourceId: string }

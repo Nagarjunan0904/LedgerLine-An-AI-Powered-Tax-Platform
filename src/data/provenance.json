@@ -1,0 +1,1465 @@
+[
+  {
+    "id": "prov-ellery-1040-1a-wages",
+    "targetFieldId": "field-ellery-1040-1a-wages",
+    "sourceFieldIds": [
+      "ext-ellery-w2-acme-box1",
+      "ext-ellery-w2-belmont-box1",
+      "ext-ellery-w2-corvid-box1"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-ellery-w2-acme-box1",
+          "ext-ellery-w2-belmont-box1",
+          "ext-ellery-w2-corvid-box1"
+        ]
+      }
+    ],
+    "confidence": 0.71,
+    "method": "derived",
+    "verification": null
+  },
+  {
+    "id": "prov-ellery-sch-b-interest",
+    "targetFieldId": "field-ellery-sch-b-interest",
+    "sourceFieldIds": [
+      "ext-ellery-1099int-firstcap-box1"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-ellery-1099int-firstcap-box1"
+      }
+    ],
+    "confidence": 0.86,
+    "method": "extracted",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-07-12T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-ellery-8949-cost-basis",
+    "targetFieldId": "field-ellery-8949-cost-basis",
+    "sourceFieldIds": [
+      "ext-ellery-1099b-handwritten-basis"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-ellery-1099b-handwritten-basis"
+      }
+    ],
+    "confidence": 0.44,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0001",
+    "targetFieldId": "field-0001",
+    "sourceFieldIds": [
+      "ext-0001"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0001"
+      }
+    ],
+    "confidence": 0.97,
+    "method": "extracted",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-07-17T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0002",
+    "targetFieldId": "field-0002",
+    "sourceFieldIds": [],
+    "transform": [
+      {
+        "op": "manual-entry",
+        "enteredBy": "user-marcus-ellery",
+        "reason": "Provided directly by the client during intake."
+      }
+    ],
+    "confidence": 1,
+    "method": "client-entered",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-07-05T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0003",
+    "targetFieldId": "field-0003",
+    "sourceFieldIds": [],
+    "transform": [
+      {
+        "op": "lookup",
+        "table": "2025-tax-tables",
+        "key": "MFJ:160000-190000"
+      }
+    ],
+    "confidence": 0.9,
+    "method": "derived",
+    "verification": null
+  },
+  {
+    "id": "prov-0004",
+    "targetFieldId": "field-0004",
+    "sourceFieldIds": [
+      "ext-0002"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0002"
+      }
+    ],
+    "confidence": 0.97,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0003",
+      "at": "2025-03-28T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0005",
+    "targetFieldId": "field-0005",
+    "sourceFieldIds": [
+      "ext-0003"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0003"
+      }
+    ],
+    "confidence": 0.96,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0003",
+      "at": "2025-03-28T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0006",
+    "targetFieldId": "field-0006",
+    "sourceFieldIds": [],
+    "transform": [
+      {
+        "op": "lookup",
+        "table": "2024-tax-tables",
+        "key": "S:100000-120000"
+      }
+    ],
+    "confidence": 0.92,
+    "method": "derived",
+    "verification": {
+      "by": "user-0003",
+      "at": "2025-03-28T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0007",
+    "targetFieldId": "field-0007",
+    "sourceFieldIds": [],
+    "transform": [
+      {
+        "op": "manual-entry",
+        "enteredBy": "user-0003",
+        "reason": "Final refund figure confirmed against the e-file acknowledgment."
+      }
+    ],
+    "confidence": 1,
+    "method": "preparer-entered",
+    "verification": {
+      "by": "user-0003",
+      "at": "2025-03-28T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0008",
+    "targetFieldId": "field-0008",
+    "sourceFieldIds": [
+      "ext-0004"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0004"
+      }
+    ],
+    "confidence": 0.93,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0002",
+      "at": "2026-08-03T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0009",
+    "targetFieldId": "field-0009",
+    "sourceFieldIds": [
+      "ext-0005"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0005"
+      }
+    ],
+    "confidence": 0.9,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0002",
+      "at": "2026-08-03T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0010",
+    "targetFieldId": "field-0010",
+    "sourceFieldIds": [
+      "ext-0006"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0006"
+      }
+    ],
+    "confidence": 0.98,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0002",
+      "at": "2026-08-03T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0011",
+    "targetFieldId": "field-0011",
+    "sourceFieldIds": [
+      "ext-0010"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0010"
+      }
+    ],
+    "confidence": 0.89,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0012",
+    "targetFieldId": "field-0012",
+    "sourceFieldIds": [
+      "ext-0014"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0014"
+      }
+    ],
+    "confidence": 0.99,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0001",
+      "at": "2026-08-01T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0013",
+    "targetFieldId": "field-0013",
+    "sourceFieldIds": [
+      "ext-0015"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0015"
+      }
+    ],
+    "confidence": 0.92,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0014",
+    "targetFieldId": "field-0014",
+    "sourceFieldIds": [],
+    "transform": [
+      {
+        "op": "manual-entry",
+        "enteredBy": "user-0014",
+        "reason": "Confirmed directly with the client."
+      }
+    ],
+    "confidence": 1,
+    "method": "client-entered",
+    "verification": null
+  },
+  {
+    "id": "prov-0015",
+    "targetFieldId": "field-0015",
+    "sourceFieldIds": [],
+    "transform": [
+      {
+        "op": "manual-entry",
+        "enteredBy": "user-0014",
+        "reason": "Confirmed directly with the client."
+      }
+    ],
+    "confidence": 1,
+    "method": "client-entered",
+    "verification": {
+      "by": "user-0005",
+      "at": "2026-08-04T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0016",
+    "targetFieldId": "field-0016",
+    "sourceFieldIds": [],
+    "transform": [
+      {
+        "op": "manual-entry",
+        "enteredBy": "user-0014",
+        "reason": "Confirmed directly with the client."
+      }
+    ],
+    "confidence": 1,
+    "method": "client-entered",
+    "verification": {
+      "by": "user-0005",
+      "at": "2026-07-30T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0017",
+    "targetFieldId": "field-0017",
+    "sourceFieldIds": [
+      "ext-0033"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0033"
+      }
+    ],
+    "confidence": 0.8,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0008",
+      "at": "2026-07-29T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0018",
+    "targetFieldId": "field-0018",
+    "sourceFieldIds": [
+      "ext-0047"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0047"
+      }
+    ],
+    "confidence": 0.89,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0005",
+      "at": "2026-07-30T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0019",
+    "targetFieldId": "field-0019",
+    "sourceFieldIds": [
+      "ext-0044"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0044"
+      }
+    ],
+    "confidence": 0.86,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0005",
+      "at": "2026-07-25T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0020",
+    "targetFieldId": "field-0020",
+    "sourceFieldIds": [
+      "ext-0061"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0061"
+      }
+    ],
+    "confidence": 0.84,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0021",
+    "targetFieldId": "field-0021",
+    "sourceFieldIds": [
+      "ext-0069"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0069"
+      }
+    ],
+    "confidence": 0.99,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0001",
+      "at": "2026-08-06T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0022",
+    "targetFieldId": "field-0022",
+    "sourceFieldIds": [
+      "ext-0065",
+      "ext-0064",
+      "ext-0070"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0065",
+          "ext-0064",
+          "ext-0070"
+        ]
+      }
+    ],
+    "confidence": 0.57,
+    "method": "derived",
+    "verification": null
+  },
+  {
+    "id": "prov-0023",
+    "targetFieldId": "field-0023",
+    "sourceFieldIds": [
+      "ext-0075"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0075"
+      }
+    ],
+    "confidence": 0.71,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0024",
+    "targetFieldId": "field-0024",
+    "sourceFieldIds": [
+      "ext-0092"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0092"
+      }
+    ],
+    "confidence": 0.96,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0025",
+    "targetFieldId": "field-0025",
+    "sourceFieldIds": [
+      "ext-0095"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0095"
+      }
+    ],
+    "confidence": 0.57,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0026",
+    "targetFieldId": "field-0026",
+    "sourceFieldIds": [
+      "ext-0092",
+      "ext-0090"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0092",
+          "ext-0090"
+        ]
+      }
+    ],
+    "confidence": 0.88,
+    "method": "derived",
+    "verification": {
+      "by": "user-0002",
+      "at": "2026-07-21T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0027",
+    "targetFieldId": "field-0027",
+    "sourceFieldIds": [
+      "ext-0096"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0096"
+      }
+    ],
+    "confidence": 0.96,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0028",
+    "targetFieldId": "field-0028",
+    "sourceFieldIds": [
+      "ext-0102",
+      "ext-0103"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0102",
+          "ext-0103"
+        ]
+      }
+    ],
+    "confidence": 0.8,
+    "method": "derived",
+    "verification": {
+      "by": "user-0009",
+      "at": "2026-07-22T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0029",
+    "targetFieldId": "field-0029",
+    "sourceFieldIds": [
+      "ext-0103"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0103"
+      }
+    ],
+    "confidence": 0.93,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0030",
+    "targetFieldId": "field-0030",
+    "sourceFieldIds": [
+      "ext-0103"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0103"
+      }
+    ],
+    "confidence": 0.93,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0009",
+      "at": "2026-08-05T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0031",
+    "targetFieldId": "field-0031",
+    "sourceFieldIds": [
+      "ext-0111"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0111"
+      }
+    ],
+    "confidence": 0.93,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0032",
+    "targetFieldId": "field-0032",
+    "sourceFieldIds": [
+      "ext-0109",
+      "ext-0110",
+      "ext-0104"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0109",
+          "ext-0110",
+          "ext-0104"
+        ]
+      }
+    ],
+    "confidence": 0.87,
+    "method": "derived",
+    "verification": null
+  },
+  {
+    "id": "prov-0033",
+    "targetFieldId": "field-0033",
+    "sourceFieldIds": [
+      "ext-0115"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0115"
+      }
+    ],
+    "confidence": 0.98,
+    "method": "extracted",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-07-23T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0034",
+    "targetFieldId": "field-0034",
+    "sourceFieldIds": [
+      "ext-0115"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0115"
+      }
+    ],
+    "confidence": 0.98,
+    "method": "extracted",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-07-20T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0035",
+    "targetFieldId": "field-0035",
+    "sourceFieldIds": [
+      "ext-0115"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0115"
+      }
+    ],
+    "confidence": 0.98,
+    "method": "extracted",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-07-22T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0036",
+    "targetFieldId": "field-0036",
+    "sourceFieldIds": [
+      "ext-0126",
+      "ext-0125"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0126",
+          "ext-0125"
+        ]
+      }
+    ],
+    "confidence": 0.87,
+    "method": "derived",
+    "verification": null
+  },
+  {
+    "id": "prov-0037",
+    "targetFieldId": "field-0037",
+    "sourceFieldIds": [
+      "ext-0131"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0131"
+      }
+    ],
+    "confidence": 0.83,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0005",
+      "at": "2026-07-29T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0038",
+    "targetFieldId": "field-0038",
+    "sourceFieldIds": [
+      "ext-0145"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0145"
+      }
+    ],
+    "confidence": 0.82,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0005",
+      "at": "2026-08-04T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0039",
+    "targetFieldId": "field-0039",
+    "sourceFieldIds": [
+      "ext-0142"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0142"
+      }
+    ],
+    "confidence": 0.77,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0040",
+    "targetFieldId": "field-0040",
+    "sourceFieldIds": [
+      "ext-0150"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0150"
+      }
+    ],
+    "confidence": 0.49,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0041",
+    "targetFieldId": "field-0041",
+    "sourceFieldIds": [
+      "ext-0147"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0147"
+      }
+    ],
+    "confidence": 0.96,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0006",
+      "at": "2026-08-01T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0042",
+    "targetFieldId": "field-0042",
+    "sourceFieldIds": [
+      "ext-0153",
+      "ext-0160"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0153",
+          "ext-0160"
+        ]
+      }
+    ],
+    "confidence": 0.83,
+    "method": "derived",
+    "verification": {
+      "by": "user-0010",
+      "at": "2026-07-31T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0043",
+    "targetFieldId": "field-0043",
+    "sourceFieldIds": [
+      "ext-0162"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0162"
+      }
+    ],
+    "confidence": 0.84,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0003",
+      "at": "2026-07-28T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0044",
+    "targetFieldId": "field-0044",
+    "sourceFieldIds": [
+      "ext-0163",
+      "ext-0162",
+      "ext-0161"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0163",
+          "ext-0162",
+          "ext-0161"
+        ]
+      }
+    ],
+    "confidence": 0.75,
+    "method": "derived",
+    "verification": null
+  },
+  {
+    "id": "prov-0045",
+    "targetFieldId": "field-0045",
+    "sourceFieldIds": [
+      "ext-0195"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0195"
+      }
+    ],
+    "confidence": 0.98,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0046",
+    "targetFieldId": "field-0046",
+    "sourceFieldIds": [
+      "ext-0193"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0193"
+      }
+    ],
+    "confidence": 0.87,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0006",
+      "at": "2026-07-23T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0047",
+    "targetFieldId": "field-0047",
+    "sourceFieldIds": [
+      "ext-0207",
+      "ext-0205"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0207",
+          "ext-0205"
+        ]
+      }
+    ],
+    "confidence": 0.88,
+    "method": "derived",
+    "verification": {
+      "by": "user-0002",
+      "at": "2026-08-02T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0048",
+    "targetFieldId": "field-0048",
+    "sourceFieldIds": [
+      "ext-0218",
+      "ext-0221"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0218",
+          "ext-0221"
+        ]
+      }
+    ],
+    "confidence": 0.9,
+    "method": "derived",
+    "verification": {
+      "by": "user-0010",
+      "at": "2026-07-27T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0049",
+    "targetFieldId": "field-0049",
+    "sourceFieldIds": [
+      "ext-0222"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0222"
+      }
+    ],
+    "confidence": 0.92,
+    "method": "extracted",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-08-04T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0050",
+    "targetFieldId": "field-0050",
+    "sourceFieldIds": [
+      "ext-0222"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0222"
+      }
+    ],
+    "confidence": 0.92,
+    "method": "extracted",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-07-29T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0051",
+    "targetFieldId": "field-0051",
+    "sourceFieldIds": [
+      "ext-0222"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0222"
+      }
+    ],
+    "confidence": 0.92,
+    "method": "extracted",
+    "verification": {
+      "by": "user-nadia-osei",
+      "at": "2026-07-19T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0052",
+    "targetFieldId": "field-0052",
+    "sourceFieldIds": [
+      "ext-0234"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0234"
+      }
+    ],
+    "confidence": 0.8,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0011",
+      "at": "2026-07-19T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0053",
+    "targetFieldId": "field-0053",
+    "sourceFieldIds": [
+      "ext-0229"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0229"
+      }
+    ],
+    "confidence": 0.97,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0011",
+      "at": "2026-08-06T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0054",
+    "targetFieldId": "field-0054",
+    "sourceFieldIds": [
+      "ext-0236"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0236"
+      }
+    ],
+    "confidence": 0.87,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0055",
+    "targetFieldId": "field-0055",
+    "sourceFieldIds": [
+      "ext-0246"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0246"
+      }
+    ],
+    "confidence": 0.99,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0056",
+    "targetFieldId": "field-0056",
+    "sourceFieldIds": [
+      "ext-0245"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0245"
+      }
+    ],
+    "confidence": 0.85,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0008",
+      "at": "2026-08-01T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0057",
+    "targetFieldId": "field-0057",
+    "sourceFieldIds": [
+      "ext-0244"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0244"
+      }
+    ],
+    "confidence": 0.91,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0008",
+      "at": "2026-07-31T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0058",
+    "targetFieldId": "field-0058",
+    "sourceFieldIds": [
+      "ext-0242"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0242"
+      }
+    ],
+    "confidence": 0.88,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0008",
+      "at": "2026-08-05T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0059",
+    "targetFieldId": "field-0059",
+    "sourceFieldIds": [
+      "ext-0258"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0258"
+      }
+    ],
+    "confidence": 0.91,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0003",
+      "at": "2026-07-21T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0060",
+    "targetFieldId": "field-0060",
+    "sourceFieldIds": [
+      "ext-0263"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0263"
+      }
+    ],
+    "confidence": 0.7,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0061",
+    "targetFieldId": "field-0061",
+    "sourceFieldIds": [
+      "ext-0271"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0271"
+      }
+    ],
+    "confidence": 0.82,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0062",
+    "targetFieldId": "field-0062",
+    "sourceFieldIds": [
+      "ext-0267"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0267"
+      }
+    ],
+    "confidence": 0.99,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0063",
+    "targetFieldId": "field-0063",
+    "sourceFieldIds": [
+      "ext-0282"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0282"
+      }
+    ],
+    "confidence": 0.45,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0064",
+    "targetFieldId": "field-0064",
+    "sourceFieldIds": [
+      "ext-0277"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0277"
+      }
+    ],
+    "confidence": 0.94,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0065",
+    "targetFieldId": "field-0065",
+    "sourceFieldIds": [
+      "ext-0286"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0286"
+      }
+    ],
+    "confidence": 0.56,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0066",
+    "targetFieldId": "field-0066",
+    "sourceFieldIds": [
+      "ext-0288"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0288"
+      }
+    ],
+    "confidence": 0.8,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0067",
+    "targetFieldId": "field-0067",
+    "sourceFieldIds": [
+      "ext-0293"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0293"
+      }
+    ],
+    "confidence": 0.99,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0003",
+      "at": "2026-08-03T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0068",
+    "targetFieldId": "field-0068",
+    "sourceFieldIds": [
+      "ext-0311"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0311"
+      }
+    ],
+    "confidence": 0.9,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0001",
+      "at": "2026-07-27T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0069",
+    "targetFieldId": "field-0069",
+    "sourceFieldIds": [
+      "ext-0316"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0316"
+      }
+    ],
+    "confidence": 0.98,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0007",
+      "at": "2026-07-20T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0070",
+    "targetFieldId": "field-0070",
+    "sourceFieldIds": [
+      "ext-0315"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0315"
+      }
+    ],
+    "confidence": 0.99,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0007",
+      "at": "2026-07-30T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0071",
+    "targetFieldId": "field-0071",
+    "sourceFieldIds": [
+      "ext-0322"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0322"
+      }
+    ],
+    "confidence": 0.95,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0009",
+      "at": "2026-07-30T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0072",
+    "targetFieldId": "field-0072",
+    "sourceFieldIds": [
+      "ext-0319"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0319"
+      }
+    ],
+    "confidence": 0.85,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0073",
+    "targetFieldId": "field-0073",
+    "sourceFieldIds": [
+      "ext-0319"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0319"
+      }
+    ],
+    "confidence": 0.85,
+    "method": "extracted",
+    "verification": {
+      "by": "user-0009",
+      "at": "2026-07-29T12:00:00.000Z"
+    }
+  },
+  {
+    "id": "prov-0074",
+    "targetFieldId": "field-0074",
+    "sourceFieldIds": [
+      "ext-0330"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0330"
+      }
+    ],
+    "confidence": 0.99,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0075",
+    "targetFieldId": "field-0075",
+    "sourceFieldIds": [
+      "ext-0325",
+      "ext-0327"
+    ],
+    "transform": [
+      {
+        "op": "sum",
+        "sourceIds": [
+          "ext-0325",
+          "ext-0327"
+        ]
+      }
+    ],
+    "confidence": 0.84,
+    "method": "derived",
+    "verification": null
+  },
+  {
+    "id": "prov-0076",
+    "targetFieldId": "field-0076",
+    "sourceFieldIds": [
+      "ext-0339"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0339"
+      }
+    ],
+    "confidence": 0.53,
+    "method": "extracted",
+    "verification": null
+  },
+  {
+    "id": "prov-0077",
+    "targetFieldId": "field-0077",
+    "sourceFieldIds": [
+      "ext-0343"
+    ],
+    "transform": [
+      {
+        "op": "direct",
+        "sourceId": "ext-0343"
+      }
+    ],
+    "confidence": 0.95,
+    "method": "extracted",
+    "verification": null
+  }
+]

@@ -1,0 +1,905 @@
+[
+  {
+    "id": "field-ellery-1040-1a-wages",
+    "returnId": "return-ellery-2025",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 184200,
+    "state": "needs-review",
+    "provenanceId": "prov-ellery-1040-1a-wages",
+    "audit": []
+  },
+  {
+    "id": "field-ellery-sch-b-interest",
+    "returnId": "return-ellery-2025",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 824.1,
+    "state": "verified",
+    "provenanceId": "prov-ellery-sch-b-interest",
+    "audit": [
+      {
+        "id": "audit-0001",
+        "fieldId": "field-ellery-sch-b-interest",
+        "at": "2026-07-12T12:00:00.000Z",
+        "by": "user-nadia-osei",
+        "previousValue": 842.1,
+        "newValue": 824.1,
+        "previousState": "ai-suggested",
+        "newState": "verified"
+      }
+    ]
+  },
+  {
+    "id": "field-ellery-8949-cost-basis",
+    "returnId": "return-ellery-2025",
+    "formLine": "8949-e",
+    "label": "Cost basis (Form 8949, column e)",
+    "value": 1240,
+    "state": "ai-suggested",
+    "provenanceId": "prov-ellery-8949-cost-basis",
+    "audit": []
+  },
+  {
+    "id": "field-0001",
+    "returnId": "return-ellery-2025",
+    "formLine": "1040-3b",
+    "label": "Ordinary dividends (Form 1040, line 3b)",
+    "value": 1904,
+    "state": "verified",
+    "provenanceId": "prov-0001",
+    "audit": []
+  },
+  {
+    "id": "field-0002",
+    "returnId": "return-ellery-2025",
+    "formLine": "1040-filing-status",
+    "label": "Filing status",
+    "value": "Married filing jointly",
+    "state": "verified",
+    "provenanceId": "prov-0002",
+    "audit": []
+  },
+  {
+    "id": "field-0003",
+    "returnId": "return-ellery-2025",
+    "formLine": "1040-16",
+    "label": "Total tax (Form 1040, line 16)",
+    "value": 28650,
+    "state": "needs-review",
+    "provenanceId": "prov-0003",
+    "audit": []
+  },
+  {
+    "id": "field-0004",
+    "returnId": "return-whitfield-2024",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 112900,
+    "state": "locked",
+    "provenanceId": "prov-0004",
+    "lockReason": "Filed with the IRS on March 28, 2025. Locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0005",
+    "returnId": "return-whitfield-2024",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 318.4,
+    "state": "locked",
+    "provenanceId": "prov-0005",
+    "lockReason": "Filed with the IRS on March 28, 2025. Locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0006",
+    "returnId": "return-whitfield-2024",
+    "formLine": "1040-16",
+    "label": "Total tax (Form 1040, line 16)",
+    "value": 16840,
+    "state": "locked",
+    "provenanceId": "prov-0006",
+    "lockReason": "Filed with the IRS on March 28, 2025. Locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0007",
+    "returnId": "return-whitfield-2024",
+    "formLine": "1040-34",
+    "label": "Overpayment / refund (Form 1040, line 34)",
+    "value": 1215,
+    "state": "locked",
+    "provenanceId": "prov-0007",
+    "lockReason": "Filed with the IRS on March 28, 2025. Locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0008",
+    "returnId": "return-bloom-2025",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 19473.86,
+    "state": "verified",
+    "provenanceId": "prov-0008",
+    "audit": []
+  },
+  {
+    "id": "field-0009",
+    "returnId": "return-bloom-2025",
+    "formLine": "1040-16",
+    "label": "Total tax (Form 1040, line 16)",
+    "value": 75319.99,
+    "state": "verified",
+    "provenanceId": "prov-0009",
+    "audit": []
+  },
+  {
+    "id": "field-0010",
+    "returnId": "return-bloom-2025",
+    "formLine": "1040-34",
+    "label": "Overpayment / refund (Form 1040, line 34)",
+    "value": 19247.78,
+    "state": "verified",
+    "provenanceId": "prov-0010",
+    "audit": []
+  },
+  {
+    "id": "field-0011",
+    "returnId": "return-voss-2025",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 55701.54,
+    "state": "needs-review",
+    "provenanceId": "prov-0011",
+    "audit": []
+  },
+  {
+    "id": "field-0012",
+    "returnId": "return-osei-2025",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 90871.81,
+    "state": "verified",
+    "provenanceId": "prov-0012",
+    "audit": []
+  },
+  {
+    "id": "field-0013",
+    "returnId": "return-osei-2025",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 8167.86,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0013",
+    "audit": []
+  },
+  {
+    "id": "field-0014",
+    "returnId": "return-0003",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 71193.63,
+    "state": "editable",
+    "provenanceId": "prov-0014",
+    "audit": []
+  },
+  {
+    "id": "field-0015",
+    "returnId": "return-0003",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 36263.95,
+    "state": "verified",
+    "provenanceId": "prov-0015",
+    "audit": []
+  },
+  {
+    "id": "field-0016",
+    "returnId": "return-0003",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 30398.07,
+    "state": "verified",
+    "provenanceId": "prov-0016",
+    "audit": []
+  },
+  {
+    "id": "field-0017",
+    "returnId": "return-0004",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 113274.66,
+    "state": "locked",
+    "provenanceId": "prov-0017",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0018",
+    "returnId": "return-0006",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 21717.62,
+    "state": "verified",
+    "provenanceId": "prov-0018",
+    "audit": []
+  },
+  {
+    "id": "field-0019",
+    "returnId": "return-0006",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 42474.37,
+    "state": "verified",
+    "provenanceId": "prov-0019",
+    "audit": [
+      {
+        "id": "audit-0002",
+        "fieldId": "field-0019",
+        "at": "2026-07-18T12:00:00.000Z",
+        "by": "user-0005",
+        "previousValue": 44173.34,
+        "newValue": 42474.37,
+        "previousState": "ai-suggested",
+        "newState": "verified"
+      }
+    ]
+  },
+  {
+    "id": "field-0020",
+    "returnId": "return-0008",
+    "formLine": "1040-16",
+    "label": "Total tax (Form 1040, line 16)",
+    "value": 32793.23,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0020",
+    "audit": []
+  },
+  {
+    "id": "field-0021",
+    "returnId": "return-0009",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 18781.12,
+    "state": "verified",
+    "provenanceId": "prov-0021",
+    "audit": [
+      {
+        "id": "audit-0003",
+        "fieldId": "field-0021",
+        "at": "2026-07-07T12:00:00.000Z",
+        "by": "user-0001",
+        "previousValue": 18668.43,
+        "newValue": 18781.12,
+        "previousState": "ai-suggested",
+        "newState": "verified"
+      }
+    ]
+  },
+  {
+    "id": "field-0022",
+    "returnId": "return-0009",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 19542.22,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0022",
+    "audit": []
+  },
+  {
+    "id": "field-0023",
+    "returnId": "return-0010",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 92577.43,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0023",
+    "audit": []
+  },
+  {
+    "id": "field-0024",
+    "returnId": "return-0013",
+    "formLine": "1040-11",
+    "label": "Adjusted gross income (Form 1040, line 11)",
+    "value": 130874.52,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0024",
+    "audit": []
+  },
+  {
+    "id": "field-0025",
+    "returnId": "return-0013",
+    "formLine": "1040-34",
+    "label": "Overpayment / refund (Form 1040, line 34)",
+    "value": 1289.49,
+    "state": "needs-review",
+    "provenanceId": "prov-0025",
+    "audit": []
+  },
+  {
+    "id": "field-0026",
+    "returnId": "return-0013",
+    "formLine": "Sch D-16",
+    "label": "Net capital gain or loss (Schedule D, line 16)",
+    "value": 13913.89,
+    "state": "verified",
+    "provenanceId": "prov-0026",
+    "audit": []
+  },
+  {
+    "id": "field-0027",
+    "returnId": "return-0014",
+    "formLine": "1040-11",
+    "label": "Adjusted gross income (Form 1040, line 11)",
+    "value": 130336.4,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0027",
+    "audit": []
+  },
+  {
+    "id": "field-0028",
+    "returnId": "return-0015",
+    "formLine": "1040-11",
+    "label": "Adjusted gross income (Form 1040, line 11)",
+    "value": 99212.58,
+    "state": "verified",
+    "provenanceId": "prov-0028",
+    "audit": [
+      {
+        "id": "audit-0004",
+        "fieldId": "field-0028",
+        "at": "2026-07-26T12:00:00.000Z",
+        "by": "user-0009",
+        "previousValue": 101196.83,
+        "newValue": 99212.58,
+        "previousState": "ai-suggested",
+        "newState": "verified"
+      }
+    ]
+  },
+  {
+    "id": "field-0029",
+    "returnId": "return-0015",
+    "formLine": "Sch D-16",
+    "label": "Net capital gain or loss (Schedule D, line 16)",
+    "value": 11972.31,
+    "state": "needs-review",
+    "provenanceId": "prov-0029",
+    "audit": []
+  },
+  {
+    "id": "field-0030",
+    "returnId": "return-0015",
+    "formLine": "1040-16",
+    "label": "Total tax (Form 1040, line 16)",
+    "value": 32387.6,
+    "state": "verified",
+    "provenanceId": "prov-0030",
+    "audit": []
+  },
+  {
+    "id": "field-0031",
+    "returnId": "return-0016",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 36582.81,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0031",
+    "audit": []
+  },
+  {
+    "id": "field-0032",
+    "returnId": "return-0016",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 112229.71,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0032",
+    "audit": []
+  },
+  {
+    "id": "field-0033",
+    "returnId": "return-0017",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 60415.29,
+    "state": "locked",
+    "provenanceId": "prov-0033",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0034",
+    "returnId": "return-0017",
+    "formLine": "1040-3b",
+    "label": "Ordinary dividends (Form 1040, line 3b)",
+    "value": 2952.54,
+    "state": "locked",
+    "provenanceId": "prov-0034",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0035",
+    "returnId": "return-0017",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 212152.68,
+    "state": "locked",
+    "provenanceId": "prov-0035",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0036",
+    "returnId": "return-0019",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 128675.15,
+    "state": "needs-review",
+    "provenanceId": "prov-0036",
+    "audit": []
+  },
+  {
+    "id": "field-0037",
+    "returnId": "return-0020",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 1354.77,
+    "state": "locked",
+    "provenanceId": "prov-0037",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0038",
+    "returnId": "return-0022",
+    "formLine": "Sch D-16",
+    "label": "Net capital gain or loss (Schedule D, line 16)",
+    "value": -3493.73,
+    "state": "verified",
+    "provenanceId": "prov-0038",
+    "audit": [
+      {
+        "id": "audit-0005",
+        "fieldId": "field-0038",
+        "at": "2026-07-03T12:00:00.000Z",
+        "by": "user-0005",
+        "previousValue": -3326.03,
+        "newValue": -3493.73,
+        "previousState": "ai-suggested",
+        "newState": "verified"
+      }
+    ]
+  },
+  {
+    "id": "field-0039",
+    "returnId": "return-0022",
+    "formLine": "1040-11",
+    "label": "Adjusted gross income (Form 1040, line 11)",
+    "value": 60362.71,
+    "state": "needs-review",
+    "provenanceId": "prov-0039",
+    "audit": []
+  },
+  {
+    "id": "field-0040",
+    "returnId": "return-0023",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 5689.83,
+    "state": "needs-review",
+    "provenanceId": "prov-0040",
+    "audit": []
+  },
+  {
+    "id": "field-0041",
+    "returnId": "return-0023",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 2594.09,
+    "state": "verified",
+    "provenanceId": "prov-0041",
+    "audit": [
+      {
+        "id": "audit-0006",
+        "fieldId": "field-0041",
+        "at": "2026-07-15T12:00:00.000Z",
+        "by": "user-0006",
+        "previousValue": 2773.08,
+        "newValue": 2594.09,
+        "previousState": "ai-suggested",
+        "newState": "verified"
+      }
+    ]
+  },
+  {
+    "id": "field-0042",
+    "returnId": "return-0024",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 165831.56,
+    "state": "locked",
+    "provenanceId": "prov-0042",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0043",
+    "returnId": "return-0025",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 27347.13,
+    "state": "verified",
+    "provenanceId": "prov-0043",
+    "audit": []
+  },
+  {
+    "id": "field-0044",
+    "returnId": "return-0025",
+    "formLine": "1040-3b",
+    "label": "Ordinary dividends (Form 1040, line 3b)",
+    "value": 1761.01,
+    "state": "needs-review",
+    "provenanceId": "prov-0044",
+    "audit": []
+  },
+  {
+    "id": "field-0045",
+    "returnId": "return-0029",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 17141.14,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0045",
+    "audit": []
+  },
+  {
+    "id": "field-0046",
+    "returnId": "return-0029",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 1497.43,
+    "state": "verified",
+    "provenanceId": "prov-0046",
+    "audit": []
+  },
+  {
+    "id": "field-0047",
+    "returnId": "return-0031",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 192.2,
+    "state": "verified",
+    "provenanceId": "prov-0047",
+    "audit": [
+      {
+        "id": "audit-0007",
+        "fieldId": "field-0047",
+        "at": "2026-07-01T12:00:00.000Z",
+        "by": "user-0002",
+        "previousValue": 208.73,
+        "newValue": 192.2,
+        "previousState": "ai-suggested",
+        "newState": "verified"
+      }
+    ]
+  },
+  {
+    "id": "field-0048",
+    "returnId": "return-0034",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 3040.93,
+    "state": "verified",
+    "provenanceId": "prov-0048",
+    "audit": [
+      {
+        "id": "audit-0008",
+        "fieldId": "field-0048",
+        "at": "2026-08-04T12:00:00.000Z",
+        "by": "user-0010",
+        "previousValue": 2904.09,
+        "newValue": 3040.93,
+        "previousState": "ai-suggested",
+        "newState": "verified"
+      }
+    ]
+  },
+  {
+    "id": "field-0049",
+    "returnId": "return-0035",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 485.74,
+    "state": "locked",
+    "provenanceId": "prov-0049",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0050",
+    "returnId": "return-0035",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 913.37,
+    "state": "locked",
+    "provenanceId": "prov-0050",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0051",
+    "returnId": "return-0035",
+    "formLine": "1040-3b",
+    "label": "Ordinary dividends (Form 1040, line 3b)",
+    "value": 2801.19,
+    "state": "locked",
+    "provenanceId": "prov-0051",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0052",
+    "returnId": "return-0037",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 18924.06,
+    "state": "verified",
+    "provenanceId": "prov-0052",
+    "audit": []
+  },
+  {
+    "id": "field-0053",
+    "returnId": "return-0037",
+    "formLine": "Sch D-16",
+    "label": "Net capital gain or loss (Schedule D, line 16)",
+    "value": 7605.16,
+    "state": "verified",
+    "provenanceId": "prov-0053",
+    "audit": []
+  },
+  {
+    "id": "field-0054",
+    "returnId": "return-0038",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 27183.95,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0054",
+    "audit": []
+  },
+  {
+    "id": "field-0055",
+    "returnId": "return-0040",
+    "formLine": "Sch B-2",
+    "label": "Taxable interest (Schedule B, line 2)",
+    "value": 1197.31,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0055",
+    "audit": []
+  },
+  {
+    "id": "field-0056",
+    "returnId": "return-0040",
+    "formLine": "1040-16",
+    "label": "Total tax (Form 1040, line 16)",
+    "value": 34910.45,
+    "state": "verified",
+    "provenanceId": "prov-0056",
+    "audit": []
+  },
+  {
+    "id": "field-0057",
+    "returnId": "return-0040",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 21815.2,
+    "state": "verified",
+    "provenanceId": "prov-0057",
+    "audit": []
+  },
+  {
+    "id": "field-0058",
+    "returnId": "return-0040",
+    "formLine": "1040-34",
+    "label": "Overpayment / refund (Form 1040, line 34)",
+    "value": 3143.77,
+    "state": "verified",
+    "provenanceId": "prov-0058",
+    "audit": []
+  },
+  {
+    "id": "field-0059",
+    "returnId": "return-0041",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 6288.28,
+    "state": "verified",
+    "provenanceId": "prov-0059",
+    "audit": []
+  },
+  {
+    "id": "field-0060",
+    "returnId": "return-0042",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 83919.54,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0060",
+    "audit": []
+  },
+  {
+    "id": "field-0061",
+    "returnId": "return-0043",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 39884,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0061",
+    "audit": []
+  },
+  {
+    "id": "field-0062",
+    "returnId": "return-0043",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 50621.33,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0062",
+    "audit": []
+  },
+  {
+    "id": "field-0063",
+    "returnId": "return-0044",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 17617.66,
+    "state": "needs-review",
+    "provenanceId": "prov-0063",
+    "audit": []
+  },
+  {
+    "id": "field-0064",
+    "returnId": "return-0044",
+    "formLine": "1040-11",
+    "label": "Adjusted gross income (Form 1040, line 11)",
+    "value": 48474.55,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0064",
+    "audit": []
+  },
+  {
+    "id": "field-0065",
+    "returnId": "return-0045",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": -6869,
+    "state": "needs-review",
+    "provenanceId": "prov-0065",
+    "audit": []
+  },
+  {
+    "id": "field-0066",
+    "returnId": "return-0045",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 5101.21,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0066",
+    "audit": []
+  },
+  {
+    "id": "field-0067",
+    "returnId": "return-0046",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 177291.3,
+    "state": "verified",
+    "provenanceId": "prov-0067",
+    "audit": []
+  },
+  {
+    "id": "field-0068",
+    "returnId": "return-0048",
+    "formLine": "1040-11",
+    "label": "Adjusted gross income (Form 1040, line 11)",
+    "value": 183893.71,
+    "state": "verified",
+    "provenanceId": "prov-0068",
+    "audit": []
+  },
+  {
+    "id": "field-0069",
+    "returnId": "return-0049",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 124486.61,
+    "state": "locked",
+    "provenanceId": "prov-0069",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0070",
+    "returnId": "return-0049",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 188617.93,
+    "state": "locked",
+    "provenanceId": "prov-0070",
+    "lockReason": "Filed and locked from further edits.",
+    "audit": []
+  },
+  {
+    "id": "field-0071",
+    "returnId": "return-0050",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 47709.73,
+    "state": "verified",
+    "provenanceId": "prov-0071",
+    "audit": []
+  },
+  {
+    "id": "field-0072",
+    "returnId": "return-0050",
+    "formLine": "Sch C-31",
+    "label": "Net profit or loss from business (Schedule C, line 31)",
+    "value": 9618.15,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0072",
+    "audit": []
+  },
+  {
+    "id": "field-0073",
+    "returnId": "return-0050",
+    "formLine": "1040-15",
+    "label": "Taxable income (Form 1040, line 15)",
+    "value": 138199.92,
+    "state": "verified",
+    "provenanceId": "prov-0073",
+    "audit": []
+  },
+  {
+    "id": "field-0074",
+    "returnId": "return-0051",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 67142.24,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0074",
+    "audit": []
+  },
+  {
+    "id": "field-0075",
+    "returnId": "return-0051",
+    "formLine": "1040-25",
+    "label": "Federal income tax withheld (Form 1040, line 25)",
+    "value": 31080.43,
+    "state": "needs-review",
+    "provenanceId": "prov-0075",
+    "audit": []
+  },
+  {
+    "id": "field-0076",
+    "returnId": "return-0053",
+    "formLine": "1040-3b",
+    "label": "Ordinary dividends (Form 1040, line 3b)",
+    "value": 2563.92,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0076",
+    "audit": []
+  },
+  {
+    "id": "field-0077",
+    "returnId": "return-0053",
+    "formLine": "1040-1a",
+    "label": "Wages, salaries, tips, etc. (Form 1040, line 1a)",
+    "value": 188245.34,
+    "state": "ai-suggested",
+    "provenanceId": "prov-0077",
+    "audit": []
+  }
+]

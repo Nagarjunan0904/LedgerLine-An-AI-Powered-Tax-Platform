@@ -1,13 +1,24 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/geist";
+@import "@fontsource/archivo/600.css";
+@import "@fontsource/archivo/700.css";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    --font-heading: var(--font-sans);
-    --font-sans: 'Geist Variable', sans-serif;
+    /* Type roles: display (form-section headings), body (running text), mono (all figures) */
+    --font-display: 'Archivo', sans-serif;
+    --font-body: 'Inter Variable', sans-serif;
+    --font-mono: 'JetBrains Mono Variable', monospace;
+    --font-heading: var(--font-display);
+    --font-sans: var(--font-body);
+
+    /* 4px base spacing unit */
+    --spacing: 0.25rem;
+
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -46,33 +57,92 @@
     --radius-2xl: calc(var(--radius) * 1.8);
     --radius-3xl: calc(var(--radius) * 2.2);
     --radius-4xl: calc(var(--radius) * 2.6);
+
+    /* Surface: cool paper, recessed panel, deep ink */
+    --color-paper: var(--paper);
+    --color-panel: var(--panel);
+    --color-ink: var(--ink);
+
+    /* Field state (src/types/return.ts FieldState) — border / fill / text per state */
+    --color-state-verified-border: var(--state-verified-border);
+    --color-state-verified-fill: var(--state-verified-fill);
+    --color-state-verified-text: var(--state-verified-text);
+    --color-state-ai-suggested-border: var(--state-ai-suggested-border);
+    --color-state-ai-suggested-fill: var(--state-ai-suggested-fill);
+    --color-state-ai-suggested-text: var(--state-ai-suggested-text);
+    --color-state-needs-review-border: var(--state-needs-review-border);
+    --color-state-needs-review-fill: var(--state-needs-review-fill);
+    --color-state-needs-review-text: var(--state-needs-review-text);
+    --color-state-editable-border: var(--state-editable-border);
+    --color-state-editable-fill: var(--state-editable-fill);
+    --color-state-editable-text: var(--state-editable-text);
+    --color-state-locked-border: var(--state-locked-border);
+    --color-state-locked-fill: var(--state-locked-fill);
+    --color-state-locked-text: var(--state-locked-text);
 }
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
+    /* Surface: cool (blue-cast), not warm, not cream */
+    --paper: oklch(0.99 0.003 240);
+    --panel: oklch(0.965 0.005 240);
+    --ink: oklch(0.17 0.015 250);
+
+    /* Field state tints. Fill lightness is spaced apart (.76/.80/.84/.88/.93, every rung at
+       least .06 below paper's .99) so states stay distinguishable with color removed
+       entirely (greyscale / compressed video). Fill chroma is kept low (roughly half of
+       the border/text chroma, and cut further still on needs-review) so ~20 stacked
+       fields read as tinted form rows, not a paint chart — hue should be findable on
+       inspection, not the first thing you see. needs-review carries the least fill
+       chroma of the colored states on purpose: urgency there comes from the border and
+       state marker, not a saturated background.
+       Lightness rungs are assigned by how much attention a state should pull: locked
+       (inert, nothing to do) gets the lightest rung and recedes toward paper; needs-review
+       (a person must act) gets the darkest, most present rung. */
+    --state-verified-border: oklch(0.52 0.12 155);
+    --state-verified-fill: oklch(0.88 0.025 155);
+    --state-verified-text: oklch(0.32 0.09 155);
+
+    --state-ai-suggested-border: oklch(0.48 0.16 300);
+    --state-ai-suggested-fill: oklch(0.8 0.0225 300);
+    --state-ai-suggested-text: oklch(0.35 0.14 300);
+
+    --state-needs-review-border: oklch(0.56 0.15 70);
+    --state-needs-review-fill: oklch(0.76 0.018 70);
+    --state-needs-review-text: oklch(0.4 0.12 70);
+
+    --state-editable-border: oklch(0.4 0.015 250);
+    --state-editable-fill: oklch(0.84 0.003 240);
+    --state-editable-text: oklch(0.17 0.015 250);
+
+    --state-locked-border: oklch(0.5 0.006 250);
+    --state-locked-fill: oklch(0.93 0.003 250);
+    --state-locked-text: oklch(0.47 0.007 250);
+
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--paper);
+    --card-foreground: var(--ink);
+    --popover: var(--paper);
+    --popover-foreground: var(--ink);
     --primary: oklch(0.205 0 0);
     --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
+    --secondary: var(--panel);
+    --secondary-foreground: var(--ink);
+    --muted: var(--panel);
+    --muted-foreground: oklch(0.5 0.01 250);
+    --accent: var(--panel);
+    --accent-foreground: var(--ink);
     --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
+    --border: oklch(0.9 0.005 240);
+    --input: oklch(0.9 0.005 240);
+    --ring: oklch(0.7 0.012 245);
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
     --chart-4: oklch(0.371 0 0);
     --chart-5: oklch(0.269 0 0);
-    --radius: 0.625rem;
+    /* Small radius — form boxes, not cards */
+    --radius: 0.1875rem;
     --sidebar: oklch(0.985 0 0);
     --sidebar-foreground: oklch(0.145 0 0);
     --sidebar-primary: oklch(0.205 0 0);
@@ -126,5 +196,8 @@
     }
   html {
     @apply font-sans;
+    }
+  .font-mono {
+    font-variant-numeric: tabular-nums;
     }
 }

@@ -3,6 +3,8 @@ import { useState } from "react"
 import type { FieldState } from "@/types"
 import { FieldBox } from "@/components/field/FieldBox"
 import type { FieldSize } from "@/components/field/fieldVariants"
+import { CLIENT_PHASES, STAFF_STATES } from "@/lib/status"
+import { cn } from "@/lib/utils"
 
 const SIZES: FieldSize[] = ["sm", "md", "lg"]
 
@@ -142,6 +144,63 @@ export function KitchenSink() {
             value={1284.91}
             verifiedBy={{ by: "Priya N.", at: "2026-08-02T09:15:00Z" }}
           />
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="font-display text-sm uppercase tracking-widest font-semibold border-b pb-2 mb-4">
+          Staff state → client phase
+        </h2>
+        <p className="font-body text-sm text-ink/70 mb-4 max-w-prose">
+          The 9 internal states firm staff work through, and the 5 plain-language phases a
+          client sees instead. Several staff states collapse into a single client phase — that
+          collapse is deliberate: it's the complexity clients are never shown.
+        </p>
+        <div className="overflow-x-auto rounded-sm border border-border">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border bg-panel text-left">
+                <th scope="col" className="px-4 py-2 font-display text-xs uppercase tracking-wide">
+                  Staff state (internal)
+                </th>
+                <th scope="col" className="px-4 py-2 font-display text-xs uppercase tracking-wide">
+                  Owner
+                </th>
+                <th scope="col" className="px-4 py-2 font-display text-xs uppercase tracking-wide">
+                  Client sees
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[...STAFF_STATES]
+                .sort(
+                  (a, b) =>
+                    CLIENT_PHASES.findIndex((p) => p.phase === a.clientPhase) -
+                    CLIENT_PHASES.findIndex((p) => p.phase === b.clientPhase)
+                )
+                .map((info) => {
+                  const phaseIndex = CLIENT_PHASES.findIndex((p) => p.phase === info.clientPhase)
+                  const phase = CLIENT_PHASES[phaseIndex]
+                  return (
+                    <tr
+                      key={info.state}
+                      className={cn(
+                        "border-b border-border/60 last:border-b-0",
+                        phaseIndex % 2 === 1 && "bg-panel/40"
+                      )}
+                    >
+                      <td className="px-4 py-2">{info.label}</td>
+                      <td className="px-4 py-2">
+                        <span className="font-mono text-[0.6875rem] uppercase tracking-wide opacity-60">
+                          {info.owner === "client" ? "Client" : "Firm"}
+                        </span>
+                      </td>
+                      <td className="px-4 py-2 font-medium">{phase.label}</td>
+                    </tr>
+                  )
+                })}
+            </tbody>
+          </table>
         </div>
       </section>
 

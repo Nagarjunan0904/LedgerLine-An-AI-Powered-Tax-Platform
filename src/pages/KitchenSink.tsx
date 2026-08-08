@@ -1,8 +1,11 @@
 import { useState } from "react"
 
 import type { FieldState } from "@/types"
+import { getDocument, getDocumentsForReturn } from "@/data/fixtures"
+import { DEMO_IDS } from "@/data/demoIds"
 import { FieldBox } from "@/components/field/FieldBox"
 import type { FieldSize } from "@/components/field/fieldVariants"
+import { MockFormRenderer } from "@/components/documents/MockFormRenderer"
 import { CLIENT_PHASES, STAFF_STATES } from "@/lib/status"
 import { cn } from "@/lib/utils"
 
@@ -201,6 +204,63 @@ export function KitchenSink() {
                 })}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="font-display text-sm uppercase tracking-widest font-semibold border-b pb-2 mb-4">
+          Mock form renderer
+        </h2>
+        <p className="font-body text-sm text-ink/70 mb-4 max-w-prose">
+          Every supported form type, styled to the visual language of the real IRS form it
+          represents. The highlighted box on each is a HighlightOverlay positioned by that
+          extraction's real bbox — never a second, invented coordinate system. The three W-2s
+          below render Ellery's actual seeded box-1 values, pulled through the fixture
+          accessors.
+        </p>
+
+        <p className="font-mono text-xs uppercase tracking-wide text-ink/50 mb-2">
+          W-2 sources — Ellery 2025 (sum into Wages, Form 1040 line 1a)
+        </p>
+        <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          {[DEMO_IDS.ELLERY_W2_ACME_DOC, DEMO_IDS.ELLERY_W2_BELMONT_DOC, DEMO_IDS.ELLERY_W2_CORVID_DOC].map(
+            (docId) => {
+              const doc = getDocument(docId)
+              return doc ? <MockFormRenderer key={docId} document={doc} /> : null
+            }
+          )}
+        </div>
+
+        <p className="font-mono text-xs uppercase tracking-wide text-ink/50 mb-2">
+          1099-INT, 1099-DIV, and Schedule K-1
+        </p>
+        <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          {(() => {
+            const interestDoc = getDocument(DEMO_IDS.ELLERY_INTEREST_DOC)
+            const divDoc = getDocumentsForReturn(DEMO_IDS.ELLERY_RETURN).find(
+              (d) => d.type === "1099-DIV" && d.extractionStatus === "complete"
+            )
+            const k1Doc = getDocumentsForReturn(DEMO_IDS.VOSS_RETURN).find(
+              (d) => d.type === "K-1" && d.extractionStatus === "complete"
+            )
+            return (
+              <>
+                {interestDoc && <MockFormRenderer document={interestDoc} />}
+                {divDoc && <MockFormRenderer document={divDoc} />}
+                {k1Doc && <MockFormRenderer document={k1Doc} />}
+              </>
+            )
+          })()}
+        </div>
+
+        <p className="font-mono text-xs uppercase tracking-wide text-ink/50 mb-2">
+          Failed extraction — edge case 4
+        </p>
+        <div className="max-w-xs">
+          {(() => {
+            const failedDoc = getDocument(DEMO_IDS.ELLERY_FAILED_EXTRACTION_DOC)
+            return failedDoc ? <MockFormRenderer document={failedDoc} /> : null
+          })()}
         </div>
       </section>
 

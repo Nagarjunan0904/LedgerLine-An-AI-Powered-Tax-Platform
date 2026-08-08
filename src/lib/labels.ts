@@ -13,17 +13,25 @@ export function returnLabel(ret: Return): string {
 }
 
 /**
- * "Acme Corp W-2 2025.pdf" → "W-2 (Acme Corp)". Falls back to the bare filename when it
- * doesn't follow the generator's "payer type year" naming (e.g. the deliberately-messy
- * failed-extraction receipt).
+ * "Acme Corp W-2 2025.pdf" → "Acme Corp". Null when the filename doesn't follow the
+ * generator's "payer type year" naming (e.g. the deliberately-messy failed-extraction
+ * receipt) — there's no payer to extract, and callers should treat that as absent rather
+ * than fall back to a guess.
  */
-export function documentLabel(doc: Document): string {
+export function documentPayerName(doc: Document): string | null {
   const withoutExt = doc.fileName.replace(/\.\w+$/, "")
   const escapedType = doc.type.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
   const stripped = withoutExt
     .replace(new RegExp(`\\s+${escapedType}\\s+\\d{4}.*$`, "i"), "")
     .trim()
-  return stripped && stripped !== withoutExt ? `${doc.type} (${stripped})` : withoutExt
+  return stripped && stripped !== withoutExt ? stripped : null
+}
+
+/** "Acme Corp W-2 2025.pdf" → "W-2 (Acme Corp)". Falls back to the bare filename when
+ * documentPayerName can't find a payer in it. */
+export function documentLabel(doc: Document): string {
+  const payer = documentPayerName(doc)
+  return payer ? `${doc.type} (${payer})` : doc.fileName.replace(/\.\w+$/, "")
 }
 
 /** "1040-1a" → "Line 1a". Other form-line shapes (e.g. "Sch B-2") pass through unchanged. */

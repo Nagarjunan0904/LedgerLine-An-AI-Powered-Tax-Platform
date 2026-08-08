@@ -1,5 +1,6 @@
-import type { Document, ExtractedField, Provenance, ReturnField, TransformStep } from "@/types"
+import type { Document, ExtractedField, FieldState, Provenance, ReturnField, TransformStep } from "@/types"
 import { getDocument, getExtractedField, getField, getProvenance } from "@/data/fixtures"
+import type { Correction } from "@/stores/useCorrectionsStore"
 
 /**
  * Below this, a source is flagged in the chain itself — not something a reviewer has to click
@@ -12,6 +13,10 @@ export interface ExtractedSource {
   extracted: ExtractedField
   document: Document
   lowConfidence: boolean
+  /** Non-null once applyCorrections has merged a human correction over this source — the
+   * extracted.rawValue above already reflects it, this is what lets a consumer render the
+   * override marker and the original value on hover without re-deriving anything. */
+  correction: Correction | null
 }
 
 /** A field derived from another field's own value, not from a raw extraction — the
@@ -115,6 +120,7 @@ function resolveSource(id: string, visited: Set<string>): SourceNode {
       extracted,
       document,
       lowConfidence: extracted.confidence < LOW_CONFIDENCE_THRESHOLD,
+      correction: null,
     }
   }
 
@@ -205,4 +211,156 @@ export function collectDocuments(node: FieldNode): Document[] {
     }
   }
   return docs
+}
+
+// ---------------------------------------------------------------------------
+// Correction resolution — the single place every consumer of an ExtractedField's or
+// ReturnField's value goes through. A correction recorded in useCorrectionsStore always wins
+// over the fixture's own value; this is what keeps the field, the chain, the equation, and the
+// document renderer from ever disagreeing about what a corrected source is actually worth.
+// ---------------------------------------------------------------------------
+
+export type CorrectionsMap = Record<string, Correction>
+
+export interface ResolvedExtractedValue {
+  value: string
+  isCorrected: boolean
+  originalValue: string | null
+  correction: Correction | null
+}
+
+export function resolveExtractedValue(extracted: ExtractedField, corrections: CorrectionsMap): ResolvedExtractedValue {
+  const correction = corrections[extracted.id]
+  if (!correction) {
+    return { value: extracted.rawValue, isCorrected: false, originalValue: null, correction: null }
+  }
+  return {
+    value: String(correction.newValue),
+    isCorrected: true,
+    originalValue: String(correction.previousValue),
+    correction,
+  }
+}
+
+function parseMoneyValue(raw: string): number | null {
+  const cleaned = raw.trim().replace(/[$,\s]/g, "")
+  if (cleaned === "") return null
+  const negative = cleaned.startsWith("-")
+  const n = Number(cleaned.replace(/[^0-9.]/g, ""))
+  if (Number.isNaN(n)) return null
+  return negative ? -n : n
+}
+
+/** Recomputes a sum/subtract field from its sources' resolved values — only when at least one
+ * source actually has a correction; otherwise there's nothing to recompute and the field's own
+ * original value stands. Only walks extracted (leaf) sources: a derived-from-derived or
+ * external source makes a confident recompute impossible, so it bails to null rather than
+ * guess. */
+function recomputeFromSources(node: FieldNode, corrections: CorrectionsMap): number | null {
+  if (typeof node.field.value !== "number") return null
+
+  let sawCorrection = false
+  let total: number | null = null
+
+  for (const detail of node.steps) {
+    if (detail.step.op !== "sum" && detail.step.op !== "subtract") continue
+    const values: number[] = []
+    for (const source of detail.sources) {
+      if (source.kind !== "extracted") return null
+      const resolved = resolveExtractedValue(source.extracted, corrections)
+      if (resolved.isCorrected) sawCorrection = true
+      const numeric = parseMoneyValue(resolved.value)
+      if (numeric === null) return null
+      values.push(numeric)
+    }
+    if (values.length === 0) continue
+    total = detail.step.op === "sum" ? values.reduce((a, b) => a + b, 0) : values.reduce((a, b, i) => (i === 0 ? b : a - b))
+  }
+
+  return sawCorrection && total !== null ? Math.round(total * 100) / 100 : null
+}
+
+export interface ResolvedFieldValue {
+  value: number | string
+  state: FieldState
+  isCorrected: boolean
+  /** True when this field's value changed not because IT was corrected, but because a source
+   * it's derived from was — the ripple. */
+  isRecalculated: boolean
+  originalValue: number | string | null
+  correction: Correction | null
+}
+
+/** A ReturnField's effective value: a direct correction on the field itself wins, then a
+ * recompute from corrected sources, then the field's own original value. */
+export function resolveFieldValue(node: FieldNode, corrections: CorrectionsMap): ResolvedFieldValue {
+  const direct = corrections[node.field.id]
+  if (direct) {
+    return {
+      value: direct.newValue,
+      state: direct.newState ?? node.field.state,
+      isCorrected: true,
+      isRecalculated: false,
+      originalValue: direct.previousValue,
+      correction: direct,
+    }
+  }
+
+  const recalculated = recomputeFromSources(node, corrections)
+  if (recalculated !== null) {
+    return {
+      value: recalculated,
+      state: node.field.state,
+      isCorrected: false,
+      isRecalculated: true,
+      originalValue: null,
+      correction: null,
+    }
+  }
+
+  return {
+    value: node.field.value,
+    state: node.field.state,
+    isCorrected: false,
+    isRecalculated: false,
+    originalValue: null,
+    correction: null,
+  }
+}
+
+function applyCorrectionsToSource(source: SourceNode, corrections: CorrectionsMap): SourceNode {
+  if (source.kind === "extracted") {
+    const resolved = resolveExtractedValue(source.extracted, corrections)
+    return {
+      ...source,
+      extracted: resolved.isCorrected ? { ...source.extracted, rawValue: resolved.value } : source.extracted,
+      correction: resolved.correction,
+    }
+  }
+  if (source.kind === "field") {
+    return { kind: "field", chain: applyCorrections(source.chain, corrections) }
+  }
+  return source
+}
+
+/**
+ * Returns a FieldNode-shaped clone of `node` with every correction merged in: each corrected
+ * extracted source's rawValue is swapped for its corrected value (and flagged via `correction`
+ * on the ExtractedSource), and the field's own value is recomputed to match. Every consumer
+ * that renders a chain — ProvenanceChain, TransformSteps's equation — reads through this
+ * instead of the raw traceField() result, so a correction can never show through in one place
+ * and not another.
+ */
+export function applyCorrections(node: FieldNode, corrections: CorrectionsMap): FieldNode {
+  const steps: TransformStepDetail[] = node.steps.map((detail) => ({
+    step: detail.step,
+    sources: detail.sources.map((source) => applyCorrectionsToSource(source, corrections)),
+  }))
+  const resolution = resolveFieldValue(node, corrections)
+  return {
+    ...node,
+    field: { ...node.field, value: resolution.value, state: resolution.state },
+    steps,
+    sources: steps.flatMap((s) => s.sources),
+  }
 }

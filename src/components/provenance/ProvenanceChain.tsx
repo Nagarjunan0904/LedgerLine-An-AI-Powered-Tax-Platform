@@ -1,10 +1,11 @@
 import { useMemo } from "react"
 import { useSearchParams } from "react-router"
-import { AlertTriangle } from "lucide-react"
+import { AlertTriangle, UserCheck } from "lucide-react"
 
-import { chainRowId, traceField, type FieldNode, type SourceNode } from "@/lib/provenance"
+import { applyCorrections, chainRowId, traceField, type FieldNode, type SourceNode } from "@/lib/provenance"
 import { documentPayerName, parseBoxLabel } from "@/lib/labels"
 import { cn } from "@/lib/utils"
+import { useCorrectionsStore } from "@/stores/useCorrectionsStore"
 import { FieldBox } from "@/components/field/FieldBox"
 import { TransformSteps } from "./TransformSteps"
 
@@ -59,7 +60,7 @@ function ExtractedSourceRow({
   selected: boolean
   onSelect: () => void
 }) {
-  const { extracted, document, lowConfidence } = source
+  const { extracted, document, lowConfidence, correction } = source
   const payer = documentPayerName(document) ?? document.fileName
   const box = parseBoxLabel(extracted.label)
 
@@ -80,7 +81,18 @@ function ExtractedSourceRow({
       </span>
       <span className="min-w-0 flex-1 truncate">{payer}</span>
       <span className="shrink-0 text-xs text-ink/45">Box {box.number}</span>
-      <span className="shrink-0 font-mono text-sm tabular-nums">{extracted.rawValue}</span>
+      {correction && (
+        <UserCheck
+          className="size-3.5 shrink-0 text-state-verified-text"
+          aria-label={`Corrected by a preparer — original: ${correction.previousValue}`}
+        />
+      )}
+      <span
+        className="shrink-0 font-mono text-sm tabular-nums"
+        title={correction ? `Original: ${correction.previousValue}` : undefined}
+      >
+        {extracted.rawValue}
+      </span>
       <span
         className={cn(
           "shrink-0 font-mono text-xs tabular-nums",
@@ -175,7 +187,9 @@ function ChainNode({
 export function ProvenanceChain({ fieldId }: ProvenanceChainProps) {
   const [searchParams, setSearchParams] = useSearchParams()
   const selected = searchParams.get("src")
-  const node = useMemo(() => traceField(fieldId), [fieldId])
+  const corrections = useCorrectionsStore((s) => s.corrections)
+  const rawNode = useMemo(() => traceField(fieldId), [fieldId])
+  const node = useMemo(() => (rawNode ? applyCorrections(rawNode, corrections) : null), [rawNode, corrections])
 
   if (!node) {
     return <p className="text-sm text-ink/50">No field found for {fieldId}.</p>

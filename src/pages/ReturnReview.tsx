@@ -1,9 +1,9 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { useParams, useSearchParams } from "react-router"
 import { AlertTriangle, ArrowRight } from "lucide-react"
 
 import type { ReturnField } from "@/types"
-import { getExtractedField, getFieldsForReturn, getProvenance, getReturn, getUser } from "@/data/fixtures"
+import { getExtractedField, getFieldsForReturn, getProvenance, getReturn } from "@/data/fixtures"
 import {
   chainRowId,
   collectDocuments,
@@ -13,10 +13,12 @@ import {
 } from "@/lib/provenance"
 import { returnLabel } from "@/lib/labels"
 import { cn } from "@/lib/utils"
-import { FieldBox } from "@/components/field/FieldBox"
 import { ProvenanceChain } from "@/components/provenance/ProvenanceChain"
 import { ConnectorOverlay } from "@/components/provenance/ConnectorOverlay"
 import { MockFormRenderer } from "@/components/documents/MockFormRenderer"
+import { CorrectionFlow } from "@/components/ai/CorrectionFlow"
+import { ExplainDrawer } from "@/components/ai/ExplainDrawer"
+import { explainEvidenceId } from "@/components/ai/useCorrectionFlow"
 
 function plural(count: number, noun: string): string {
   return `${count} ${noun}${count === 1 ? "" : "s"}`
@@ -105,38 +107,18 @@ interface FieldRowProps {
   isCursor: boolean
   isSelected: boolean
   isEditing: boolean
-  overrideValue: number | string | undefined
   onSelect: () => void
-  onCommitEdit: (field: ReturnField, raw: string) => void
+  onExplain: () => void
+  onCommitted: () => void
 }
 
-/**
- * FieldBox stays inert (no onEdit) until this row is the one being edited — click anywhere on
- * the row to select it for the chain, with no competing click-to-edit behavior from FieldBox
- * itself. Enter (see ReturnReview's keydown handler) flips isEditing on, and this effect opens
- * FieldBox's own edit UI for it via the same click FieldBox would receive from a real pointer
- * — FieldBox has no external "start editing" API, so this is the one honest way to trigger it
- * without modifying that component.
- */
-function FieldRow({ field, isCursor, isSelected, isEditing, overrideValue, onSelect, onCommitEdit }: FieldRowProps) {
-  const wrapperRef = useRef<HTMLDivElement>(null)
-  const prov = getProvenance(field.id)
-
-  useEffect(() => {
-    if (!isEditing) return
-    const trigger = wrapperRef.current?.querySelector<HTMLElement>('[data-slot="field-box"]')
-    trigger?.dispatchEvent(new MouseEvent("click", { bubbles: true, cancelable: true }))
-  }, [isEditing])
-
-  const verifiedBy =
-    field.state === "verified" && prov?.verification
-      ? { by: getUser(prov.verification.by)?.name ?? prov.verification.by, at: prov.verification.at }
-      : undefined
-
+/** Thin positional wrapper — id for scrollIntoView, the cursor/selection ring, click-to-
+ * select. CorrectionFlow owns everything about the field itself (display, edit, audit,
+ * marker). */
+function FieldRow({ field, isCursor, isSelected, isEditing, onSelect, onExplain, onCommitted }: FieldRowProps) {
   return (
     <div
       id={fieldRowId(field.id)}
-      ref={wrapperRef}
       onClick={onSelect}
       className={cn(
         "cursor-pointer rounded-sm p-1 outline-none transition-colors",
@@ -144,16 +126,7 @@ function FieldRow({ field, isCursor, isSelected, isEditing, overrideValue, onSel
         isCursor && "ring-2 ring-ring"
       )}
     >
-      <FieldBox
-        state={field.state}
-        label={field.label}
-        value={overrideValue ?? field.value}
-        confidence={field.state === "ai-suggested" ? prov?.confidence : undefined}
-        lockReason={field.lockReason}
-        verifiedBy={verifiedBy}
-        onEdit={isEditing ? (raw) => onCommitEdit(field, raw) : undefined}
-        onExplain={field.state === "ai-suggested" ? onSelect : undefined}
-      />
+      <CorrectionFlow field={field} isEditing={isEditing} onExplain={onExplain} onCommitted={onCommitted} />
     </div>
   )
 }
@@ -194,8 +167,9 @@ function RightEmptyState() {
 /**
  * Three panes, all reflecting URL state: the return's fields (left), the selected field's
  * provenance chain (center), and its source documents with a connector drawn to whichever
- * source is selected (right). A cold load with both ?field= and ?src= set restores everything
- * — nothing here is client-only state that needs a separate hydration step.
+ * source is selected (right). A cold load with ?field=, ?src=, and ?explain=open all set
+ * restores everything — nothing here is client-only state that needs a separate hydration
+ * step.
  */
 export function ReturnReview() {
   const { id } = useParams()
@@ -207,6 +181,7 @@ export function ReturnReview() {
 
   const fieldParam = searchParams.get("field")
   const srcParam = searchParams.get("src")
+  const explainOpen = searchParams.get("explain") === "open"
   const selectedField = fieldParam ? fields.find((f) => f.formLine === fieldParam) : undefined
 
   // A cold load with ?field= already set should start the keyboard cursor there too, not at
@@ -217,7 +192,6 @@ export function ReturnReview() {
     return index >= 0 ? index : 0
   })
   const [editingFieldId, setEditingFieldId] = useState<string | null>(null)
-  const [overrides, setOverrides] = useState<Record<string, number | string>>({})
   const selectedChain: FieldNode | null = useMemo(
     () => (selectedField ? traceField(selectedField.id) : null),
     [selectedField]
@@ -232,10 +206,24 @@ export function ReturnReview() {
     setEditingFieldId(null)
   }
 
+  /** E / FieldBox's Explain affordance: select the field AND open the drawer in one URL
+   * update — both triggers land here. */
+  function explainField(formLine: string) {
+    const next = new URLSearchParams(searchParams)
+    next.set("field", formLine)
+    next.delete("src")
+    next.set("explain", "open")
+    setSearchParams(next)
+    setEditingFieldId(null)
+    const index = fields.findIndex((f) => f.formLine === formLine)
+    if (index >= 0) setCursorIndex(index)
+  }
+
   function closePanels() {
     const next = new URLSearchParams(searchParams)
     next.delete("field")
     next.delete("src")
+    next.delete("explain")
     setSearchParams(next)
     setEditingFieldId(null)
   }
@@ -247,13 +235,6 @@ export function ReturnReview() {
     if (index >= 0) setCursorIndex(index)
     selectField(first.formLine)
     document.getElementById(fieldRowId(first.id))?.scrollIntoView({ behavior: "smooth", block: "center" })
-  }
-
-  function handleCommitEdit(field: ReturnField, raw: string) {
-    const parsed = Number(raw)
-    const value = raw.trim() !== "" && !Number.isNaN(parsed) && typeof field.value === "number" ? parsed : raw
-    setOverrides((prev) => ({ ...prev, [field.id]: value }))
-    setEditingFieldId(null)
   }
 
   // Intentionally no dependency array: this re-subscribes every render so the handler always
@@ -278,7 +259,7 @@ export function ReturnReview() {
       } else if (event.key.toLowerCase() === "e") {
         event.preventDefault()
         const field = fields[cursorIndex]
-        if (field) selectField(field.formLine)
+        if (field) explainField(field.formLine)
       } else if (event.key === "Enter") {
         event.preventDefault()
         const field = fields[cursorIndex]
@@ -305,6 +286,9 @@ export function ReturnReview() {
     const extracted = getExtractedField(srcParam)
     return extracted && extracted.confidence < LOW_CONFIDENCE_THRESHOLD ? ("flagged" as const) : ("neutral" as const)
   })()
+  // Two possible connector origins share the same ?src= — the chain row in the center pane,
+  // or an evidence chip in the drawer — whichever is actually on screen right now.
+  const connectorFromId = srcParam ? (explainOpen ? explainEvidenceId(srcParam) : chainRowId(srcParam)) : null
 
   return (
     <div className="grid grid-cols-1 items-start gap-6 p-6 lg:grid-cols-[18rem_24rem_minmax(28rem,1fr)]">
@@ -323,12 +307,12 @@ export function ReturnReview() {
               isCursor={index === cursorIndex}
               isSelected={selectedField?.id === field.id}
               isEditing={editingFieldId === field.id}
-              overrideValue={overrides[field.id]}
               onSelect={() => {
                 setCursorIndex(index)
                 selectField(field.formLine)
               }}
-              onCommitEdit={handleCommitEdit}
+              onExplain={() => explainField(field.formLine)}
+              onCommitted={() => setEditingFieldId(null)}
             />
           ))}
         </div>
@@ -360,7 +344,8 @@ export function ReturnReview() {
         )}
       </section>
 
-      {srcParam && <ConnectorOverlay fromId={chainRowId(srcParam)} toId={srcParam} tone={connectorTone} />}
+      <ExplainDrawer fieldId={selectedField?.id ?? null} />
+      {srcParam && connectorFromId && <ConnectorOverlay fromId={connectorFromId} toId={srcParam} tone={connectorTone} />}
     </div>
   )
 }

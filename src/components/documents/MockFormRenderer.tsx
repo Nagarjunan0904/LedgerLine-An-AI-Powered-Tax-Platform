@@ -1,11 +1,14 @@
+import { useMemo } from "react"
 import type { ReactNode } from "react"
 import { Link } from "react-router"
-import { ArrowRight, ImageOff } from "lucide-react"
+import { ArrowRight, ImageOff, UserCheck } from "lucide-react"
 
-import type { Document, FieldState } from "@/types"
+import type { Document, ExtractedField, FieldState } from "@/types"
 import { getExtractedFieldsForDocument, getFieldsForReturn, getOpenItemsForReturn, getProvenance, getReturn } from "@/data/fixtures"
+import { resolveExtractedValue } from "@/lib/provenance"
 import { documentPayerName, parseBoxLabel } from "@/lib/labels"
 import { cn } from "@/lib/utils"
+import { useCorrectionsStore } from "@/stores/useCorrectionsStore"
 import { HighlightOverlay } from "./HighlightOverlay"
 
 export interface MockFormRendererProps {
@@ -83,17 +86,49 @@ function PlaceholderBox({ number, caption }: { number: string; caption: string }
   )
 }
 
+/** The document renderer's own read of an ExtractedField's value — resolved through the same
+ * resolver the chain and the field itself use, so a correction shows through here too instead
+ * of the box quietly disagreeing with the total above it. */
+function useResolvedExtracted(extracted: ExtractedField | undefined) {
+  const corrections = useCorrectionsStore((s) => s.corrections)
+  return useMemo(() => (extracted ? resolveExtractedValue(extracted, corrections) : undefined), [extracted, corrections])
+}
+
 /** The content of the one box per form that has a real ExtractedField behind it — rendered
  * inside HighlightOverlay, never as a PlaceholderBox. Full caption, no truncation: this is
- * the box the whole demo is about. */
-function DataBoxContent({ number, caption, value }: { number: string; caption: string; value: string }) {
+ * the box the whole demo is about. A corrected box keeps a quiet marker and the original value
+ * on hover — same treatment as the explain drawer's evidence rows. */
+function DataBoxContent({
+  number,
+  caption,
+  value,
+  originalValue,
+}: {
+  number: string
+  caption: string
+  value: string
+  /** Non-null when a human overrode this box's value — the original AI-read value, shown on
+   * hover. Never discarded. */
+  originalValue?: string | null
+}) {
   return (
     <div className="flex flex-col gap-0.5">
       <p className="flex items-baseline gap-1">
         <span className="font-mono text-[0.625rem] font-bold">{number}</span>
         <span className="text-[0.5rem] uppercase leading-tight tracking-wide opacity-75">{caption}</span>
+        {originalValue != null && (
+          <UserCheck
+            className="size-3 shrink-0 text-state-verified-text"
+            aria-label={`Corrected by a preparer — original: ${originalValue}`}
+          />
+        )}
       </p>
-      <p className="font-mono text-sm font-semibold tabular-nums">{value}</p>
+      <p
+        className="font-mono text-sm font-semibold tabular-nums"
+        title={originalValue != null ? `Original: ${originalValue}` : undefined}
+      >
+        {value}
+      </p>
     </div>
   )
 }
@@ -156,6 +191,7 @@ function resolveFieldState(returnId: string, extractedId: string): FieldState {
 function W2Form({ document: doc, highlightId }: { document: Document; highlightId?: string }) {
   const ret = getReturn(doc.returnId)!
   const extracted = getExtractedFieldsForDocument(doc.id)[0]
+  const resolved = useResolvedExtracted(extracted)
   const employer = documentPayerName(doc) ?? "Employer"
   const box1 = extracted ? parseBoxLabel(extracted.label) : null
 
@@ -176,7 +212,12 @@ function W2Form({ document: doc, highlightId }: { document: Document; highlightI
                   label={extracted.label}
                   pulse={extracted.id === highlightId}
                 >
-                  <DataBoxContent number={box1.number} caption={box1.description} value={extracted.rawValue} />
+                  <DataBoxContent
+                    number={box1.number}
+                    caption={box1.description}
+                    value={resolved ? resolved.value : extracted.rawValue}
+                    originalValue={resolved?.isCorrected ? resolved.originalValue : null}
+                  />
                 </HighlightOverlay>
               ) : (
                 <PlaceholderBox number="1" caption="Wages, tips, other compensation" />
@@ -199,6 +240,7 @@ function W2Form({ document: doc, highlightId }: { document: Document; highlightI
 function Form1099Int({ document: doc, highlightId }: { document: Document; highlightId?: string }) {
   const ret = getReturn(doc.returnId)!
   const extracted = getExtractedFieldsForDocument(doc.id)[0]
+  const resolved = useResolvedExtracted(extracted)
   const payer = documentPayerName(doc) ?? "Payer"
   const box1 = extracted ? parseBoxLabel(extracted.label) : null
 
@@ -219,7 +261,12 @@ function Form1099Int({ document: doc, highlightId }: { document: Document; highl
                   label={extracted.label}
                   pulse={extracted.id === highlightId}
                 >
-                  <DataBoxContent number={box1.number} caption={box1.description} value={extracted.rawValue} />
+                  <DataBoxContent
+                    number={box1.number}
+                    caption={box1.description}
+                    value={resolved ? resolved.value : extracted.rawValue}
+                    originalValue={resolved?.isCorrected ? resolved.originalValue : null}
+                  />
                 </HighlightOverlay>
               ) : (
                 <PlaceholderBox number="1" caption="Interest income" />
@@ -242,6 +289,7 @@ function Form1099Int({ document: doc, highlightId }: { document: Document; highl
 function Form1099Div({ document: doc, highlightId }: { document: Document; highlightId?: string }) {
   const ret = getReturn(doc.returnId)!
   const extracted = getExtractedFieldsForDocument(doc.id)[0]
+  const resolved = useResolvedExtracted(extracted)
   const payer = documentPayerName(doc) ?? "Payer"
   const box1 = extracted ? parseBoxLabel(extracted.label) : null
 
@@ -262,7 +310,12 @@ function Form1099Div({ document: doc, highlightId }: { document: Document; highl
                   label={extracted.label}
                   pulse={extracted.id === highlightId}
                 >
-                  <DataBoxContent number={box1.number} caption={box1.description} value={extracted.rawValue} />
+                  <DataBoxContent
+                    number={box1.number}
+                    caption={box1.description}
+                    value={resolved ? resolved.value : extracted.rawValue}
+                    originalValue={resolved?.isCorrected ? resolved.originalValue : null}
+                  />
                 </HighlightOverlay>
               ) : (
                 <PlaceholderBox number="1a" caption="Total ordinary dividends" />
@@ -285,6 +338,7 @@ function Form1099Div({ document: doc, highlightId }: { document: Document; highl
 function FormK1({ document: doc, highlightId }: { document: Document; highlightId?: string }) {
   const ret = getReturn(doc.returnId)!
   const extracted = getExtractedFieldsForDocument(doc.id)[0]
+  const resolved = useResolvedExtracted(extracted)
   // documentPayerName strips "K-1 <year>" but the generator's K-1 filenames read
   // "<payer> Schedule K-1 <year>" — "Schedule" is left dangling and needs its own trim.
   const partnership = documentPayerName(doc)?.replace(/\s+Schedule$/i, "") ?? "Partnership"
@@ -307,7 +361,12 @@ function FormK1({ document: doc, highlightId }: { document: Document; highlightI
                   label={extracted.label}
                   pulse={extracted.id === highlightId}
                 >
-                  <DataBoxContent number={box1.number} caption={box1.description} value={extracted.rawValue} />
+                  <DataBoxContent
+                    number={box1.number}
+                    caption={box1.description}
+                    value={resolved ? resolved.value : extracted.rawValue}
+                    originalValue={resolved?.isCorrected ? resolved.originalValue : null}
+                  />
                 </HighlightOverlay>
               ) : (
                 <PlaceholderBox number="1" caption="Ordinary business income" />

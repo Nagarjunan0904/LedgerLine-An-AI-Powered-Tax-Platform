@@ -40,6 +40,15 @@ export function shortFieldLabel(field: ReturnField): string {
   return match ? `Line ${match[1]}` : field.formLine
 }
 
+/** "Box 1 — Wages, tips, other compensation" -> { number: "1", description: "Wages, tips,
+ * other compensation" }. Shared by MockFormRenderer (the box's own caption) and
+ * ProvenanceChain (a source row's box label) so both read the same real fixture text instead
+ * of two hand-typed copies that could drift apart. */
+export function parseBoxLabel(label: string): { number: string; description: string } {
+  const match = /^Box\s+(\S+)\s+—\s+(.+)$/.exec(label)
+  return match ? { number: match[1], description: match[2] } : { number: "", description: label }
+}
+
 /** Threads have no title — the first message's opening words stand in for one. */
 export function threadLabel(thread: Thread): string {
   const first = thread.messages[0]

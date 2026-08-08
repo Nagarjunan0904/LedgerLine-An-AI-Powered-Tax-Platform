@@ -1,12 +1,16 @@
 import { useState } from "react"
+import { useSearchParams } from "react-router"
 
 import type { FieldState } from "@/types"
-import { getDocument, getDocumentsForReturn } from "@/data/fixtures"
+import { getDocument, getDocumentsForReturn, getExtractedField } from "@/data/fixtures"
 import { DEMO_IDS } from "@/data/demoIds"
 import { FieldBox } from "@/components/field/FieldBox"
 import type { FieldSize } from "@/components/field/fieldVariants"
 import { MockFormRenderer } from "@/components/documents/MockFormRenderer"
+import { ProvenanceChain } from "@/components/provenance/ProvenanceChain"
+import { ConnectorOverlay } from "@/components/provenance/ConnectorOverlay"
 import { CLIENT_PHASES, STAFF_STATES } from "@/lib/status"
+import { chainRowId, LOW_CONFIDENCE_THRESHOLD } from "@/lib/provenance"
 import { cn } from "@/lib/utils"
 
 const SIZES: FieldSize[] = ["sm", "md", "lg"]
@@ -21,6 +25,11 @@ const STATE_ROWS: { state: FieldState; label: string }[] = [
 
 export function KitchenSink() {
   const [lastAction, setLastAction] = useState<string | null>(null)
+  const [searchParams] = useSearchParams()
+  const selectedSrc = searchParams.get("src")
+  const selectedExtracted = selectedSrc ? getExtractedField(selectedSrc) : undefined
+  const connectorTone =
+    selectedExtracted && selectedExtracted.confidence < LOW_CONFIDENCE_THRESHOLD ? "flagged" : "neutral"
 
   function renderStateExample(state: FieldState, size: FieldSize) {
     const label = `Wages, box 1`
@@ -214,22 +223,10 @@ export function KitchenSink() {
         <p className="font-body text-sm text-ink/70 mb-4 max-w-prose">
           Every supported form type, styled to the visual language of the real IRS form it
           represents. The highlighted box on each is a HighlightOverlay positioned by that
-          extraction's real bbox — never a second, invented coordinate system. The three W-2s
-          below render Ellery's actual seeded box-1 values, pulled through the fixture
-          accessors.
+          extraction's real bbox — never a second, invented coordinate system. Ellery's three
+          W-2s are showcased in the Provenance chain section below, alongside the chain that
+          explains them.
         </p>
-
-        <p className="font-mono text-xs uppercase tracking-wide text-ink/50 mb-2">
-          W-2 sources — Ellery 2025 (sum into Wages, Form 1040 line 1a)
-        </p>
-        <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {[DEMO_IDS.ELLERY_W2_ACME_DOC, DEMO_IDS.ELLERY_W2_BELMONT_DOC, DEMO_IDS.ELLERY_W2_CORVID_DOC].map(
-            (docId) => {
-              const doc = getDocument(docId)
-              return doc ? <MockFormRenderer key={docId} document={doc} /> : null
-            }
-          )}
-        </div>
 
         <p className="font-mono text-xs uppercase tracking-wide text-ink/50 mb-2">
           1099-INT, 1099-DIV, and Schedule K-1
@@ -262,6 +259,36 @@ export function KitchenSink() {
             return failedDoc ? <MockFormRenderer document={failedDoc} /> : null
           })()}
         </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="font-display text-sm uppercase tracking-widest font-semibold border-b pb-2 mb-4">
+          Provenance chain
+        </h2>
+        <p className="font-body text-sm text-ink/70 mb-4 max-w-prose">
+          The single most important interaction in the build. Click a source below: it pulses
+          and scrolls into view on its form, and a connector draws itself from the chain to the
+          exact box the number came from. Corvid Inc is flagged in the chain itself, before
+          anyone clicks into it.
+        </p>
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[22rem_1fr]">
+          <div className="rounded-sm border border-border p-4">
+            <ProvenanceChain fieldId={DEMO_IDS.ELLERY_WAGES_FIELD} />
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {[DEMO_IDS.ELLERY_W2_ACME_DOC, DEMO_IDS.ELLERY_W2_BELMONT_DOC, DEMO_IDS.ELLERY_W2_CORVID_DOC].map(
+              (docId) => {
+                const doc = getDocument(docId)
+                return doc ? (
+                  <MockFormRenderer key={docId} document={doc} highlightId={selectedSrc ?? undefined} />
+                ) : null
+              }
+            )}
+          </div>
+        </div>
+        {selectedSrc && (
+          <ConnectorOverlay fromId={chainRowId(selectedSrc)} toId={selectedSrc} tone={connectorTone} />
+        )}
       </section>
 
       <section>

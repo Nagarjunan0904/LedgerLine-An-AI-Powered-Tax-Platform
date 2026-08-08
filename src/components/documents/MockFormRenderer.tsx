@@ -4,7 +4,7 @@ import { ArrowRight, ImageOff } from "lucide-react"
 
 import type { Document, FieldState } from "@/types"
 import { getExtractedFieldsForDocument, getFieldsForReturn, getOpenItemsForReturn, getProvenance, getReturn } from "@/data/fixtures"
-import { documentPayerName } from "@/lib/labels"
+import { documentPayerName, parseBoxLabel } from "@/lib/labels"
 import { cn } from "@/lib/utils"
 import { HighlightOverlay } from "./HighlightOverlay"
 
@@ -99,14 +99,6 @@ function DataBoxContent({ number, caption, value }: { number: string; caption: s
       <p className="font-mono text-sm font-semibold tabular-nums">{value}</p>
     </div>
   )
-}
-
-/** "Box 1 — Wages, tips, other compensation" -> { number: "1", description: "Wages, tips,
- * other compensation" }. Reads the box number and full caption straight off the fixture's own
- * ExtractedField.label instead of a second, hand-typed copy that could drift from it. */
-function parseBoxLabel(label: string): { number: string; description: string } {
-  const match = /^Box\s+(\S+)\s+—\s+(.+)$/.exec(label)
-  return match ? { number: match[1], description: match[2] } : { number: "", description: label }
 }
 
 /**

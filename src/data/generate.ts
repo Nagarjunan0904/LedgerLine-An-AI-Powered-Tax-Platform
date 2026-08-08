@@ -270,7 +270,7 @@ const elleryReturn = addReturn({
 })
 
 // Case 6 — brand-new client, no documents (first-run state). Same client, a fresh engagement.
-addReturn({
+const elleryFirstRunReturn = addReturn({
   id: DEMO_IDS.ELLERY_RETURN_FIRST_RUN,
   clientId: marcus.id,
   clientName: marcus.name,
@@ -281,6 +281,46 @@ addReturn({
   assignedTo: nadia.id,
   dueDate: "2027-04-15T00:00:00.000Z",
   blockers: [],
+})
+
+// These three exist in the fixture from the start, not created by the upload itself — only
+// the Document comes from ClientHome's fake-upload flow. They stay invisible to the
+// onboarding-stage derivation while document count is zero (State A shows one card, nothing
+// else), then become the client's queue the moment a document exists — State A → B, not
+// straight to "onboarding complete."
+addQuestionnaireItem({
+  id: DEMO_IDS.ELLERY_FIRST_RUN_W2_QUESTION,
+  returnId: elleryFirstRunReturn.id,
+  sectionId: "income",
+  question: "Is the W-2 you uploaded from your primary employer?",
+  answerType: "boolean",
+  answer: null,
+  required: true,
+})
+addOpenItem({
+  id: DEMO_IDS.ELLERY_FIRST_RUN_SECOND_DOC_ITEM,
+  returnId: elleryFirstRunReturn.id,
+  title: "Upload your 1099-INT, if you have one",
+  description:
+    "If you earned interest from a bank or investment account this year, upload the 1099-INT for it.",
+  owner: "client",
+  assignedTo: null,
+  dueDate: daysFrom(NOW, 21),
+  severity: "medium",
+  linkedObjects: [],
+  resolvedAt: null,
+})
+addOpenItem({
+  id: DEMO_IDS.ELLERY_FIRST_RUN_ADDRESS_ITEM,
+  returnId: elleryFirstRunReturn.id,
+  title: "Confirm your current mailing address",
+  description: "Confirm the mailing address we have on file is still correct for this tax year.",
+  owner: "client",
+  assignedTo: null,
+  dueDate: daysFrom(NOW, 14),
+  severity: "low",
+  linkedObjects: [],
+  resolvedAt: null,
 })
 
 // Case 5 — zero open items (empty state), otherwise a normal, wrapped-up return
@@ -1392,7 +1432,9 @@ genericReturns.forEach((ret, i) => {
 })
 
 // ---------------------------------------------------------------------------
-// Open items — allocated to hit exactly 120 total (Ellery2026 and Bloom stay at 0)
+// Open items — allocated to hit exactly 120 total. Bloom stays at 0 (excluded below).
+// Ellery2026 isn't in genericReturns so it gets none from this pool either — its two are
+// hand-authored above, and openItemsSoFar already counts them, so the 120 total still holds.
 // ---------------------------------------------------------------------------
 
 const OPEN_ITEM_TEMPLATES: { title: string; description: string }[] = [
@@ -1624,6 +1666,7 @@ function validate() {
   const provenanceIds = new Set(provenance.map((p) => p.id))
   const openItemIds = new Set(openItems.map((i) => i.id))
   const threadIds = new Set(threads.map((t) => t.id))
+  const questionnaireIds = new Set(questionnaireItems.map((q) => q.id))
 
   function need(ok: boolean, message: string) {
     if (!ok) errors.push(message)
@@ -1725,6 +1768,7 @@ function validate() {
       fieldIds.has(id) ||
       provenanceIds.has(id) ||
       openItemIds.has(id) ||
+      questionnaireIds.has(id) ||
       id === DEMO_IDS.VOSS_BLOCKER // blockers are nested, not a top-level collection — checked separately below
     need(resolves, `DEMO_IDS.${key} (${id}) does not resolve to any generated record`)
   }

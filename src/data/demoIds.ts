@@ -43,8 +43,15 @@ export const DEMO_IDS = {
   // Case 5 — a return with zero open items (empty state)
   BLOOM_RETURN: "return-bloom-2025",
 
-  // Case 6 — a brand-new client with no documents (first-run state)
+  // Case 6 — a brand-new client with no documents (first-run state). These three are
+  // client-owned but only surface once the first document exists — ClientHome's
+  // onboarding-stage derivation keys off document count, so State A shows none of this;
+  // uploading the first document (ClientHome's fake-upload flow) moves the return into
+  // State B with these as the queue, not straight to State C.
   ELLERY_RETURN_FIRST_RUN: "return-ellery-2026",
+  ELLERY_FIRST_RUN_W2_QUESTION: "qi-ellery-2026-w2-employer",
+  ELLERY_FIRST_RUN_SECOND_DOC_ITEM: "item-ellery-2026-second-doc",
+  ELLERY_FIRST_RUN_ADDRESS_ITEM: "item-ellery-2026-address",
 
   // Case 7 — an e-filed, fully locked return (read-only affordance)
   WHITFIELD_RETURN: "return-whitfield-2024",

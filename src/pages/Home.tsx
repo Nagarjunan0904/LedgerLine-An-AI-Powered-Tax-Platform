@@ -1,4 +1,5 @@
 import { getEffectiveRole, isClientRole, useRoleStore } from "@/stores/useRoleStore"
+import { ClientHome } from "./ClientHome"
 import { PlaceholderPage } from "./PlaceholderPage"
 
 /** /home — ClientHome or StaffHome depending on the active role (or, for a dual-role user
@@ -7,7 +8,7 @@ export function Home() {
   const role = useRoleStore((s) => s.role)
   const context = useRoleStore((s) => s.context)
   const effectiveRole = getEffectiveRole(role, context)
-  return <PlaceholderPage name={isClientRole(effectiveRole) ? "ClientHome" : "StaffHome"} />
+  return isClientRole(effectiveRole) ? <ClientHome /> : <PlaceholderPage name="StaffHome" />
 }
 
 export default Home

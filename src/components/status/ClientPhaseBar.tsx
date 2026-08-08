@@ -18,13 +18,20 @@ function OwnerPill({ owner }: { owner: "client" | "firm" }) {
   )
 }
 
+export interface ClientPhaseBarProps {
+  ret: Return
+  /** Smaller circles, no phase description paragraph — for contexts like ClientHome's "in
+   * progress" state where the bar is a supporting element, not the page's main content. */
+  compact?: boolean
+}
+
 /**
  * Horizontal 5-step progress across CLIENT_PHASES — the only status vocabulary a client ever
  * sees. StaffState never appears here; getNextAction() already resolves state + blockers down
  * to a plain-language description before this component touches it, so there's no internal
  * detail left to accidentally leak.
  */
-export function ClientPhaseBar({ ret }: { ret: Return }) {
+export function ClientPhaseBar({ ret, compact = false }: ClientPhaseBarProps) {
   const currentIndex = CLIENT_PHASES.findIndex((p) => p.phase === ret.clientPhase)
   const current = CLIENT_PHASES[currentIndex]
   const nextAction = getNextAction(ret)
@@ -41,38 +48,41 @@ export function ClientPhaseBar({ ret }: { ret: Return }) {
               {i > 0 && (
                 <div
                   aria-hidden="true"
-                  className={cn("mt-3.5 h-px flex-1", i <= currentIndex ? "bg-ink" : "bg-border")}
+                  className={cn(compact ? "mt-3" : "mt-3.5", "h-px flex-1", i <= currentIndex ? "bg-ink" : "bg-border")}
                 />
               )}
               <li className="flex shrink-0 flex-col items-center gap-1.5">
                 <div
                   aria-current={isCurrent ? "step" : undefined}
                   className={cn(
-                    "flex size-7 shrink-0 items-center justify-center rounded-full border font-mono text-xs tabular-nums",
+                    "flex shrink-0 items-center justify-center rounded-full border font-mono tabular-nums",
+                    compact ? "size-6 text-[0.6875rem]" : "size-7 text-xs",
                     done && "border-ink bg-ink text-paper",
                     isCurrent && "border-ink bg-paper text-ink ring-2 ring-ring",
                     !done && !isCurrent && "border-border bg-paper text-ink/40"
                   )}
                 >
-                  {done ? <Check className="size-3.5" aria-hidden="true" /> : i + 1}
+                  {done ? <Check className={compact ? "size-3" : "size-3.5"} aria-hidden="true" /> : i + 1}
                 </div>
-                <span
-                  className={cn(
-                    "max-w-24 text-center text-xs leading-tight",
-                    isCurrent ? "font-semibold text-ink" : "text-ink/50"
-                  )}
-                >
-                  {phaseInfo.label}
-                </span>
+                {!compact && (
+                  <span
+                    className={cn(
+                      "max-w-24 text-center text-xs leading-tight",
+                      isCurrent ? "font-semibold text-ink" : "text-ink/50"
+                    )}
+                  >
+                    {phaseInfo.label}
+                  </span>
+                )}
               </li>
             </Fragment>
           )
         })}
       </ol>
 
-      <div className="mt-5 rounded-sm border border-border bg-panel/40 p-4">
+      <div className={cn("rounded-sm border border-border bg-panel/40", compact ? "mt-3 p-3" : "mt-5 p-4")}>
         <p className="font-display text-sm font-semibold uppercase tracking-wide">{current.label}</p>
-        <p className="mt-1 text-sm text-ink/70">{current.description}</p>
+        {!compact && <p className="mt-1 text-sm text-ink/70">{current.description}</p>}
         <div className="mt-3 flex items-center gap-2">
           <OwnerPill owner={nextAction.owner} />
           <p className={cn("text-sm", blocked ? "text-ink" : "text-ink/70")}>{nextAction.description}</p>

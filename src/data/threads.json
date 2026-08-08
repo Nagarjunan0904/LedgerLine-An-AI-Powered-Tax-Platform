@@ -142,37 +142,21 @@
     "id": "thread-0006",
     "scope": {
       "type": "return",
-      "id": "return-0047"
+      "id": "return-0036"
     },
     "visibility": "internal",
     "participants": [
-      "user-0008",
-      "user-0010"
+      "user-0007",
+      "user-0008"
     ],
     "messages": [
       {
         "id": "msg-0009",
         "threadId": "thread-0006",
         "authorId": "user-0008",
-        "body": "Uterque concido stipes culpa aptus. Vespillo voluptatum audentia supplanto ascisco patruus tenax versus uterque una.",
-        "sentAt": "2026-07-26T12:00:00.000Z",
-        "isRequest": true
-      },
-      {
-        "id": "msg-0010",
-        "threadId": "thread-0006",
-        "authorId": "user-0010",
-        "body": "Demulceo assentator suggero veritatis voluntarius torrens. Adhaero adeptio ducimus cuius denego certus beatus.",
-        "sentAt": "2026-08-01T12:00:00.000Z",
-        "isRequest": false
-      },
-      {
-        "id": "msg-0011",
-        "threadId": "thread-0006",
-        "authorId": "user-0010",
-        "body": "Cubicularis adsuesco appositus trans accusantium dolorum statua. Auxilium deripio somniculosus.",
+        "body": "Depopulo torrens sapiente tubineus. Qui solitudo volutabrum.",
         "sentAt": "2026-08-03T12:00:00.000Z",
-        "isRequest": false
+        "isRequest": true
       }
     ],
     "resolvedAt": null
@@ -181,82 +165,90 @@
     "id": "thread-0007",
     "scope": {
       "type": "return",
-      "id": "return-0033"
+      "id": "return-0026"
     },
     "visibility": "internal",
     "participants": [
-      "user-0008",
-      "user-0003"
+      "user-0001",
+      "user-0009"
     ],
     "messages": [
       {
-        "id": "msg-0012",
+        "id": "msg-0010",
         "threadId": "thread-0007",
-        "authorId": "user-0008",
-        "body": "Cogo bellicus rem tamisium spero. Decipio consuasor xiphias peior iste congregatio venustas.",
-        "sentAt": "2026-08-05T12:00:00.000Z",
+        "authorId": "user-0009",
+        "body": "Culpa aptus utor vespillo voluptatum audentia supplanto ascisco.",
+        "sentAt": "2026-08-03T12:00:00.000Z",
         "isRequest": false
       }
     ],
-    "resolvedAt": "2026-08-06T12:00:00.000Z"
+    "resolvedAt": null
   },
   {
     "id": "thread-0008",
     "scope": {
       "type": "return",
-      "id": "return-0032"
+      "id": "return-0038"
     },
     "visibility": "client-visible",
     "participants": [
-      "user-0011",
-      "user-0043"
+      "user-nadia-osei",
+      "user-0049"
     ],
     "messages": [
       {
-        "id": "msg-0013",
+        "id": "msg-0011",
         "threadId": "thread-0008",
-        "authorId": "user-0043",
-        "body": "Ademptio vulnero denique similique via stultus audacia stella decens colo.",
+        "authorId": "user-nadia-osei",
+        "body": "Ulterius culpo demulceo assentator suggero veritatis voluntarius torrens perferendis adhaero. Ducimus cuius denego.",
+        "sentAt": "2026-08-04T12:00:00.000Z",
+        "isRequest": true
+      },
+      {
+        "id": "msg-0012",
+        "threadId": "thread-0008",
+        "authorId": "user-0049",
+        "body": "Nam cubicularis adsuesco appositus trans accusantium dolorum statua alias auxilium. Somniculosus texo sumo contabesco coaegresco amita.",
         "sentAt": "2026-08-05T12:00:00.000Z",
         "isRequest": false
       },
       {
-        "id": "msg-0014",
+        "id": "msg-0013",
         "threadId": "thread-0008",
-        "authorId": "user-0011",
-        "body": "Compono vinco valens vulnus astrum contabesco suscipio conculco.",
-        "sentAt": "2026-08-03T12:00:00.000Z",
+        "authorId": "user-0049",
+        "body": "Bellicus rem tamisium spero earum.",
+        "sentAt": "2026-08-05T12:00:00.000Z",
         "isRequest": false
       }
     ],
-    "resolvedAt": "2026-08-04T12:00:00.000Z"
+    "resolvedAt": null
   },
   {
     "id": "thread-0009",
     "scope": {
       "type": "return",
-      "id": "return-0006"
+      "id": "return-0021"
     },
-    "visibility": "internal",
+    "visibility": "client-visible",
     "participants": [
-      "user-0005",
-      "user-0008"
+      "user-0003",
+      "user-0032"
     ],
     "messages": [
       {
-        "id": "msg-0015",
+        "id": "msg-0014",
         "threadId": "thread-0009",
-        "authorId": "user-0005",
-        "body": "Ars tracto in balbus curto deputo turbo quia.",
+        "authorId": "user-0032",
+        "body": "Ullus constans claudeo venio sint varietas alo validus ademptio vulnero.",
         "sentAt": "2026-08-01T12:00:00.000Z",
-        "isRequest": true
+        "isRequest": false
       },
       {
-        "id": "msg-0016",
+        "id": "msg-0015",
         "threadId": "thread-0009",
-        "authorId": "user-0008",
-        "body": "Aliqua valetudo magnam tamdiu laborum centum. Cometes aestus amiculum annus catena volup summopere.",
-        "sentAt": "2026-08-05T12:00:00.000Z",
+        "authorId": "user-0032",
+        "body": "Stella decens colo quasi. Crepusculum curso soleo compono.",
+        "sentAt": "2026-08-03T12:00:00.000Z",
         "isRequest": false
       }
     ],
@@ -266,81 +258,97 @@
     "id": "thread-0010",
     "scope": {
       "type": "return",
-      "id": "return-0054"
+      "id": "return-0003"
     },
-    "visibility": "internal",
+    "visibility": "client-visible",
     "participants": [
-      "user-0011",
-      "user-0011"
+      "user-0005",
+      "user-0014"
     ],
     "messages": [
       {
-        "id": "msg-0017",
+        "id": "msg-0016",
         "threadId": "thread-0010",
-        "authorId": "user-0011",
-        "body": "Ad canis tremo aro voco. Umquam campana angelus.",
-        "sentAt": "2026-08-01T12:00:00.000Z",
-        "isRequest": false
-      },
-      {
-        "id": "msg-0018",
-        "threadId": "thread-0010",
-        "authorId": "user-0011",
-        "body": "Certus ea carmen dicta incidunt omnis cognatus.",
-        "sentAt": "2026-08-03T12:00:00.000Z",
-        "isRequest": false
-      },
-      {
-        "id": "msg-0019",
-        "threadId": "thread-0010",
-        "authorId": "user-0011",
-        "body": "Demergo tepidus clementia sollers capillus copiose suppellex. A cumque eos cursim ut sursum.",
-        "sentAt": "2026-08-06T12:00:00.000Z",
+        "authorId": "user-0005",
+        "body": "Vicissitudo arto appono suadeo derelinquo. Cito studio ars.",
+        "sentAt": "2026-08-04T12:00:00.000Z",
         "isRequest": false
       }
     ],
-    "resolvedAt": "2026-08-07T12:00:00.000Z"
+    "resolvedAt": "2026-08-05T12:00:00.000Z"
   },
   {
     "id": "thread-0011",
     "scope": {
       "type": "return",
-      "id": "return-0035"
+      "id": "return-0008"
     },
     "visibility": "internal",
     "participants": [
-      "user-nadia-osei",
-      "user-nadia-osei"
+      "user-0002",
+      "user-0005"
     ],
     "messages": [
       {
-        "id": "msg-0020",
+        "id": "msg-0017",
         "threadId": "thread-0011",
-        "authorId": "user-nadia-osei",
-        "body": "Dolor ait creta.",
-        "sentAt": "2026-08-05T12:00:00.000Z",
+        "authorId": "user-0005",
+        "body": "Texo volubilis depono aliqua valetudo magnam tamdiu laborum.",
+        "sentAt": "2026-07-29T12:00:00.000Z",
+        "isRequest": true
+      },
+      {
+        "id": "msg-0018",
+        "threadId": "thread-0011",
+        "authorId": "user-0002",
+        "body": "Annus catena volup.",
+        "sentAt": "2026-08-01T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0019",
+        "threadId": "thread-0011",
+        "authorId": "user-0002",
+        "body": "Vilicus supra subseco.",
+        "sentAt": "2026-08-03T12:00:00.000Z",
         "isRequest": false
       }
     ],
-    "resolvedAt": "2026-08-06T12:00:00.000Z"
+    "resolvedAt": null
   },
   {
     "id": "thread-0012",
     "scope": {
       "type": "return",
-      "id": "return-0044"
+      "id": "return-0016"
     },
     "visibility": "internal",
     "participants": [
-      "user-0009",
-      "user-0003"
+      "user-0005",
+      "user-0002"
     ],
     "messages": [
       {
+        "id": "msg-0020",
+        "threadId": "thread-0012",
+        "authorId": "user-0005",
+        "body": "Umquam campana angelus. Cohaero adulescens commodo inflammatio certus ea carmen dicta incidunt omnis.",
+        "sentAt": "2026-08-01T12:00:00.000Z",
+        "isRequest": true
+      },
+      {
         "id": "msg-0021",
         "threadId": "thread-0012",
-        "authorId": "user-0009",
-        "body": "Minima ascit addo terebro volubilis acidus.",
+        "authorId": "user-0002",
+        "body": "Demergo tepidus clementia sollers capillus copiose suppellex. A cumque eos cursim ut sursum.",
+        "sentAt": "2026-08-05T12:00:00.000Z",
+        "isRequest": false
+      },
+      {
+        "id": "msg-0022",
+        "threadId": "thread-0012",
+        "authorId": "user-0005",
+        "body": "Combibo quidem capitulus.",
         "sentAt": "2026-08-06T12:00:00.000Z",
         "isRequest": false
       }

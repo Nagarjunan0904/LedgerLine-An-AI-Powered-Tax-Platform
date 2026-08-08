@@ -20,6 +20,10 @@ React 19 · TypeScript · Vite 8 · React Router v7 · Tailwind v4 · shadcn/ui
 - Path alias is @/ → src/. Use it; no ../../ imports.
 - TypeScript strict. No `any`. The types in src/types/ are the contract.
 - No new dependencies without asking first.
+- Zustand selectors return only raw stored slices. Never `?? []`, object
+  literals, or derived arrays inside a selector — that mints a new reference
+  every render and infinite-loops via useSyncExternalStore. Fallbacks use
+  module-level constants; derivation goes in useMemo in the component.
 
 ## Voice
 Sentence case. Active voice. Buttons say what happens ("Approve value", not

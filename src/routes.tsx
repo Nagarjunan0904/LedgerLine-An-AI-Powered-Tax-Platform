@@ -4,6 +4,7 @@ import { AppShell } from "@/components/shell/AppShell"
 import { Home } from "@/pages/Home"
 import { KitchenSink } from "@/pages/KitchenSink"
 import { PlaceholderPage } from "@/pages/PlaceholderPage"
+import { ReturnReview } from "@/pages/ReturnReview"
 import { ReturnsIndex } from "@/pages/ReturnsIndex"
 import { RootRedirect } from "@/pages/RootRedirect"
 import { TokenProofSheet } from "@/pages/TokenProofSheet"
@@ -24,7 +25,7 @@ export const router = createBrowserRouter([
       { path: "home", element: <Home /> },
       { path: "returns", element: <ReturnsIndex /> },
       { path: "returns/:id", element: <PlaceholderPage name="ReturnOverview" /> },
-      { path: "returns/:id/review", element: <PlaceholderPage name="ReturnReview" /> },
+      { path: "returns/:id/review", element: <ReturnReview /> },
       { path: "returns/:id/documents", element: <PlaceholderPage name="DocumentExplorer" /> },
       { path: "returns/:id/documents/:docId", element: <PlaceholderPage name="DocumentViewer" /> },
       { path: "returns/:id/items", element: <PlaceholderPage name="OpenItems" /> },

@@ -20,23 +20,20 @@ export interface MockFormRendererProps {
 // sees one consistent visual language across form types, not four different experiments.
 // ---------------------------------------------------------------------------
 
+/** Sizes to its content — no fixed aspect ratio. HighlightOverlay is a normal grid cell (see
+ * MoneyBoxGrid), not absolutely positioned, so nothing here needs a fixed-height canvas to
+ * anchor against; pinning one anyway just clips whatever doesn't fit the guessed height,
+ * which real captions (full text, sometimes two lines) routinely didn't. */
 function FormPage({ children, className }: { children: ReactNode; className?: string }) {
   return (
-    <div
-      className={cn(
-        "relative aspect-[850/1100] w-full overflow-hidden rounded-sm border border-ink/25 bg-paper shadow-sm",
-        className
-      )}
-    >
+    <div className={cn("w-full overflow-hidden rounded-sm border border-ink/25 bg-paper shadow-sm", className)}>
       {children}
     </div>
   )
 }
 
-/** The page's normal-flow content, including the money-box grid — the live-data highlight is
- * a real grid cell inside it now, not a floating sibling (see MoneyBoxGrid). */
 function FormStaticLayer({ children }: { children: ReactNode }) {
-  return <div className="absolute inset-0 flex flex-col gap-1.5 p-2.5">{children}</div>
+  return <div className="flex flex-col gap-1.5 p-2.5">{children}</div>
 }
 
 function FormHeader({

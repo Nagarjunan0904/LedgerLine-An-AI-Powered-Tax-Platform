@@ -176,3 +176,33 @@ function traceFieldInternal(fieldId: string, visited: Set<string>): FieldNode | 
 export function traceField(fieldId: string): FieldNode | null {
   return traceFieldInternal(fieldId, new Set())
 }
+
+/** Every extracted source in a chain, including ones nested inside a derived-from-derived
+ * field — the document pane needs the full set, not just this field's own top-level steps. */
+export function collectExtractedSources(node: FieldNode): ExtractedSource[] {
+  const result: ExtractedSource[] = []
+  for (const source of node.sources) {
+    if (source.kind === "extracted") {
+      result.push(source)
+    } else if (source.kind === "field") {
+      result.push(...collectExtractedSources(source.chain))
+    }
+  }
+  return result
+}
+
+/** The distinct documents behind a chain, in first-seen order — one per document even when
+ * multiple sources in the chain point at it (not the case today, but two boxes on the same
+ * form both feeding the same field is plausible), so the document pane never renders the same
+ * form twice. */
+export function collectDocuments(node: FieldNode): Document[] {
+  const seen = new Set<string>()
+  const docs: Document[] = []
+  for (const source of collectExtractedSources(node)) {
+    if (!seen.has(source.document.id)) {
+      seen.add(source.document.id)
+      docs.push(source.document)
+    }
+  }
+  return docs
+}

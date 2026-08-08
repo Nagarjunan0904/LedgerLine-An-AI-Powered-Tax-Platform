@@ -1,11 +1,13 @@
 import { Navigate } from "react-router"
 
-import { isClientRole, useRoleStore } from "@/stores/useRoleStore"
+import { getEffectiveRole, isClientRole, useRoleStore } from "@/stores/useRoleStore"
 
 /** / — sends staff to the dashboard and clients toward their return (via /returns). */
 export function RootRedirect() {
   const role = useRoleStore((s) => s.role)
-  return <Navigate to={isClientRole(role) ? "/returns" : "/home"} replace />
+  const context = useRoleStore((s) => s.context)
+  const effectiveRole = getEffectiveRole(role, context)
+  return <Navigate to={isClientRole(effectiveRole) ? "/returns" : "/home"} replace />
 }
 
 export default RootRedirect

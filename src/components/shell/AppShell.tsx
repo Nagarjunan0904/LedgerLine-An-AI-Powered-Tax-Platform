@@ -12,6 +12,8 @@ import {
   type WorkContext,
 } from "@/stores/useRoleStore"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
+import { Breadcrumbs } from "./Breadcrumbs"
+import { ContextRail } from "./ContextRail"
 import { RoleSwitcher } from "./RoleSwitcher"
 
 interface NavItem {
@@ -150,14 +152,12 @@ export function AppShell() {
         </nav>
 
         <main className="min-w-0 flex-1 overflow-auto">
+          <Breadcrumbs />
           <Outlet />
         </main>
 
-        {/* Reserved for 2.3's context rail — sized now so nothing reflows when it lands. */}
-        <aside className="w-72 shrink-0 border-l border-border bg-panel/40 p-4">
-          <p className="font-mono text-[0.6875rem] uppercase tracking-wide opacity-40">
-            Context rail — 2.3
-          </p>
+        <aside className="w-72 shrink-0 overflow-y-auto border-l border-border bg-panel/40 p-4">
+          <ContextRail />
         </aside>
       </div>
     </div>

@@ -94,6 +94,10 @@ export function getExtractedField(id: string): ExtractedField | undefined {
   return extractedFields.find((e) => e.id === id)
 }
 
+export function getExtractedFieldsForDocument(documentId: string): ExtractedField[] {
+  return extractedFields.filter((e) => e.documentId === documentId)
+}
+
 export function getOpenItemsForReturn(returnId: string): OpenItem[] {
   return openItems.filter((i) => i.returnId === returnId)
 }
@@ -104,6 +108,10 @@ export function getOpenItems(): OpenItem[] {
 
 export function getThreadsForObject(ref: ObjectRef): Thread[] {
   return threads.filter((t) => t.scope.type === ref.type && t.scope.id === ref.id)
+}
+
+export function getThread(id: string): Thread | undefined {
+  return threads.find((t) => t.id === id)
 }
 
 export function getQuestionnaireItemsForReturn(returnId: string): QuestionnaireItem[] {

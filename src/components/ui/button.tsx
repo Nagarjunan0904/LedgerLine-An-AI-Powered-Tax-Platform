@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components -- shadcn's standard pattern of co-exporting the component and its cva variants */
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { Slot } from "radix-ui"

@@ -81,7 +81,55 @@
   {
     "id": "return-0001",
     "clientId": "user-0012",
-    "clientName": "Ettie Bradtke",
+    "clientName": "Lora O'Conner",
+    "taxYear": 2024,
+    "clientPhase": "reviewing",
+    "staffState": "extraction-review",
+    "ownerRole": "firm",
+    "assignedTo": "user-0004",
+    "dueDate": "2025-04-15T00:00:00.000Z",
+    "blockers": []
+  },
+  {
+    "id": "return-0002",
+    "clientId": "user-0013",
+    "clientName": "Samantha Toy",
+    "taxYear": 2024,
+    "clientPhase": "reviewing",
+    "staffState": "extraction-review",
+    "ownerRole": "firm",
+    "assignedTo": "user-0002",
+    "dueDate": "2025-04-15T00:00:00.000Z",
+    "blockers": []
+  },
+  {
+    "id": "return-0003",
+    "clientId": "user-0014",
+    "clientName": "Joshua Toy",
+    "taxYear": 2025,
+    "clientPhase": "filed",
+    "staffState": "e-filed",
+    "ownerRole": "firm",
+    "assignedTo": "user-0003",
+    "dueDate": "2026-10-15T00:00:00.000Z",
+    "blockers": []
+  },
+  {
+    "id": "return-0004",
+    "clientId": "user-0015",
+    "clientName": "Mathilde Torphy",
+    "taxYear": 2024,
+    "clientPhase": "gathering-documents",
+    "staffState": "docs-pending",
+    "ownerRole": "firm",
+    "assignedTo": "user-0009",
+    "dueDate": "2025-04-15T00:00:00.000Z",
+    "blockers": []
+  },
+  {
+    "id": "return-0005",
+    "clientId": "user-0016",
+    "clientName": "Kevin Hoppe",
     "taxYear": 2025,
     "clientPhase": "gathering-documents",
     "staffState": "docs-pending",
@@ -91,9 +139,9 @@
     "blockers": []
   },
   {
-    "id": "return-0002",
-    "clientId": "user-0013",
-    "clientName": "Declan Robel",
+    "id": "return-0006",
+    "clientId": "user-0017",
+    "clientName": "Stanford Ratke",
     "taxYear": 2025,
     "clientPhase": "filed",
     "staffState": "e-filed",
@@ -103,9 +151,9 @@
     "blockers": []
   },
   {
-    "id": "return-0003",
-    "clientId": "user-0014",
-    "clientName": "Aurelio Armstrong",
+    "id": "return-0007",
+    "clientId": "user-0018",
+    "clientName": "Abigail Bernhard",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -115,9 +163,9 @@
     "blockers": []
   },
   {
-    "id": "return-0004",
-    "clientId": "user-0015",
-    "clientName": "Jermain Wunsch",
+    "id": "return-0008",
+    "clientId": "user-0019",
+    "clientName": "Clayton Williamson",
     "taxYear": 2024,
     "clientPhase": "filed",
     "staffState": "e-filed",
@@ -127,9 +175,9 @@
     "blockers": []
   },
   {
-    "id": "return-0005",
-    "clientId": "user-0016",
-    "clientName": "Clark Beier",
+    "id": "return-0009",
+    "clientId": "user-0020",
+    "clientName": "Ana Hayes",
     "taxYear": 2025,
     "clientPhase": "needs-your-answer",
     "staffState": "open-items",
@@ -139,9 +187,9 @@
     "blockers": []
   },
   {
-    "id": "return-0006",
-    "clientId": "user-0017",
-    "clientName": "Leora Dietrich",
+    "id": "return-0010",
+    "clientId": "user-0021",
+    "clientName": "Mattie Wisoky",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -158,9 +206,9 @@
     ]
   },
   {
-    "id": "return-0007",
-    "clientId": "user-0018",
-    "clientName": "Timothy Lynch",
+    "id": "return-0011",
+    "clientId": "user-0022",
+    "clientName": "Dwayne Streich",
     "taxYear": 2024,
     "clientPhase": "gathering-documents",
     "staffState": "docs-pending",
@@ -170,9 +218,9 @@
     "blockers": []
   },
   {
-    "id": "return-0008",
-    "clientId": "user-0019",
-    "clientName": "Niko Langworth",
+    "id": "return-0012",
+    "clientId": "user-0023",
+    "clientName": "Mazie Balistreri",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "partner-review",
@@ -182,9 +230,9 @@
     "blockers": []
   },
   {
-    "id": "return-0009",
-    "clientId": "user-0020",
-    "clientName": "Amelia Schmitt I",
+    "id": "return-0013",
+    "clientId": "user-0024",
+    "clientName": "Jana Abbott",
     "taxYear": 2024,
     "clientPhase": "reviewing",
     "staffState": "partner-review",
@@ -194,9 +242,9 @@
     "blockers": []
   },
   {
-    "id": "return-0010",
-    "clientId": "user-0021",
-    "clientName": "Wilbur Leffler-Predovic",
+    "id": "return-0014",
+    "clientId": "user-0025",
+    "clientName": "Lorenzo Jakubowski",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -206,9 +254,9 @@
     "blockers": []
   },
   {
-    "id": "return-0011",
-    "clientId": "user-0022",
-    "clientName": "Wilfrid Crona MD",
+    "id": "return-0015",
+    "clientId": "user-0026",
+    "clientName": "Yolanda Sanford",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -218,9 +266,9 @@
     "blockers": []
   },
   {
-    "id": "return-0012",
-    "clientId": "user-0023",
-    "clientName": "Grace Flatley",
+    "id": "return-0016",
+    "clientId": "user-0027",
+    "clientName": "Zackery Roberts",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -237,9 +285,9 @@
     ]
   },
   {
-    "id": "return-0013",
-    "clientId": "user-0024",
-    "clientName": "Elroy Kohler",
+    "id": "return-0017",
+    "clientId": "user-0028",
+    "clientName": "Lillian Daniel",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -256,9 +304,9 @@
     ]
   },
   {
-    "id": "return-0014",
-    "clientId": "user-0025",
-    "clientName": "Mr. Rex Legros PhD",
+    "id": "return-0018",
+    "clientId": "user-0029",
+    "clientName": "Herbert Hudson",
     "taxYear": 2024,
     "clientPhase": "ready-to-sign",
     "staffState": "client-signature",
@@ -268,9 +316,9 @@
     "blockers": []
   },
   {
-    "id": "return-0015",
-    "clientId": "user-0026",
-    "clientName": "Violet Mueller-Hagenes",
+    "id": "return-0019",
+    "clientId": "user-0030",
+    "clientName": "Zion Schmeler",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "extraction-review",
@@ -280,9 +328,9 @@
     "blockers": []
   },
   {
-    "id": "return-0016",
-    "clientId": "user-0027",
-    "clientName": "Lillian Casper",
+    "id": "return-0020",
+    "clientId": "user-0031",
+    "clientName": "Sandra Hilll",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "manager-review",
@@ -299,9 +347,9 @@
     ]
   },
   {
-    "id": "return-0017",
-    "clientId": "user-0028",
-    "clientName": "Herbert Feil",
+    "id": "return-0021",
+    "clientId": "user-0032",
+    "clientName": "Leopoldo Dicki",
     "taxYear": 2024,
     "clientPhase": "filed",
     "staffState": "e-filed",
@@ -311,9 +359,9 @@
     "blockers": []
   },
   {
-    "id": "return-0018",
-    "clientId": "user-0029",
-    "clientName": "Mr. Zion Raynor",
+    "id": "return-0022",
+    "clientId": "user-0033",
+    "clientName": "Kristine Swaniawski",
     "taxYear": 2024,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -323,9 +371,9 @@
     "blockers": []
   },
   {
-    "id": "return-0019",
-    "clientId": "user-0030",
-    "clientName": "Maxwell Hilll",
+    "id": "return-0023",
+    "clientId": "user-0034",
+    "clientName": "Donato Hilpert",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -335,9 +383,9 @@
     "blockers": []
   },
   {
-    "id": "return-0020",
-    "clientId": "user-0031",
-    "clientName": "Madge Dicki I",
+    "id": "return-0024",
+    "clientId": "user-0035",
+    "clientName": "Sheri Kirlin",
     "taxYear": 2025,
     "clientPhase": "filed",
     "staffState": "e-filed",
@@ -347,9 +395,9 @@
     "blockers": []
   },
   {
-    "id": "return-0021",
-    "clientId": "user-0032",
-    "clientName": "Mr. Ernest Jenkins DDS",
+    "id": "return-0025",
+    "clientId": "user-0036",
+    "clientName": "Samara Ritchie",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -359,9 +407,9 @@
     "blockers": []
   },
   {
-    "id": "return-0022",
-    "clientId": "user-0033",
-    "clientName": "Cornelius Rice",
+    "id": "return-0026",
+    "clientId": "user-0037",
+    "clientName": "Carla Stanton",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "extraction-review",
@@ -371,9 +419,9 @@
     "blockers": []
   },
   {
-    "id": "return-0023",
-    "clientId": "user-0034",
-    "clientName": "James Boyer I",
+    "id": "return-0027",
+    "clientId": "user-0038",
+    "clientName": "Shirley Mitchell",
     "taxYear": 2024,
     "clientPhase": "reviewing",
     "staffState": "extraction-review",
@@ -383,9 +431,9 @@
     "blockers": []
   },
   {
-    "id": "return-0024",
-    "clientId": "user-0035",
-    "clientName": "Myron Gerhold",
+    "id": "return-0028",
+    "clientId": "user-0039",
+    "clientName": "Latoya Beier",
     "taxYear": 2025,
     "clientPhase": "filed",
     "staffState": "e-filed",
@@ -395,9 +443,9 @@
     "blockers": []
   },
   {
-    "id": "return-0025",
-    "clientId": "user-0036",
-    "clientName": "Mariam Streich",
+    "id": "return-0029",
+    "clientId": "user-0040",
+    "clientName": "Raymundo Armstrong",
     "taxYear": 2025,
     "clientPhase": "needs-your-answer",
     "staffState": "open-items",
@@ -407,9 +455,9 @@
     "blockers": []
   },
   {
-    "id": "return-0026",
-    "clientId": "user-0037",
-    "clientName": "Veda Mayer",
+    "id": "return-0030",
+    "clientId": "user-0041",
+    "clientName": "Vickie Keebler",
     "taxYear": 2025,
     "clientPhase": "gathering-documents",
     "staffState": "docs-pending",
@@ -419,9 +467,9 @@
     "blockers": []
   },
   {
-    "id": "return-0027",
-    "clientId": "user-0038",
-    "clientName": "Cheryl Jacobson",
+    "id": "return-0031",
+    "clientId": "user-0042",
+    "clientName": "Walter Lowe-Cummings",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "extraction-review",
@@ -431,9 +479,9 @@
     "blockers": []
   },
   {
-    "id": "return-0028",
-    "clientId": "user-0039",
-    "clientName": "Ariane O'Reilly",
+    "id": "return-0032",
+    "clientId": "user-0043",
+    "clientName": "Frank Jenkins",
     "taxYear": 2025,
     "clientPhase": "gathering-documents",
     "staffState": "docs-pending",
@@ -443,9 +491,9 @@
     "blockers": []
   },
   {
-    "id": "return-0029",
-    "clientId": "user-0040",
-    "clientName": "Denise Jacobs III",
+    "id": "return-0033",
+    "clientId": "user-0044",
+    "clientName": "Ophelia Hansen",
     "taxYear": 2025,
     "clientPhase": "gathering-documents",
     "staffState": "docs-pending",
@@ -455,9 +503,9 @@
     "blockers": []
   },
   {
-    "id": "return-0030",
-    "clientId": "user-0041",
-    "clientName": "Mrs. Myra Robel",
+    "id": "return-0034",
+    "clientId": "user-0045",
+    "clientName": "Wyatt Marvin",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "extraction-review",
@@ -467,9 +515,9 @@
     "blockers": []
   },
   {
-    "id": "return-0031",
-    "clientId": "user-0042",
-    "clientName": "Dr. Ira Osinski",
+    "id": "return-0035",
+    "clientId": "user-0046",
+    "clientName": "Katheryn Rutherford",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "manager-review",
@@ -479,9 +527,9 @@
     "blockers": []
   },
   {
-    "id": "return-0032",
-    "clientId": "user-0043",
-    "clientName": "Otha Wyman",
+    "id": "return-0036",
+    "clientId": "user-0047",
+    "clientName": "Maurine Labadie",
     "taxYear": 2025,
     "clientPhase": "filed",
     "staffState": "e-filed",
@@ -491,9 +539,9 @@
     "blockers": []
   },
   {
-    "id": "return-0033",
-    "clientId": "user-0044",
-    "clientName": "Karla Lueilwitz",
+    "id": "return-0037",
+    "clientId": "user-0048",
+    "clientName": "Rosario Towne",
     "taxYear": 2024,
     "clientPhase": "reviewing",
     "staffState": "partner-review",
@@ -503,9 +551,9 @@
     "blockers": []
   },
   {
-    "id": "return-0034",
-    "clientId": "user-0045",
-    "clientName": "Lucia Prosacco",
+    "id": "return-0038",
+    "clientId": "user-0049",
+    "clientName": "Edmond Crist",
     "taxYear": 2024,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -515,9 +563,9 @@
     "blockers": []
   },
   {
-    "id": "return-0035",
-    "clientId": "user-0046",
-    "clientName": "Ms. Freida Stark",
+    "id": "return-0039",
+    "clientId": "user-0050",
+    "clientName": "Hannah Reichel",
     "taxYear": 2025,
     "clientPhase": "filed",
     "staffState": "e-filed",
@@ -527,9 +575,9 @@
     "blockers": []
   },
   {
-    "id": "return-0036",
-    "clientId": "user-0047",
-    "clientName": "Edmond Welch",
+    "id": "return-0040",
+    "clientId": "user-0051",
+    "clientName": "Miguel Cummerata",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -539,9 +587,9 @@
     "blockers": []
   },
   {
-    "id": "return-0037",
-    "clientId": "user-0048",
-    "clientName": "Hannah Mraz",
+    "id": "return-0041",
+    "clientId": "user-0052",
+    "clientName": "Katherine Littel",
     "taxYear": 2024,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -551,9 +599,9 @@
     "blockers": []
   },
   {
-    "id": "return-0038",
-    "clientId": "user-0049",
-    "clientName": "Miguel Swift",
+    "id": "return-0042",
+    "clientId": "user-0053",
+    "clientName": "Breana Waelchi",
     "taxYear": 2025,
     "clientPhase": "gathering-documents",
     "staffState": "docs-pending",
@@ -563,9 +611,9 @@
     "blockers": []
   },
   {
-    "id": "return-0039",
-    "clientId": "user-0050",
-    "clientName": "Katherine Bauch",
+    "id": "return-0043",
+    "clientId": "user-0054",
+    "clientName": "Nick Sauer",
     "taxYear": 2024,
     "clientPhase": "ready-to-sign",
     "staffState": "client-signature",
@@ -575,9 +623,9 @@
     "blockers": []
   },
   {
-    "id": "return-0040",
-    "clientId": "user-0051",
-    "clientName": "Breana Metz I",
+    "id": "return-0044",
+    "clientId": "user-0055",
+    "clientName": "Philip Mann",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -587,9 +635,9 @@
     "blockers": []
   },
   {
-    "id": "return-0041",
-    "clientId": "user-0052",
-    "clientName": "Mya Sauer",
+    "id": "return-0045",
+    "clientId": "user-0056",
+    "clientName": "Clyde Sporer",
     "taxYear": 2025,
     "clientPhase": "needs-your-answer",
     "staffState": "open-items",
@@ -599,9 +647,9 @@
     "blockers": []
   },
   {
-    "id": "return-0042",
-    "clientId": "user-0053",
-    "clientName": "Ara Mann",
+    "id": "return-0046",
+    "clientId": "user-0057",
+    "clientName": "Johanna Ledner",
     "taxYear": 2025,
     "clientPhase": "gathering-documents",
     "staffState": "docs-pending",
@@ -611,9 +659,9 @@
     "blockers": []
   },
   {
-    "id": "return-0043",
-    "clientId": "user-0054",
-    "clientName": "Ollie Sporer",
+    "id": "return-0047",
+    "clientId": "user-0058",
+    "clientName": "Jeannie Aufderhar",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "manager-review",
@@ -630,9 +678,9 @@
     ]
   },
   {
-    "id": "return-0044",
-    "clientId": "user-0055",
-    "clientName": "Percy Ledner",
+    "id": "return-0048",
+    "clientId": "user-0059",
+    "clientName": "Alonzo Little",
     "taxYear": 2024,
     "clientPhase": "reviewing",
     "staffState": "extraction-review",
@@ -642,9 +690,9 @@
     "blockers": []
   },
   {
-    "id": "return-0045",
-    "clientId": "user-0056",
-    "clientName": "Inez Aufderhar",
+    "id": "return-0049",
+    "clientId": "user-0060",
+    "clientName": "Samuel Quitzon",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "manager-review",
@@ -654,9 +702,9 @@
     "blockers": []
   },
   {
-    "id": "return-0046",
-    "clientId": "user-0057",
-    "clientName": "Mr. Leo Little",
+    "id": "return-0050",
+    "clientId": "user-0061",
+    "clientName": "Justin Rohan",
     "taxYear": 2025,
     "clientPhase": "gathering-documents",
     "staffState": "docs-pending",
@@ -666,9 +714,9 @@
     "blockers": []
   },
   {
-    "id": "return-0047",
-    "clientId": "user-0058",
-    "clientName": "Orville Grady IV",
+    "id": "return-0051",
+    "clientId": "user-0062",
+    "clientName": "Alicia Zboncak",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -678,9 +726,9 @@
     "blockers": []
   },
   {
-    "id": "return-0048",
-    "clientId": "user-0059",
-    "clientName": "Nannie Morar",
+    "id": "return-0052",
+    "clientId": "user-0063",
+    "clientName": "Vicente Ortiz",
     "taxYear": 2024,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -690,9 +738,9 @@
     "blockers": []
   },
   {
-    "id": "return-0049",
-    "clientId": "user-0060",
-    "clientName": "Wilma Wuckert",
+    "id": "return-0053",
+    "clientId": "user-0064",
+    "clientName": "Ella Larkin-Langosh",
     "taxYear": 2025,
     "clientPhase": "filed",
     "staffState": "e-filed",
@@ -702,9 +750,9 @@
     "blockers": []
   },
   {
-    "id": "return-0050",
-    "clientId": "user-0061",
-    "clientName": "Magnolia Wisoky",
+    "id": "return-0054",
+    "clientId": "user-0065",
+    "clientName": "Lauretta Klein",
     "taxYear": 2025,
     "clientPhase": "reviewing",
     "staffState": "preparation",
@@ -719,53 +767,5 @@
         "since": "2026-07-27T12:00:00.000Z"
       }
     ]
-  },
-  {
-    "id": "return-0051",
-    "clientId": "user-0062",
-    "clientName": "Jolie Bahringer",
-    "taxYear": 2025,
-    "clientPhase": "reviewing",
-    "staffState": "preparation",
-    "ownerRole": "firm",
-    "assignedTo": "user-nadia-osei",
-    "dueDate": "2026-10-15T00:00:00.000Z",
-    "blockers": []
-  },
-  {
-    "id": "return-0052",
-    "clientId": "user-0063",
-    "clientName": "Lea Schinner",
-    "taxYear": 2024,
-    "clientPhase": "needs-your-answer",
-    "staffState": "open-items",
-    "ownerRole": "firm",
-    "assignedTo": "user-0010",
-    "dueDate": "2025-04-15T00:00:00.000Z",
-    "blockers": []
-  },
-  {
-    "id": "return-0053",
-    "clientId": "user-0064",
-    "clientName": "Justin Tremblay-Graham",
-    "taxYear": 2025,
-    "clientPhase": "reviewing",
-    "staffState": "preparation",
-    "ownerRole": "firm",
-    "assignedTo": "user-0003",
-    "dueDate": "2026-10-15T00:00:00.000Z",
-    "blockers": []
-  },
-  {
-    "id": "return-0054",
-    "clientId": "user-0065",
-    "clientName": "Elmer Wehner",
-    "taxYear": 2025,
-    "clientPhase": "needs-your-answer",
-    "staffState": "open-items",
-    "ownerRole": "firm",
-    "assignedTo": "user-0011",
-    "dueDate": "2026-10-15T00:00:00.000Z",
-    "blockers": []
   }
 ]

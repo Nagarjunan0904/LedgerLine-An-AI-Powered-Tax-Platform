@@ -1,7 +1,13 @@
 import { differenceInCalendarDays, differenceInHours } from "date-fns"
 
-import type { Document, OpenItem, Return, Role, Severity } from "@/types"
-import { getOpenItemsForReturn, getQuestionnaireItemsForReturn, getReturn, getThreadsForObject } from "@/data/fixtures"
+import type { Document, OpenItem, Return, ReturnField, Role, Severity } from "@/types"
+import {
+  getField,
+  getOpenItemsForReturn,
+  getQuestionnaireItemsForReturn,
+  getReturn,
+  getThreadsForObject,
+} from "@/data/fixtures"
 
 /**
  * A client's three home-page states, derived from their own data rather than a manual
@@ -93,7 +99,15 @@ const WEIGHTS: FactorWeights = {
 }
 
 /** Client roles never work an open-item queue — rankForRole only makes sense for the rest. */
-type StaffRole = Exclude<Role, "individual" | "business-owner">
+export type StaffRole = Exclude<Role, "individual" | "business-owner">
+
+const STAFF_ROLES = new Set<Role>(["preparer", "seasonal", "reviewer", "firm-admin"])
+
+/** Narrows a Role to a StaffRole at runtime — pages that gate on isClientRole already know
+ * this holds, but rankForRole's signature needs the type-checker to know it too. */
+export function isStaffRole(role: Role): role is StaffRole {
+  return STAFF_ROLES.has(role)
+}
 
 /**
  * Same six factors, different emphasis per role. A preparer's queue should surface their own
@@ -200,14 +214,20 @@ function ownershipFactor(item: OpenItem, ctx: ScoringContext, weight: number): F
   return { points: 0, reason: null }
 }
 
+/** Calendar days since this item's last recorded activity, or null when it has none at all —
+ * shared by stalenessFactor and by StaffHome's team-view "oldest untouched item" pick, so both
+ * ask the same question of the same fact. */
+export function daysSinceLastActivity(item: OpenItem, now: Date): number | null {
+  const last = latestMessage(item)
+  return last ? differenceInCalendarDays(now, new Date(last.sentAt)) : null
+}
+
 /** How long since anything happened here. An item whose last activity was the client replying
  * an hour ago isn't stale — it's the opposite (see clientResponseFactor) — so this only fires
  * once activity has gone quiet for at least 5 days. */
 function stalenessFactor(item: OpenItem, ctx: ScoringContext, weight: number): FactorResult {
-  const last = latestMessage(item)
-  if (!last) return { points: 0, reason: null }
-  const daysSince = differenceInCalendarDays(ctx.now, new Date(last.sentAt))
-  if (daysSince < 5) return { points: 0, reason: null }
+  const daysSince = daysSinceLastActivity(item, ctx.now)
+  if (daysSince === null || daysSince < 5) return { points: 0, reason: null }
   const points = weight * clamp(daysSince / 21, 0, 1.5)
   return { points, reason: { factor: "staleness", label: `No activity in ${plural(daysSince, "day")}`, points } }
 }
@@ -263,6 +283,15 @@ function weightsForRole(role: StaffRole): FactorWeights {
   return Object.fromEntries(entries) as FactorWeights
 }
 
+/** A filed return is closed — nothing can be uploaded, answered, or reviewed on it anymore.
+ * Its open items (if any are still technically unresolved) are not work; they're bookkeeping.
+ * Excluded before scoring, not just ranked low, so a filed return can never surface as
+ * something to act on regardless of how overdue or severe its stale open items look. */
+function isActionable(item: OpenItem): boolean {
+  const ret = getReturn(item.returnId)
+  return ret !== undefined && ret.clientPhase !== "filed"
+}
+
 /**
  * The same open items, ranked differently depending on who's looking — see
  * ROLE_WEIGHT_MULTIPLIERS for exactly what shifts between a preparer's own-queue view and a
@@ -270,5 +299,42 @@ function weightsForRole(role: StaffRole): FactorWeights {
  */
 export function rankForRole(items: OpenItem[], role: StaffRole, userId: string): ScoredItem[] {
   const ctx: ScoringContext = { now: new Date(), userId, weights: weightsForRole(role) }
-  return items.map((item) => ({ item, ...scoreItem(item, ctx) })).sort((a, b) => b.score - a.score)
+  return items
+    .filter(isActionable)
+    .map((item) => ({ item, ...scoreItem(item, ctx) }))
+    .sort((a, b) => b.score - a.score)
+}
+
+// ---------------------------------------------------------------------------
+// Deep links — resolving an open item to the exact spot in the return it's about, not just
+// the return's front page. StaffHome uses this for the primary action on every ranked item.
+// ---------------------------------------------------------------------------
+
+export interface ItemDeepLink {
+  to: string
+  kind: "field" | "document" | "item"
+}
+
+/** An item's first linked field, if it has one — the actual value at stake, for display
+ * alongside the item (via FieldBox, never inline-styled) rather than just its description. */
+export function getPrimaryLinkedField(item: OpenItem): ReturnField | undefined {
+  const fieldRef = item.linkedObjects.find((ref) => ref.type === "field")
+  return fieldRef ? getField(fieldRef.id) : undefined
+}
+
+/**
+ * Where "work on this" actually goes: the field under review if this item is about one, the
+ * document if it's about one, otherwise the item's own entry. Preference order matches
+ * specificity — a field is a more exact destination than the document it was extracted from.
+ */
+export function getItemDeepLink(item: OpenItem): ItemDeepLink {
+  const field = getPrimaryLinkedField(item)
+  if (field) {
+    return { to: `/returns/${item.returnId}/review?field=${encodeURIComponent(field.formLine)}`, kind: "field" }
+  }
+  const docRef = item.linkedObjects.find((ref) => ref.type === "document")
+  if (docRef) {
+    return { to: `/returns/${item.returnId}/documents/${docRef.id}`, kind: "document" }
+  }
+  return { to: `/returns/${item.returnId}/items?item=${item.id}`, kind: "item" }
 }

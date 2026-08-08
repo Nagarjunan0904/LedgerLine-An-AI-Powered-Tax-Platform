@@ -142,90 +142,104 @@
   {
     "id": "ext-0004",
     "documentId": "doc-0011",
-    "page": 2,
+    "page": 1,
     "bbox": {
-      "x": 0.11,
-      "y": 0.32,
-      "w": 0.35,
-      "h": 0.03
+      "x": 0.45,
+      "y": 0.3,
+      "w": 0.34,
+      "h": 0.05
     },
     "label": "Box 1 — Ordinary business income",
-    "rawValue": "$7,637.29",
-    "confidence": 0.93
+    "rawValue": "$35,888.69",
+    "confidence": 0.69
   },
   {
     "id": "ext-0005",
     "documentId": "doc-0012",
-    "page": 2,
+    "page": 1,
     "bbox": {
-      "x": 0.43,
-      "y": 0.25,
-      "w": 0.15,
-      "h": 0.04
+      "x": 0.19,
+      "y": 0.57,
+      "w": 0.18,
+      "h": 0.05
     },
-    "label": "Column (e) — Cost basis",
-    "rawValue": "$27,675.62",
-    "confidence": 0.9
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$103,630.83",
+    "confidence": 0.84
   },
   {
     "id": "ext-0006",
     "documentId": "doc-0013",
     "page": 1,
     "bbox": {
-      "x": 0.17,
-      "y": 0.26,
-      "w": 0.24,
+      "x": 0.08,
+      "y": 0.62,
+      "w": 0.33,
       "h": 0.04
     },
-    "label": "Box 1 — Interest income",
-    "rawValue": "$1,339.63",
-    "confidence": 0.98
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$167,084.83",
+    "confidence": 0.99
   },
   {
     "id": "ext-0007",
-    "documentId": "doc-0014",
-    "page": 1,
-    "bbox": {
-      "x": 0.23,
-      "y": 0.78,
-      "w": 0.25,
-      "h": 0.03
-    },
-    "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$202,295.86",
-    "confidence": 0.8
-  },
-  {
-    "id": "ext-0008",
     "documentId": "doc-0015",
     "page": 1,
     "bbox": {
-      "x": 0.3,
-      "y": 0.68,
-      "w": 0.35,
+      "x": 0.2,
+      "y": 0.14,
+      "w": 0.29,
       "h": 0.03
     },
     "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$186,712.99",
+    "rawValue": "$41,592.56",
     "confidence": 0.84
   },
   {
-    "id": "ext-0009",
+    "id": "ext-0008",
     "documentId": "doc-0016",
     "page": 1,
     "bbox": {
-      "x": 0.29,
-      "y": 0.23,
-      "w": 0.21,
+      "x": 0.56,
+      "y": 0.49,
+      "w": 0.24,
       "h": 0.04
     },
-    "label": "Box 1 — Mortgage interest received",
-    "rawValue": "$16,599.02",
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$1,940.81",
+    "confidence": 0.5
+  },
+  {
+    "id": "ext-0009",
+    "documentId": "doc-0017",
+    "page": 1,
+    "bbox": {
+      "x": 0.48,
+      "y": 0.84,
+      "w": 0.23,
+      "h": 0.05
+    },
+    "label": "Total amount",
+    "rawValue": "$1,708.12",
     "confidence": 0.94
   },
   {
     "id": "ext-0010",
-    "documentId": "doc-0017",
+    "documentId": "doc-0018",
+    "page": 1,
+    "bbox": {
+      "x": 0.41,
+      "y": 0.28,
+      "w": 0.3,
+      "h": 0.02
+    },
+    "label": "Column (e) — Cost basis",
+    "rawValue": "$7,873.87",
+    "confidence": 0.84
+  },
+  {
+    "id": "ext-0011",
+    "documentId": "doc-0019",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -238,8 +252,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0011",
-    "documentId": "doc-0019",
+    "id": "ext-0012",
+    "documentId": "doc-0021",
     "page": 3,
     "bbox": {
       "x": 0.55,
@@ -252,344 +266,372 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0012",
-    "documentId": "doc-0020",
-    "page": 1,
-    "bbox": {
-      "x": 0.6,
-      "y": 0.3,
-      "w": 0.15,
-      "h": 0.03
-    },
-    "label": "Box 1 — Mortgage interest received",
-    "rawValue": "$3,614.84",
-    "confidence": 0.93
-  },
-  {
     "id": "ext-0013",
-    "documentId": "doc-0021",
-    "page": 1,
-    "bbox": {
-      "x": 0.36,
-      "y": 0.47,
-      "w": 0.26,
-      "h": 0.02
-    },
-    "label": "Box 1 — Mortgage interest received",
-    "rawValue": "$10,360.08",
-    "confidence": 0.92
-  },
-  {
-    "id": "ext-0014",
     "documentId": "doc-0022",
     "page": 1,
     "bbox": {
-      "x": 0.19,
-      "y": 0.8,
-      "w": 0.19,
-      "h": 0.02
+      "x": 0.22,
+      "y": 0.12,
+      "w": 0.21,
+      "h": 0.05
     },
-    "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$115,695.39",
-    "confidence": 0.99
-  },
-  {
-    "id": "ext-0015",
-    "documentId": "doc-0023",
-    "page": 1,
-    "bbox": {
-      "x": 0.44,
-      "y": 0.26,
-      "w": 0.19,
-      "h": 0.03
-    },
-    "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$48,407.63",
-    "confidence": 0.92
-  },
-  {
-    "id": "ext-0016",
-    "documentId": "doc-0025",
-    "page": 1,
-    "bbox": {
-      "x": 0.08,
-      "y": 0.8,
-      "w": 0.17,
-      "h": 0.04
-    },
-    "label": "Box 1 — Ordinary business income",
-    "rawValue": "$30,879.45",
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$21,872.11",
     "confidence": 0.94
   },
   {
-    "id": "ext-0017",
+    "id": "ext-0014",
+    "documentId": "doc-0023",
+    "page": 1,
+    "bbox": {
+      "x": 0.41,
+      "y": 0.69,
+      "w": 0.19,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$137,129.13",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0015",
     "documentId": "doc-0026",
     "page": 1,
     "bbox": {
-      "x": 0.57,
-      "y": 0.81,
-      "w": 0.25,
-      "h": 0.05
+      "x": 0.25,
+      "y": 0.18,
+      "w": 0.3,
+      "h": 0.02
     },
-    "label": "Box 1 — Interest income",
-    "rawValue": "$2,586.45",
-    "confidence": 0.45
+    "label": "Total amount",
+    "rawValue": "$2,037.78",
+    "confidence": 0.95
   },
   {
-    "id": "ext-0018",
+    "id": "ext-0016",
     "documentId": "doc-0027",
     "page": 1,
     "bbox": {
-      "x": 0.44,
-      "y": 0.52,
-      "w": 0.25,
-      "h": 0.05
+      "x": 0.36,
+      "y": 0.54,
+      "w": 0.31,
+      "h": 0.03
     },
-    "label": "Column (e) — Cost basis",
-    "rawValue": "$21,641.18",
-    "confidence": 0.98
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$143,995.15",
+    "confidence": 0.93
   },
   {
-    "id": "ext-0019",
+    "id": "ext-0017",
     "documentId": "doc-0028",
     "page": 1,
     "bbox": {
-      "x": 0.15,
-      "y": 0.22,
-      "w": 0.23,
-      "h": 0.05
-    },
-    "label": "Reported amount",
-    "rawValue": "$5,447.76",
-    "confidence": 0.92
-  },
-  {
-    "id": "ext-0020",
-    "documentId": "doc-0031",
-    "page": 1,
-    "bbox": {
-      "x": 0.13,
-      "y": 0.12,
-      "w": 0.34,
-      "h": 0.03
-    },
-    "label": "Reported amount",
-    "rawValue": "$5,562.05",
-    "confidence": 0.8
-  },
-  {
-    "id": "ext-0021",
-    "documentId": "doc-0032",
-    "page": 1,
-    "bbox": {
-      "x": 0.31,
-      "y": 0.45,
-      "w": 0.2,
-      "h": 0.04
-    },
-    "label": "Reported amount",
-    "rawValue": "$4,483.97",
-    "confidence": 0.99
-  },
-  {
-    "id": "ext-0022",
-    "documentId": "doc-0033",
-    "page": 1,
-    "bbox": {
-      "x": 0.53,
-      "y": 0.42,
-      "w": 0.28,
-      "h": 0.05
-    },
-    "label": "Box 1a — Total ordinary dividends",
-    "rawValue": "$2,954.38",
-    "confidence": 0.99
-  },
-  {
-    "id": "ext-0023",
-    "documentId": "doc-0034",
-    "page": 1,
-    "bbox": {
-      "x": 0.09,
-      "y": 0.5,
-      "w": 0.2,
+      "x": 0.6,
+      "y": 0.14,
+      "w": 0.16,
       "h": 0.04
     },
     "label": "Box 1 — Interest income",
-    "rawValue": "$2,670.45",
-    "confidence": 0.93
+    "rawValue": "$1,580.07",
+    "confidence": 0.95
   },
   {
-    "id": "ext-0024",
-    "documentId": "doc-0035",
+    "id": "ext-0018",
+    "documentId": "doc-0029",
     "page": 1,
     "bbox": {
-      "x": 0.29,
-      "y": 0.38,
-      "w": 0.33,
-      "h": 0.03
-    },
-    "label": "Box 1 — Ordinary business income",
-    "rawValue": "$25,448.05",
-    "confidence": 0.92
-  },
-  {
-    "id": "ext-0025",
-    "documentId": "doc-0036",
-    "page": 1,
-    "bbox": {
-      "x": 0.2,
-      "y": 0.22,
-      "w": 0.2,
-      "h": 0.03
-    },
-    "label": "Box 1a — Total ordinary dividends",
-    "rawValue": "$2,814.58",
-    "confidence": 0.47
-  },
-  {
-    "id": "ext-0026",
-    "documentId": "doc-0037",
-    "page": 1,
-    "bbox": {
-      "x": 0.4,
-      "y": 0.52,
-      "w": 0.34,
-      "h": 0.03
-    },
-    "label": "Box 1 — Ordinary business income",
-    "rawValue": "$37,177.35",
-    "confidence": 0.86
-  },
-  {
-    "id": "ext-0027",
-    "documentId": "doc-0038",
-    "page": 1,
-    "bbox": {
-      "x": 0.21,
-      "y": 0.58,
-      "w": 0.31,
-      "h": 0.02
+      "x": 0.56,
+      "y": 0.8,
+      "w": 0.24,
+      "h": 0.05
     },
     "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$73,183.80",
+    "rawValue": "$105,580.97",
     "confidence": 0.93
   },
   {
-    "id": "ext-0028",
-    "documentId": "doc-0039",
+    "id": "ext-0019",
+    "documentId": "doc-0031",
     "page": 1,
     "bbox": {
-      "x": 0.38,
-      "y": 0.32,
-      "w": 0.32,
+      "x": 0.17,
+      "y": 0.58,
+      "w": 0.16,
       "h": 0.04
     },
     "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$182,856.01",
-    "confidence": 0.91
+    "rawValue": "$91,686.08",
+    "confidence": 0.7
   },
   {
-    "id": "ext-0029",
+    "id": "ext-0020",
+    "documentId": "doc-0032",
+    "page": 1,
+    "bbox": {
+      "x": 0.59,
+      "y": 0.46,
+      "w": 0.24,
+      "h": 0.02
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$54,277.82",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0021",
+    "documentId": "doc-0033",
+    "page": 1,
+    "bbox": {
+      "x": 0.31,
+      "y": 0.63,
+      "w": 0.19,
+      "h": 0.02
+    },
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$42,634.83",
+    "confidence": 0.74
+  },
+  {
+    "id": "ext-0022",
+    "documentId": "doc-0034",
+    "page": 1,
+    "bbox": {
+      "x": 0.6,
+      "y": 0.41,
+      "w": 0.19,
+      "h": 0.04
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$72,845.88",
+    "confidence": 0.88
+  },
+  {
+    "id": "ext-0023",
+    "documentId": "doc-0035",
+    "page": 1,
+    "bbox": {
+      "x": 0.58,
+      "y": 0.38,
+      "w": 0.25,
+      "h": 0.03
+    },
+    "label": "Reported amount",
+    "rawValue": "$2,992.98",
+    "confidence": 0.97
+  },
+  {
+    "id": "ext-0024",
+    "documentId": "doc-0037",
+    "page": 1,
+    "bbox": {
+      "x": 0.08,
+      "y": 0.66,
+      "w": 0.28,
+      "h": 0.04
+    },
+    "label": "Total amount",
+    "rawValue": "$328.61",
+    "confidence": 0.89
+  },
+  {
+    "id": "ext-0025",
+    "documentId": "doc-0038",
+    "page": 1,
+    "bbox": {
+      "x": 0.55,
+      "y": 0.26,
+      "w": 0.34,
+      "h": 0.03
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,937.05",
+    "confidence": 0.83
+  },
+  {
+    "id": "ext-0026",
+    "documentId": "doc-0039",
+    "page": 1,
+    "bbox": {
+      "x": 0.15,
+      "y": 0.85,
+      "w": 0.24,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$289.99",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0027",
     "documentId": "doc-0040",
     "page": 1,
     "bbox": {
-      "x": 0.43,
-      "y": 0.65,
-      "w": 0.24,
-      "h": 0.03
+      "x": 0.14,
+      "y": 0.52,
+      "w": 0.31,
+      "h": 0.02
     },
-    "label": "Total amount",
-    "rawValue": "$37.87",
-    "confidence": 0.92
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "-$6,673.26",
+    "confidence": 0.84
   },
   {
-    "id": "ext-0030",
+    "id": "ext-0028",
+    "documentId": "doc-0041",
+    "page": 1,
+    "bbox": {
+      "x": 0.49,
+      "y": 0.83,
+      "w": 0.18,
+      "h": 0.05
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$1,933.53",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0029",
     "documentId": "doc-0042",
     "page": 1,
     "bbox": {
       "x": 0.34,
-      "y": 0.28,
-      "w": 0.34,
-      "h": 0.02
+      "y": 0.52,
+      "w": 0.16,
+      "h": 0.05
     },
-    "label": "Box 1 — Mortgage interest received",
-    "rawValue": "$15,767.63",
-    "confidence": 0.96
+    "label": "Total amount",
+    "rawValue": "$1,597.19",
+    "confidence": 0.87
+  },
+  {
+    "id": "ext-0030",
+    "documentId": "doc-0043",
+    "page": 1,
+    "bbox": {
+      "x": 0.4,
+      "y": 0.51,
+      "w": 0.2,
+      "h": 0.04
+    },
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$4,679.12",
+    "confidence": 0.88
   },
   {
     "id": "ext-0031",
     "documentId": "doc-0044",
     "page": 1,
     "bbox": {
-      "x": 0.33,
-      "y": 0.45,
-      "w": 0.19,
-      "h": 0.03
+      "x": 0.31,
+      "y": 0.71,
+      "w": 0.32,
+      "h": 0.05
     },
-    "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$26,281.64",
-    "confidence": 0.94
+    "label": "Box 1 — Interest income",
+    "rawValue": "$90.38",
+    "confidence": 0.97
   },
   {
     "id": "ext-0032",
     "documentId": "doc-0045",
     "page": 1,
     "bbox": {
-      "x": 0.58,
-      "y": 0.5,
+      "x": 0.48,
+      "y": 0.2,
       "w": 0.18,
-      "h": 0.05
+      "h": 0.03
     },
-    "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$143,598.29",
-    "confidence": 0.42
+    "label": "Box 1a — Total ordinary dividends",
+    "rawValue": "$173.31",
+    "confidence": 0.73
   },
   {
     "id": "ext-0033",
-    "documentId": "doc-0048",
+    "documentId": "doc-0046",
     "page": 1,
     "bbox": {
-      "x": 0.45,
-      "y": 0.77,
-      "w": 0.2,
+      "x": 0.35,
+      "y": 0.49,
+      "w": 0.17,
       "h": 0.03
     },
-    "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$107,414.61",
-    "confidence": 0.8
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$44,360.89",
+    "confidence": 0.99
   },
   {
     "id": "ext-0034",
-    "documentId": "doc-0049",
+    "documentId": "doc-0048",
     "page": 2,
     "bbox": {
-      "x": 0.22,
-      "y": 0.63,
-      "w": 0.24,
+      "x": 0.39,
+      "y": 0.71,
+      "w": 0.29,
       "h": 0.02
     },
-    "label": "Column (e) — Cost basis",
-    "rawValue": "$28,110.28",
-    "confidence": 0.51
+    "label": "Box 1 — Ordinary business income",
+    "rawValue": "$38,321.92",
+    "confidence": 0.87
   },
   {
     "id": "ext-0035",
-    "documentId": "doc-0050",
-    "page": 2,
+    "documentId": "doc-0049",
+    "page": 1,
     "bbox": {
-      "x": 0.1,
-      "y": 0.31,
-      "w": 0.26,
-      "h": 0.05
+      "x": 0.32,
+      "y": 0.63,
+      "w": 0.33,
+      "h": 0.03
     },
-    "label": "Total amount",
-    "rawValue": "$3,818.43",
-    "confidence": 0.85
+    "label": "Box 1 — Mortgage interest received",
+    "rawValue": "$18,672.63",
+    "confidence": 0.93
   },
   {
     "id": "ext-0036",
+    "documentId": "doc-0050",
+    "page": 1,
+    "bbox": {
+      "x": 0.3,
+      "y": 0.26,
+      "w": 0.17,
+      "h": 0.03
+    },
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$153,286.14",
+    "confidence": 0.94
+  },
+  {
+    "id": "ext-0037",
+    "documentId": "doc-0051",
+    "page": 1,
+    "bbox": {
+      "x": 0.44,
+      "y": 0.13,
+      "w": 0.2,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$3,054.61",
+    "confidence": 0.85
+  },
+  {
+    "id": "ext-0038",
     "documentId": "doc-0052",
+    "page": 1,
+    "bbox": {
+      "x": 0.56,
+      "y": 0.28,
+      "w": 0.17,
+      "h": 0.04
+    },
+    "label": "Box 1 — Interest income",
+    "rawValue": "$2,582.21",
+    "confidence": 0.75
+  },
+  {
+    "id": "ext-0039",
+    "documentId": "doc-0053",
     "page": 1,
     "bbox": {
       "x": 0.41,
@@ -597,13 +639,13 @@
       "w": 0.35,
       "h": 0.04
     },
-    "label": "Reported amount",
-    "rawValue": "$361.02",
+    "label": "Box 1 — Wages, tips, other compensation",
+    "rawValue": "$26,435.11",
     "confidence": 0.8
   },
   {
-    "id": "ext-0037",
-    "documentId": "doc-0053",
+    "id": "ext-0040",
+    "documentId": "doc-0054",
     "page": 1,
     "bbox": {
       "x": 0.27,
@@ -616,8 +658,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0038",
-    "documentId": "doc-0054",
+    "id": "ext-0041",
+    "documentId": "doc-0055",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -630,8 +672,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0039",
-    "documentId": "doc-0055",
+    "id": "ext-0042",
+    "documentId": "doc-0056",
     "page": 1,
     "bbox": {
       "x": 0.17,
@@ -644,8 +686,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0040",
-    "documentId": "doc-0056",
+    "id": "ext-0043",
+    "documentId": "doc-0057",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -658,8 +700,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0041",
-    "documentId": "doc-0057",
+    "id": "ext-0044",
+    "documentId": "doc-0058",
     "page": 1,
     "bbox": {
       "x": 0.28,
@@ -672,8 +714,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0042",
-    "documentId": "doc-0058",
+    "id": "ext-0045",
+    "documentId": "doc-0059",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -686,8 +728,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0043",
-    "documentId": "doc-0059",
+    "id": "ext-0046",
+    "documentId": "doc-0060",
     "page": 1,
     "bbox": {
       "x": 0.41,
@@ -700,8 +742,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0044",
-    "documentId": "doc-0060",
+    "id": "ext-0047",
+    "documentId": "doc-0061",
     "page": 1,
     "bbox": {
       "x": 0.12,
@@ -714,8 +756,8 @@
     "confidence": 0.86
   },
   {
-    "id": "ext-0045",
-    "documentId": "doc-0061",
+    "id": "ext-0048",
+    "documentId": "doc-0062",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -728,8 +770,8 @@
     "confidence": 0.48
   },
   {
-    "id": "ext-0046",
-    "documentId": "doc-0063",
+    "id": "ext-0049",
+    "documentId": "doc-0064",
     "page": 1,
     "bbox": {
       "x": 0.29,
@@ -742,8 +784,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0047",
-    "documentId": "doc-0064",
+    "id": "ext-0050",
+    "documentId": "doc-0065",
     "page": 1,
     "bbox": {
       "x": 0.45,
@@ -756,8 +798,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0048",
-    "documentId": "doc-0065",
+    "id": "ext-0051",
+    "documentId": "doc-0066",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -770,8 +812,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0049",
-    "documentId": "doc-0066",
+    "id": "ext-0052",
+    "documentId": "doc-0067",
     "page": 2,
     "bbox": {
       "x": 0.5,
@@ -784,8 +826,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0050",
-    "documentId": "doc-0067",
+    "id": "ext-0053",
+    "documentId": "doc-0068",
     "page": 1,
     "bbox": {
       "x": 0.23,
@@ -798,8 +840,8 @@
     "confidence": 0.57
   },
   {
-    "id": "ext-0051",
-    "documentId": "doc-0068",
+    "id": "ext-0054",
+    "documentId": "doc-0069",
     "page": 1,
     "bbox": {
       "x": 0.13,
@@ -812,8 +854,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0052",
-    "documentId": "doc-0069",
+    "id": "ext-0055",
+    "documentId": "doc-0070",
     "page": 1,
     "bbox": {
       "x": 0.37,
@@ -826,8 +868,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0053",
-    "documentId": "doc-0070",
+    "id": "ext-0056",
+    "documentId": "doc-0071",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -840,8 +882,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0054",
-    "documentId": "doc-0071",
+    "id": "ext-0057",
+    "documentId": "doc-0072",
     "page": 1,
     "bbox": {
       "x": 0.24,
@@ -854,8 +896,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0055",
-    "documentId": "doc-0072",
+    "id": "ext-0058",
+    "documentId": "doc-0073",
     "page": 2,
     "bbox": {
       "x": 0.16,
@@ -868,8 +910,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0056",
-    "documentId": "doc-0075",
+    "id": "ext-0059",
+    "documentId": "doc-0076",
     "page": 1,
     "bbox": {
       "x": 0.38,
@@ -882,8 +924,8 @@
     "confidence": 0.52
   },
   {
-    "id": "ext-0057",
-    "documentId": "doc-0076",
+    "id": "ext-0060",
+    "documentId": "doc-0077",
     "page": 1,
     "bbox": {
       "x": 0.11,
@@ -896,8 +938,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0058",
-    "documentId": "doc-0078",
+    "id": "ext-0061",
+    "documentId": "doc-0079",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -910,8 +952,8 @@
     "confidence": 0.63
   },
   {
-    "id": "ext-0059",
-    "documentId": "doc-0079",
+    "id": "ext-0062",
+    "documentId": "doc-0080",
     "page": 1,
     "bbox": {
       "x": 0.5,
@@ -924,8 +966,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0060",
-    "documentId": "doc-0081",
+    "id": "ext-0063",
+    "documentId": "doc-0082",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -938,8 +980,8 @@
     "confidence": 0.79
   },
   {
-    "id": "ext-0061",
-    "documentId": "doc-0082",
+    "id": "ext-0064",
+    "documentId": "doc-0083",
     "page": 2,
     "bbox": {
       "x": 0.28,
@@ -952,8 +994,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0062",
-    "documentId": "doc-0083",
+    "id": "ext-0065",
+    "documentId": "doc-0084",
     "page": 2,
     "bbox": {
       "x": 0.31,
@@ -966,8 +1008,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0063",
-    "documentId": "doc-0085",
+    "id": "ext-0066",
+    "documentId": "doc-0086",
     "page": 1,
     "bbox": {
       "x": 0.21,
@@ -980,8 +1022,8 @@
     "confidence": 0.86
   },
   {
-    "id": "ext-0064",
-    "documentId": "doc-0086",
+    "id": "ext-0067",
+    "documentId": "doc-0087",
     "page": 1,
     "bbox": {
       "x": 0.43,
@@ -994,8 +1036,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0065",
-    "documentId": "doc-0087",
+    "id": "ext-0068",
+    "documentId": "doc-0088",
     "page": 1,
     "bbox": {
       "x": 0.43,
@@ -1008,8 +1050,8 @@
     "confidence": 0.57
   },
   {
-    "id": "ext-0066",
-    "documentId": "doc-0088",
+    "id": "ext-0069",
+    "documentId": "doc-0089",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -1022,8 +1064,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0067",
-    "documentId": "doc-0089",
+    "id": "ext-0070",
+    "documentId": "doc-0090",
     "page": 1,
     "bbox": {
       "x": 0.49,
@@ -1036,8 +1078,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0068",
-    "documentId": "doc-0090",
+    "id": "ext-0071",
+    "documentId": "doc-0091",
     "page": 1,
     "bbox": {
       "x": 0.33,
@@ -1050,8 +1092,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0069",
-    "documentId": "doc-0091",
+    "id": "ext-0072",
+    "documentId": "doc-0092",
     "page": 1,
     "bbox": {
       "x": 0.19,
@@ -1064,8 +1106,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0070",
-    "documentId": "doc-0092",
+    "id": "ext-0073",
+    "documentId": "doc-0093",
     "page": 1,
     "bbox": {
       "x": 0.53,
@@ -1078,8 +1120,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0071",
-    "documentId": "doc-0093",
+    "id": "ext-0074",
+    "documentId": "doc-0094",
     "page": 1,
     "bbox": {
       "x": 0.36,
@@ -1092,8 +1134,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0072",
-    "documentId": "doc-0094",
+    "id": "ext-0075",
+    "documentId": "doc-0095",
     "page": 2,
     "bbox": {
       "x": 0.34,
@@ -1106,8 +1148,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0073",
-    "documentId": "doc-0095",
+    "id": "ext-0076",
+    "documentId": "doc-0096",
     "page": 1,
     "bbox": {
       "x": 0.46,
@@ -1120,8 +1162,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0074",
-    "documentId": "doc-0096",
+    "id": "ext-0077",
+    "documentId": "doc-0097",
     "page": 1,
     "bbox": {
       "x": 0.45,
@@ -1134,8 +1176,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0075",
-    "documentId": "doc-0097",
+    "id": "ext-0078",
+    "documentId": "doc-0098",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -1148,8 +1190,8 @@
     "confidence": 0.71
   },
   {
-    "id": "ext-0076",
-    "documentId": "doc-0098",
+    "id": "ext-0079",
+    "documentId": "doc-0099",
     "page": 3,
     "bbox": {
       "x": 0.27,
@@ -1162,8 +1204,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0077",
-    "documentId": "doc-0099",
+    "id": "ext-0080",
+    "documentId": "doc-0100",
     "page": 1,
     "bbox": {
       "x": 0.25,
@@ -1176,8 +1218,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0078",
-    "documentId": "doc-0101",
+    "id": "ext-0081",
+    "documentId": "doc-0102",
     "page": 3,
     "bbox": {
       "x": 0.53,
@@ -1190,8 +1232,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0079",
-    "documentId": "doc-0102",
+    "id": "ext-0082",
+    "documentId": "doc-0103",
     "page": 1,
     "bbox": {
       "x": 0.23,
@@ -1204,8 +1246,8 @@
     "confidence": 0.65
   },
   {
-    "id": "ext-0080",
-    "documentId": "doc-0103",
+    "id": "ext-0083",
+    "documentId": "doc-0104",
     "page": 1,
     "bbox": {
       "x": 0.26,
@@ -1218,8 +1260,8 @@
     "confidence": 0.98
   },
   {
-    "id": "ext-0081",
-    "documentId": "doc-0105",
+    "id": "ext-0084",
+    "documentId": "doc-0106",
     "page": 1,
     "bbox": {
       "x": 0.43,
@@ -1232,8 +1274,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0082",
-    "documentId": "doc-0107",
+    "id": "ext-0085",
+    "documentId": "doc-0108",
     "page": 1,
     "bbox": {
       "x": 0.19,
@@ -1246,8 +1288,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0083",
-    "documentId": "doc-0108",
+    "id": "ext-0086",
+    "documentId": "doc-0109",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -1260,8 +1302,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0084",
-    "documentId": "doc-0109",
+    "id": "ext-0087",
+    "documentId": "doc-0110",
     "page": 1,
     "bbox": {
       "x": 0.44,
@@ -1274,8 +1316,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0085",
-    "documentId": "doc-0110",
+    "id": "ext-0088",
+    "documentId": "doc-0111",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -1288,8 +1330,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0086",
-    "documentId": "doc-0112",
+    "id": "ext-0089",
+    "documentId": "doc-0113",
     "page": 1,
     "bbox": {
       "x": 0.37,
@@ -1302,8 +1344,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0087",
-    "documentId": "doc-0113",
+    "id": "ext-0090",
+    "documentId": "doc-0114",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -1316,8 +1358,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0088",
-    "documentId": "doc-0114",
+    "id": "ext-0091",
+    "documentId": "doc-0115",
     "page": 3,
     "bbox": {
       "x": 0.59,
@@ -1330,8 +1372,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0089",
-    "documentId": "doc-0115",
+    "id": "ext-0092",
+    "documentId": "doc-0116",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -1344,8 +1386,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0090",
-    "documentId": "doc-0116",
+    "id": "ext-0093",
+    "documentId": "doc-0117",
     "page": 1,
     "bbox": {
       "x": 0.57,
@@ -1358,8 +1400,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0091",
-    "documentId": "doc-0117",
+    "id": "ext-0094",
+    "documentId": "doc-0118",
     "page": 1,
     "bbox": {
       "x": 0.23,
@@ -1372,8 +1414,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0092",
-    "documentId": "doc-0118",
+    "id": "ext-0095",
+    "documentId": "doc-0119",
     "page": 1,
     "bbox": {
       "x": 0.41,
@@ -1386,8 +1428,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0093",
-    "documentId": "doc-0119",
+    "id": "ext-0096",
+    "documentId": "doc-0120",
     "page": 1,
     "bbox": {
       "x": 0.49,
@@ -1400,8 +1442,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0094",
-    "documentId": "doc-0121",
+    "id": "ext-0097",
+    "documentId": "doc-0122",
     "page": 1,
     "bbox": {
       "x": 0.57,
@@ -1414,8 +1456,8 @@
     "confidence": 0.83
   },
   {
-    "id": "ext-0095",
-    "documentId": "doc-0122",
+    "id": "ext-0098",
+    "documentId": "doc-0123",
     "page": 2,
     "bbox": {
       "x": 0.44,
@@ -1428,8 +1470,8 @@
     "confidence": 0.57
   },
   {
-    "id": "ext-0096",
-    "documentId": "doc-0123",
+    "id": "ext-0099",
+    "documentId": "doc-0124",
     "page": 1,
     "bbox": {
       "x": 0.32,
@@ -1442,8 +1484,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0097",
-    "documentId": "doc-0124",
+    "id": "ext-0100",
+    "documentId": "doc-0125",
     "page": 1,
     "bbox": {
       "x": 0.32,
@@ -1456,8 +1498,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0098",
-    "documentId": "doc-0125",
+    "id": "ext-0101",
+    "documentId": "doc-0126",
     "page": 1,
     "bbox": {
       "x": 0.29,
@@ -1470,8 +1512,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0099",
-    "documentId": "doc-0126",
+    "id": "ext-0102",
+    "documentId": "doc-0127",
     "page": 2,
     "bbox": {
       "x": 0.6,
@@ -1484,8 +1526,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0100",
-    "documentId": "doc-0127",
+    "id": "ext-0103",
+    "documentId": "doc-0128",
     "page": 1,
     "bbox": {
       "x": 0.32,
@@ -1498,8 +1540,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0101",
-    "documentId": "doc-0128",
+    "id": "ext-0104",
+    "documentId": "doc-0129",
     "page": 1,
     "bbox": {
       "x": 0.37,
@@ -1512,8 +1554,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0102",
-    "documentId": "doc-0130",
+    "id": "ext-0105",
+    "documentId": "doc-0131",
     "page": 2,
     "bbox": {
       "x": 0.12,
@@ -1526,8 +1568,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0103",
-    "documentId": "doc-0131",
+    "id": "ext-0106",
+    "documentId": "doc-0132",
     "page": 1,
     "bbox": {
       "x": 0.51,
@@ -1540,8 +1582,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0104",
-    "documentId": "doc-0132",
+    "id": "ext-0107",
+    "documentId": "doc-0133",
     "page": 1,
     "bbox": {
       "x": 0.51,
@@ -1554,8 +1596,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0105",
-    "documentId": "doc-0133",
+    "id": "ext-0108",
+    "documentId": "doc-0134",
     "page": 1,
     "bbox": {
       "x": 0.54,
@@ -1568,8 +1610,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0106",
-    "documentId": "doc-0134",
+    "id": "ext-0109",
+    "documentId": "doc-0135",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -1582,8 +1624,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0107",
-    "documentId": "doc-0135",
+    "id": "ext-0110",
+    "documentId": "doc-0136",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -1596,8 +1638,8 @@
     "confidence": 0.56
   },
   {
-    "id": "ext-0108",
-    "documentId": "doc-0136",
+    "id": "ext-0111",
+    "documentId": "doc-0137",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -1610,8 +1652,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0109",
-    "documentId": "doc-0137",
+    "id": "ext-0112",
+    "documentId": "doc-0138",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -1624,8 +1666,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0110",
-    "documentId": "doc-0138",
+    "id": "ext-0113",
+    "documentId": "doc-0139",
     "page": 1,
     "bbox": {
       "x": 0.09,
@@ -1638,8 +1680,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0111",
-    "documentId": "doc-0139",
+    "id": "ext-0114",
+    "documentId": "doc-0140",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -1652,8 +1694,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0112",
-    "documentId": "doc-0141",
+    "id": "ext-0115",
+    "documentId": "doc-0142",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -1666,8 +1708,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0113",
-    "documentId": "doc-0142",
+    "id": "ext-0116",
+    "documentId": "doc-0143",
     "page": 1,
     "bbox": {
       "x": 0.19,
@@ -1680,8 +1722,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0114",
-    "documentId": "doc-0143",
+    "id": "ext-0117",
+    "documentId": "doc-0144",
     "page": 1,
     "bbox": {
       "x": 0.13,
@@ -1694,8 +1736,8 @@
     "confidence": 0.74
   },
   {
-    "id": "ext-0115",
-    "documentId": "doc-0144",
+    "id": "ext-0118",
+    "documentId": "doc-0145",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -1708,8 +1750,8 @@
     "confidence": 0.98
   },
   {
-    "id": "ext-0116",
-    "documentId": "doc-0145",
+    "id": "ext-0119",
+    "documentId": "doc-0146",
     "page": 1,
     "bbox": {
       "x": 0.12,
@@ -1722,8 +1764,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0117",
-    "documentId": "doc-0147",
+    "id": "ext-0120",
+    "documentId": "doc-0148",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -1736,8 +1778,8 @@
     "confidence": 0.98
   },
   {
-    "id": "ext-0118",
-    "documentId": "doc-0148",
+    "id": "ext-0121",
+    "documentId": "doc-0149",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -1750,8 +1792,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0119",
-    "documentId": "doc-0149",
+    "id": "ext-0122",
+    "documentId": "doc-0150",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -1764,8 +1806,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0120",
-    "documentId": "doc-0150",
+    "id": "ext-0123",
+    "documentId": "doc-0151",
     "page": 1,
     "bbox": {
       "x": 0.27,
@@ -1778,8 +1820,8 @@
     "confidence": 0.59
   },
   {
-    "id": "ext-0121",
-    "documentId": "doc-0151",
+    "id": "ext-0124",
+    "documentId": "doc-0152",
     "page": 2,
     "bbox": {
       "x": 0.52,
@@ -1792,8 +1834,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0122",
-    "documentId": "doc-0152",
+    "id": "ext-0125",
+    "documentId": "doc-0153",
     "page": 1,
     "bbox": {
       "x": 0.47,
@@ -1806,8 +1848,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0123",
-    "documentId": "doc-0153",
+    "id": "ext-0126",
+    "documentId": "doc-0154",
     "page": 1,
     "bbox": {
       "x": 0.25,
@@ -1820,8 +1862,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0124",
-    "documentId": "doc-0155",
+    "id": "ext-0127",
+    "documentId": "doc-0156",
     "page": 1,
     "bbox": {
       "x": 0.25,
@@ -1834,8 +1876,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0125",
-    "documentId": "doc-0156",
+    "id": "ext-0128",
+    "documentId": "doc-0157",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -1848,8 +1890,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0126",
-    "documentId": "doc-0157",
+    "id": "ext-0129",
+    "documentId": "doc-0158",
     "page": 1,
     "bbox": {
       "x": 0.08,
@@ -1862,8 +1904,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0127",
-    "documentId": "doc-0158",
+    "id": "ext-0130",
+    "documentId": "doc-0159",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -1876,8 +1918,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0128",
-    "documentId": "doc-0159",
+    "id": "ext-0131",
+    "documentId": "doc-0160",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -1890,8 +1932,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0129",
-    "documentId": "doc-0160",
+    "id": "ext-0132",
+    "documentId": "doc-0161",
     "page": 1,
     "bbox": {
       "x": 0.6,
@@ -1904,8 +1946,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0130",
-    "documentId": "doc-0163",
+    "id": "ext-0133",
+    "documentId": "doc-0164",
     "page": 1,
     "bbox": {
       "x": 0.47,
@@ -1918,8 +1960,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0131",
-    "documentId": "doc-0164",
+    "id": "ext-0134",
+    "documentId": "doc-0165",
     "page": 1,
     "bbox": {
       "x": 0.49,
@@ -1932,8 +1974,8 @@
     "confidence": 0.83
   },
   {
-    "id": "ext-0132",
-    "documentId": "doc-0165",
+    "id": "ext-0135",
+    "documentId": "doc-0166",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -1946,8 +1988,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0133",
-    "documentId": "doc-0166",
+    "id": "ext-0136",
+    "documentId": "doc-0167",
     "page": 1,
     "bbox": {
       "x": 0.37,
@@ -1960,8 +2002,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0134",
-    "documentId": "doc-0167",
+    "id": "ext-0137",
+    "documentId": "doc-0168",
     "page": 1,
     "bbox": {
       "x": 0.14,
@@ -1974,8 +2016,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0135",
-    "documentId": "doc-0169",
+    "id": "ext-0138",
+    "documentId": "doc-0170",
     "page": 2,
     "bbox": {
       "x": 0.21,
@@ -1988,8 +2030,8 @@
     "confidence": 0.74
   },
   {
-    "id": "ext-0136",
-    "documentId": "doc-0170",
+    "id": "ext-0139",
+    "documentId": "doc-0171",
     "page": 3,
     "bbox": {
       "x": 0.22,
@@ -2002,8 +2044,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0137",
-    "documentId": "doc-0171",
+    "id": "ext-0140",
+    "documentId": "doc-0172",
     "page": 1,
     "bbox": {
       "x": 0.45,
@@ -2016,8 +2058,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0138",
-    "documentId": "doc-0172",
+    "id": "ext-0141",
+    "documentId": "doc-0173",
     "page": 1,
     "bbox": {
       "x": 0.23,
@@ -2030,8 +2072,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0139",
-    "documentId": "doc-0173",
+    "id": "ext-0142",
+    "documentId": "doc-0174",
     "page": 1,
     "bbox": {
       "x": 0.18,
@@ -2044,8 +2086,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0140",
-    "documentId": "doc-0174",
+    "id": "ext-0143",
+    "documentId": "doc-0175",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -2058,8 +2100,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0141",
-    "documentId": "doc-0176",
+    "id": "ext-0144",
+    "documentId": "doc-0177",
     "page": 2,
     "bbox": {
       "x": 0.2,
@@ -2072,8 +2114,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0142",
-    "documentId": "doc-0177",
+    "id": "ext-0145",
+    "documentId": "doc-0178",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -2086,8 +2128,8 @@
     "confidence": 0.77
   },
   {
-    "id": "ext-0143",
-    "documentId": "doc-0178",
+    "id": "ext-0146",
+    "documentId": "doc-0179",
     "page": 1,
     "bbox": {
       "x": 0.47,
@@ -2100,8 +2142,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0144",
-    "documentId": "doc-0179",
+    "id": "ext-0147",
+    "documentId": "doc-0180",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -2114,8 +2156,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0145",
-    "documentId": "doc-0181",
+    "id": "ext-0148",
+    "documentId": "doc-0182",
     "page": 1,
     "bbox": {
       "x": 0.51,
@@ -2128,8 +2170,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0146",
-    "documentId": "doc-0182",
+    "id": "ext-0149",
+    "documentId": "doc-0183",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -2142,8 +2184,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0147",
-    "documentId": "doc-0183",
+    "id": "ext-0150",
+    "documentId": "doc-0184",
     "page": 1,
     "bbox": {
       "x": 0.17,
@@ -2156,8 +2198,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0148",
-    "documentId": "doc-0184",
+    "id": "ext-0151",
+    "documentId": "doc-0185",
     "page": 1,
     "bbox": {
       "x": 0.33,
@@ -2170,8 +2212,8 @@
     "confidence": 0.83
   },
   {
-    "id": "ext-0149",
-    "documentId": "doc-0185",
+    "id": "ext-0152",
+    "documentId": "doc-0186",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -2184,8 +2226,8 @@
     "confidence": 0.5
   },
   {
-    "id": "ext-0150",
-    "documentId": "doc-0186",
+    "id": "ext-0153",
+    "documentId": "doc-0187",
     "page": 1,
     "bbox": {
       "x": 0.47,
@@ -2198,8 +2240,8 @@
     "confidence": 0.49
   },
   {
-    "id": "ext-0151",
-    "documentId": "doc-0187",
+    "id": "ext-0154",
+    "documentId": "doc-0188",
     "page": 1,
     "bbox": {
       "x": 0.38,
@@ -2212,8 +2254,8 @@
     "confidence": 0.83
   },
   {
-    "id": "ext-0152",
-    "documentId": "doc-0188",
+    "id": "ext-0155",
+    "documentId": "doc-0189",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -2226,8 +2268,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0153",
-    "documentId": "doc-0189",
+    "id": "ext-0156",
+    "documentId": "doc-0190",
     "page": 1,
     "bbox": {
       "x": 0.2,
@@ -2240,8 +2282,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0154",
-    "documentId": "doc-0190",
+    "id": "ext-0157",
+    "documentId": "doc-0191",
     "page": 1,
     "bbox": {
       "x": 0.4,
@@ -2254,8 +2296,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0155",
-    "documentId": "doc-0191",
+    "id": "ext-0158",
+    "documentId": "doc-0192",
     "page": 1,
     "bbox": {
       "x": 0.2,
@@ -2268,8 +2310,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0156",
-    "documentId": "doc-0192",
+    "id": "ext-0159",
+    "documentId": "doc-0193",
     "page": 1,
     "bbox": {
       "x": 0.34,
@@ -2282,8 +2324,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0157",
-    "documentId": "doc-0193",
+    "id": "ext-0160",
+    "documentId": "doc-0194",
     "page": 1,
     "bbox": {
       "x": 0.36,
@@ -2296,8 +2338,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0158",
-    "documentId": "doc-0195",
+    "id": "ext-0161",
+    "documentId": "doc-0196",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -2310,8 +2352,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0159",
-    "documentId": "doc-0196",
+    "id": "ext-0162",
+    "documentId": "doc-0197",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -2324,8 +2366,8 @@
     "confidence": 0.83
   },
   {
-    "id": "ext-0160",
-    "documentId": "doc-0197",
+    "id": "ext-0163",
+    "documentId": "doc-0198",
     "page": 1,
     "bbox": {
       "x": 0.08,
@@ -2338,8 +2380,8 @@
     "confidence": 0.83
   },
   {
-    "id": "ext-0161",
-    "documentId": "doc-0198",
+    "id": "ext-0164",
+    "documentId": "doc-0199",
     "page": 1,
     "bbox": {
       "x": 0.44,
@@ -2352,8 +2394,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0162",
-    "documentId": "doc-0199",
+    "id": "ext-0165",
+    "documentId": "doc-0200",
     "page": 1,
     "bbox": {
       "x": 0.21,
@@ -2366,8 +2408,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0163",
-    "documentId": "doc-0200",
+    "id": "ext-0166",
+    "documentId": "doc-0201",
     "page": 1,
     "bbox": {
       "x": 0.53,
@@ -2380,8 +2422,8 @@
     "confidence": 0.75
   },
   {
-    "id": "ext-0164",
-    "documentId": "doc-0201",
+    "id": "ext-0167",
+    "documentId": "doc-0202",
     "page": 2,
     "bbox": {
       "x": 0.37,
@@ -2394,8 +2436,8 @@
     "confidence": 0.83
   },
   {
-    "id": "ext-0165",
-    "documentId": "doc-0202",
+    "id": "ext-0168",
+    "documentId": "doc-0203",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -2408,8 +2450,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0166",
-    "documentId": "doc-0203",
+    "id": "ext-0169",
+    "documentId": "doc-0204",
     "page": 1,
     "bbox": {
       "x": 0.49,
@@ -2422,8 +2464,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0167",
-    "documentId": "doc-0204",
+    "id": "ext-0170",
+    "documentId": "doc-0205",
     "page": 1,
     "bbox": {
       "x": 0.09,
@@ -2436,8 +2478,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0168",
-    "documentId": "doc-0206",
+    "id": "ext-0171",
+    "documentId": "doc-0207",
     "page": 1,
     "bbox": {
       "x": 0.44,
@@ -2450,8 +2492,8 @@
     "confidence": 0.98
   },
   {
-    "id": "ext-0169",
-    "documentId": "doc-0207",
+    "id": "ext-0172",
+    "documentId": "doc-0208",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -2464,8 +2506,8 @@
     "confidence": 0.73
   },
   {
-    "id": "ext-0170",
-    "documentId": "doc-0208",
+    "id": "ext-0173",
+    "documentId": "doc-0209",
     "page": 1,
     "bbox": {
       "x": 0.38,
@@ -2478,8 +2520,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0171",
-    "documentId": "doc-0209",
+    "id": "ext-0174",
+    "documentId": "doc-0210",
     "page": 1,
     "bbox": {
       "x": 0.4,
@@ -2492,8 +2534,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0172",
-    "documentId": "doc-0210",
+    "id": "ext-0175",
+    "documentId": "doc-0211",
     "page": 1,
     "bbox": {
       "x": 0.12,
@@ -2506,8 +2548,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0173",
-    "documentId": "doc-0211",
+    "id": "ext-0176",
+    "documentId": "doc-0212",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -2520,8 +2562,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0174",
-    "documentId": "doc-0212",
+    "id": "ext-0177",
+    "documentId": "doc-0213",
     "page": 1,
     "bbox": {
       "x": 0.34,
@@ -2534,8 +2576,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0175",
-    "documentId": "doc-0213",
+    "id": "ext-0178",
+    "documentId": "doc-0214",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -2548,8 +2590,8 @@
     "confidence": 0.62
   },
   {
-    "id": "ext-0176",
-    "documentId": "doc-0214",
+    "id": "ext-0179",
+    "documentId": "doc-0215",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -2562,8 +2604,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0177",
-    "documentId": "doc-0215",
+    "id": "ext-0180",
+    "documentId": "doc-0216",
     "page": 1,
     "bbox": {
       "x": 0.49,
@@ -2576,8 +2618,8 @@
     "confidence": 0.72
   },
   {
-    "id": "ext-0178",
-    "documentId": "doc-0216",
+    "id": "ext-0181",
+    "documentId": "doc-0217",
     "page": 3,
     "bbox": {
       "x": 0.29,
@@ -2590,8 +2632,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0179",
-    "documentId": "doc-0217",
+    "id": "ext-0182",
+    "documentId": "doc-0218",
     "page": 1,
     "bbox": {
       "x": 0.36,
@@ -2604,8 +2646,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0180",
-    "documentId": "doc-0218",
+    "id": "ext-0183",
+    "documentId": "doc-0219",
     "page": 1,
     "bbox": {
       "x": 0.55,
@@ -2618,8 +2660,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0181",
-    "documentId": "doc-0219",
+    "id": "ext-0184",
+    "documentId": "doc-0220",
     "page": 1,
     "bbox": {
       "x": 0.42,
@@ -2632,8 +2674,8 @@
     "confidence": 0.69
   },
   {
-    "id": "ext-0182",
-    "documentId": "doc-0221",
+    "id": "ext-0185",
+    "documentId": "doc-0222",
     "page": 1,
     "bbox": {
       "x": 0.34,
@@ -2646,8 +2688,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0183",
-    "documentId": "doc-0222",
+    "id": "ext-0186",
+    "documentId": "doc-0223",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -2660,8 +2702,8 @@
     "confidence": 0.77
   },
   {
-    "id": "ext-0184",
-    "documentId": "doc-0225",
+    "id": "ext-0187",
+    "documentId": "doc-0226",
     "page": 1,
     "bbox": {
       "x": 0.45,
@@ -2674,8 +2716,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0185",
-    "documentId": "doc-0227",
+    "id": "ext-0188",
+    "documentId": "doc-0228",
     "page": 1,
     "bbox": {
       "x": 0.47,
@@ -2688,8 +2730,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0186",
-    "documentId": "doc-0228",
+    "id": "ext-0189",
+    "documentId": "doc-0229",
     "page": 1,
     "bbox": {
       "x": 0.23,
@@ -2702,8 +2744,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0187",
-    "documentId": "doc-0229",
+    "id": "ext-0190",
+    "documentId": "doc-0230",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -2716,8 +2758,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0188",
-    "documentId": "doc-0230",
+    "id": "ext-0191",
+    "documentId": "doc-0231",
     "page": 3,
     "bbox": {
       "x": 0.53,
@@ -2730,8 +2772,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0189",
-    "documentId": "doc-0231",
+    "id": "ext-0192",
+    "documentId": "doc-0232",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -2744,8 +2786,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0190",
-    "documentId": "doc-0232",
+    "id": "ext-0193",
+    "documentId": "doc-0233",
     "page": 1,
     "bbox": {
       "x": 0.51,
@@ -2758,8 +2800,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0191",
-    "documentId": "doc-0233",
+    "id": "ext-0194",
+    "documentId": "doc-0234",
     "page": 2,
     "bbox": {
       "x": 0.44,
@@ -2772,8 +2814,8 @@
     "confidence": 0.59
   },
   {
-    "id": "ext-0192",
-    "documentId": "doc-0234",
+    "id": "ext-0195",
+    "documentId": "doc-0235",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -2786,8 +2828,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0193",
-    "documentId": "doc-0235",
+    "id": "ext-0196",
+    "documentId": "doc-0236",
     "page": 1,
     "bbox": {
       "x": 0.35,
@@ -2800,8 +2842,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0194",
-    "documentId": "doc-0236",
+    "id": "ext-0197",
+    "documentId": "doc-0237",
     "page": 2,
     "bbox": {
       "x": 0.5,
@@ -2814,8 +2856,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0195",
-    "documentId": "doc-0237",
+    "id": "ext-0198",
+    "documentId": "doc-0238",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -2828,8 +2870,8 @@
     "confidence": 0.98
   },
   {
-    "id": "ext-0196",
-    "documentId": "doc-0238",
+    "id": "ext-0199",
+    "documentId": "doc-0239",
     "page": 1,
     "bbox": {
       "x": 0.17,
@@ -2842,8 +2884,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0197",
-    "documentId": "doc-0239",
+    "id": "ext-0200",
+    "documentId": "doc-0240",
     "page": 1,
     "bbox": {
       "x": 0.09,
@@ -2856,8 +2898,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0198",
-    "documentId": "doc-0240",
+    "id": "ext-0201",
+    "documentId": "doc-0241",
     "page": 1,
     "bbox": {
       "x": 0.29,
@@ -2870,8 +2912,8 @@
     "confidence": 0.98
   },
   {
-    "id": "ext-0199",
-    "documentId": "doc-0241",
+    "id": "ext-0202",
+    "documentId": "doc-0242",
     "page": 1,
     "bbox": {
       "x": 0.4,
@@ -2884,8 +2926,8 @@
     "confidence": 0.86
   },
   {
-    "id": "ext-0200",
-    "documentId": "doc-0242",
+    "id": "ext-0203",
+    "documentId": "doc-0243",
     "page": 1,
     "bbox": {
       "x": 0.57,
@@ -2898,8 +2940,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0201",
-    "documentId": "doc-0243",
+    "id": "ext-0204",
+    "documentId": "doc-0244",
     "page": 1,
     "bbox": {
       "x": 0.12,
@@ -2912,8 +2954,8 @@
     "confidence": 0.73
   },
   {
-    "id": "ext-0202",
-    "documentId": "doc-0244",
+    "id": "ext-0205",
+    "documentId": "doc-0245",
     "page": 1,
     "bbox": {
       "x": 0.28,
@@ -2926,8 +2968,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0203",
-    "documentId": "doc-0245",
+    "id": "ext-0206",
+    "documentId": "doc-0246",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -2940,8 +2982,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0204",
-    "documentId": "doc-0248",
+    "id": "ext-0207",
+    "documentId": "doc-0249",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -2954,8 +2996,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0205",
-    "documentId": "doc-0249",
+    "id": "ext-0208",
+    "documentId": "doc-0250",
     "page": 1,
     "bbox": {
       "x": 0.36,
@@ -2968,8 +3010,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0206",
-    "documentId": "doc-0250",
+    "id": "ext-0209",
+    "documentId": "doc-0251",
     "page": 1,
     "bbox": {
       "x": 0.46,
@@ -2982,8 +3024,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0207",
-    "documentId": "doc-0251",
+    "id": "ext-0210",
+    "documentId": "doc-0252",
     "page": 1,
     "bbox": {
       "x": 0.14,
@@ -2996,8 +3038,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0208",
-    "documentId": "doc-0252",
+    "id": "ext-0211",
+    "documentId": "doc-0253",
     "page": 1,
     "bbox": {
       "x": 0.1,
@@ -3010,8 +3052,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0209",
-    "documentId": "doc-0254",
+    "id": "ext-0212",
+    "documentId": "doc-0255",
     "page": 2,
     "bbox": {
       "x": 0.22,
@@ -3024,8 +3066,8 @@
     "confidence": 0.73
   },
   {
-    "id": "ext-0210",
-    "documentId": "doc-0255",
+    "id": "ext-0213",
+    "documentId": "doc-0256",
     "page": 1,
     "bbox": {
       "x": 0.22,
@@ -3038,8 +3080,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0211",
-    "documentId": "doc-0256",
+    "id": "ext-0214",
+    "documentId": "doc-0257",
     "page": 1,
     "bbox": {
       "x": 0.42,
@@ -3052,8 +3094,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0212",
-    "documentId": "doc-0257",
+    "id": "ext-0215",
+    "documentId": "doc-0258",
     "page": 1,
     "bbox": {
       "x": 0.47,
@@ -3066,8 +3108,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0213",
-    "documentId": "doc-0258",
+    "id": "ext-0216",
+    "documentId": "doc-0259",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -3080,8 +3122,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0214",
-    "documentId": "doc-0259",
+    "id": "ext-0217",
+    "documentId": "doc-0260",
     "page": 1,
     "bbox": {
       "x": 0.28,
@@ -3094,8 +3136,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0215",
-    "documentId": "doc-0260",
+    "id": "ext-0218",
+    "documentId": "doc-0261",
     "page": 1,
     "bbox": {
       "x": 0.42,
@@ -3108,8 +3150,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0216",
-    "documentId": "doc-0261",
+    "id": "ext-0219",
+    "documentId": "doc-0262",
     "page": 1,
     "bbox": {
       "x": 0.11,
@@ -3122,8 +3164,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0217",
-    "documentId": "doc-0263",
+    "id": "ext-0220",
+    "documentId": "doc-0264",
     "page": 1,
     "bbox": {
       "x": 0.53,
@@ -3136,8 +3178,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0218",
-    "documentId": "doc-0264",
+    "id": "ext-0221",
+    "documentId": "doc-0265",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -3150,8 +3192,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0219",
-    "documentId": "doc-0265",
+    "id": "ext-0222",
+    "documentId": "doc-0266",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -3164,8 +3206,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0220",
-    "documentId": "doc-0266",
+    "id": "ext-0223",
+    "documentId": "doc-0267",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -3178,8 +3220,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0221",
-    "documentId": "doc-0267",
+    "id": "ext-0224",
+    "documentId": "doc-0268",
     "page": 1,
     "bbox": {
       "x": 0.11,
@@ -3192,8 +3234,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0222",
-    "documentId": "doc-0268",
+    "id": "ext-0225",
+    "documentId": "doc-0269",
     "page": 1,
     "bbox": {
       "x": 0.18,
@@ -3206,8 +3248,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0223",
-    "documentId": "doc-0270",
+    "id": "ext-0226",
+    "documentId": "doc-0271",
     "page": 1,
     "bbox": {
       "x": 0.12,
@@ -3220,8 +3262,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0224",
-    "documentId": "doc-0271",
+    "id": "ext-0227",
+    "documentId": "doc-0272",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -3234,8 +3276,8 @@
     "confidence": 0.73
   },
   {
-    "id": "ext-0225",
-    "documentId": "doc-0272",
+    "id": "ext-0228",
+    "documentId": "doc-0273",
     "page": 1,
     "bbox": {
       "x": 0.53,
@@ -3248,8 +3290,8 @@
     "confidence": 0.86
   },
   {
-    "id": "ext-0226",
-    "documentId": "doc-0273",
+    "id": "ext-0229",
+    "documentId": "doc-0274",
     "page": 3,
     "bbox": {
       "x": 0.55,
@@ -3262,8 +3304,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0227",
-    "documentId": "doc-0274",
+    "id": "ext-0230",
+    "documentId": "doc-0275",
     "page": 1,
     "bbox": {
       "x": 0.49,
@@ -3276,8 +3318,8 @@
     "confidence": 0.79
   },
   {
-    "id": "ext-0228",
-    "documentId": "doc-0275",
+    "id": "ext-0231",
+    "documentId": "doc-0276",
     "page": 1,
     "bbox": {
       "x": 0.13,
@@ -3290,8 +3332,8 @@
     "confidence": 0.86
   },
   {
-    "id": "ext-0229",
-    "documentId": "doc-0277",
+    "id": "ext-0232",
+    "documentId": "doc-0278",
     "page": 1,
     "bbox": {
       "x": 0.26,
@@ -3304,8 +3346,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0230",
-    "documentId": "doc-0278",
+    "id": "ext-0233",
+    "documentId": "doc-0279",
     "page": 1,
     "bbox": {
       "x": 0.48,
@@ -3318,8 +3360,8 @@
     "confidence": 0.77
   },
   {
-    "id": "ext-0231",
-    "documentId": "doc-0279",
+    "id": "ext-0234",
+    "documentId": "doc-0280",
     "page": 1,
     "bbox": {
       "x": 0.57,
@@ -3332,8 +3374,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0232",
-    "documentId": "doc-0280",
+    "id": "ext-0235",
+    "documentId": "doc-0281",
     "page": 1,
     "bbox": {
       "x": 0.26,
@@ -3346,8 +3388,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0233",
-    "documentId": "doc-0281",
+    "id": "ext-0236",
+    "documentId": "doc-0282",
     "page": 1,
     "bbox": {
       "x": 0.55,
@@ -3360,8 +3402,8 @@
     "confidence": 0.59
   },
   {
-    "id": "ext-0234",
-    "documentId": "doc-0282",
+    "id": "ext-0237",
+    "documentId": "doc-0283",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -3374,8 +3416,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0235",
-    "documentId": "doc-0283",
+    "id": "ext-0238",
+    "documentId": "doc-0284",
     "page": 1,
     "bbox": {
       "x": 0.6,
@@ -3388,8 +3430,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0236",
-    "documentId": "doc-0284",
+    "id": "ext-0239",
+    "documentId": "doc-0285",
     "page": 1,
     "bbox": {
       "x": 0.5,
@@ -3402,8 +3444,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0237",
-    "documentId": "doc-0285",
+    "id": "ext-0240",
+    "documentId": "doc-0286",
     "page": 1,
     "bbox": {
       "x": 0.53,
@@ -3416,8 +3458,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0238",
-    "documentId": "doc-0286",
+    "id": "ext-0241",
+    "documentId": "doc-0287",
     "page": 1,
     "bbox": {
       "x": 0.14,
@@ -3430,8 +3472,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0239",
-    "documentId": "doc-0287",
+    "id": "ext-0242",
+    "documentId": "doc-0288",
     "page": 1,
     "bbox": {
       "x": 0.18,
@@ -3444,8 +3486,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0240",
-    "documentId": "doc-0288",
+    "id": "ext-0243",
+    "documentId": "doc-0289",
     "page": 1,
     "bbox": {
       "x": 0.32,
@@ -3458,8 +3500,8 @@
     "confidence": 0.89
   },
   {
-    "id": "ext-0241",
-    "documentId": "doc-0289",
+    "id": "ext-0244",
+    "documentId": "doc-0290",
     "page": 1,
     "bbox": {
       "x": 0.36,
@@ -3472,8 +3514,8 @@
     "confidence": 0.53
   },
   {
-    "id": "ext-0242",
-    "documentId": "doc-0290",
+    "id": "ext-0245",
+    "documentId": "doc-0291",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -3486,8 +3528,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0243",
-    "documentId": "doc-0291",
+    "id": "ext-0246",
+    "documentId": "doc-0292",
     "page": 1,
     "bbox": {
       "x": 0.17,
@@ -3500,8 +3542,8 @@
     "confidence": 0.62
   },
   {
-    "id": "ext-0244",
-    "documentId": "doc-0292",
+    "id": "ext-0247",
+    "documentId": "doc-0293",
     "page": 1,
     "bbox": {
       "x": 0.2,
@@ -3514,8 +3556,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0245",
-    "documentId": "doc-0293",
+    "id": "ext-0248",
+    "documentId": "doc-0294",
     "page": 1,
     "bbox": {
       "x": 0.19,
@@ -3528,8 +3570,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0246",
-    "documentId": "doc-0294",
+    "id": "ext-0249",
+    "documentId": "doc-0295",
     "page": 1,
     "bbox": {
       "x": 0.6,
@@ -3542,8 +3584,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0247",
-    "documentId": "doc-0295",
+    "id": "ext-0250",
+    "documentId": "doc-0296",
     "page": 1,
     "bbox": {
       "x": 0.33,
@@ -3556,8 +3598,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0248",
-    "documentId": "doc-0296",
+    "id": "ext-0251",
+    "documentId": "doc-0297",
     "page": 1,
     "bbox": {
       "x": 0.28,
@@ -3570,8 +3612,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0249",
-    "documentId": "doc-0297",
+    "id": "ext-0252",
+    "documentId": "doc-0298",
     "page": 1,
     "bbox": {
       "x": 0.42,
@@ -3584,8 +3626,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0250",
-    "documentId": "doc-0298",
+    "id": "ext-0253",
+    "documentId": "doc-0299",
     "page": 1,
     "bbox": {
       "x": 0.24,
@@ -3598,8 +3640,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0251",
-    "documentId": "doc-0299",
+    "id": "ext-0254",
+    "documentId": "doc-0300",
     "page": 1,
     "bbox": {
       "x": 0.08,
@@ -3612,8 +3654,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0252",
-    "documentId": "doc-0300",
+    "id": "ext-0255",
+    "documentId": "doc-0301",
     "page": 3,
     "bbox": {
       "x": 0.55,
@@ -3626,8 +3668,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0253",
-    "documentId": "doc-0301",
+    "id": "ext-0256",
+    "documentId": "doc-0302",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -3640,8 +3682,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0254",
-    "documentId": "doc-0303",
+    "id": "ext-0257",
+    "documentId": "doc-0304",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -3654,8 +3696,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0255",
-    "documentId": "doc-0304",
+    "id": "ext-0258",
+    "documentId": "doc-0305",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -3668,8 +3710,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0256",
-    "documentId": "doc-0305",
+    "id": "ext-0259",
+    "documentId": "doc-0306",
     "page": 1,
     "bbox": {
       "x": 0.12,
@@ -3682,8 +3724,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0257",
-    "documentId": "doc-0306",
+    "id": "ext-0260",
+    "documentId": "doc-0307",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -3696,8 +3738,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0258",
-    "documentId": "doc-0307",
+    "id": "ext-0261",
+    "documentId": "doc-0308",
     "page": 1,
     "bbox": {
       "x": 0.43,
@@ -3710,8 +3752,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0259",
-    "documentId": "doc-0310",
+    "id": "ext-0262",
+    "documentId": "doc-0311",
     "page": 1,
     "bbox": {
       "x": 0.27,
@@ -3724,8 +3766,8 @@
     "confidence": 0.73
   },
   {
-    "id": "ext-0260",
-    "documentId": "doc-0311",
+    "id": "ext-0263",
+    "documentId": "doc-0312",
     "page": 3,
     "bbox": {
       "x": 0.59,
@@ -3738,8 +3780,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0261",
-    "documentId": "doc-0312",
+    "id": "ext-0264",
+    "documentId": "doc-0313",
     "page": 1,
     "bbox": {
       "x": 0.42,
@@ -3752,8 +3794,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0262",
-    "documentId": "doc-0313",
+    "id": "ext-0265",
+    "documentId": "doc-0314",
     "page": 1,
     "bbox": {
       "x": 0.21,
@@ -3766,8 +3808,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0263",
-    "documentId": "doc-0314",
+    "id": "ext-0266",
+    "documentId": "doc-0315",
     "page": 1,
     "bbox": {
       "x": 0.49,
@@ -3780,8 +3822,8 @@
     "confidence": 0.7
   },
   {
-    "id": "ext-0264",
-    "documentId": "doc-0315",
+    "id": "ext-0267",
+    "documentId": "doc-0316",
     "page": 1,
     "bbox": {
       "x": 0.58,
@@ -3794,8 +3836,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0265",
-    "documentId": "doc-0316",
+    "id": "ext-0268",
+    "documentId": "doc-0317",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -3808,8 +3850,8 @@
     "confidence": 0.6
   },
   {
-    "id": "ext-0266",
-    "documentId": "doc-0317",
+    "id": "ext-0269",
+    "documentId": "doc-0318",
     "page": 1,
     "bbox": {
       "x": 0.47,
@@ -3822,8 +3864,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0267",
-    "documentId": "doc-0318",
+    "id": "ext-0270",
+    "documentId": "doc-0319",
     "page": 1,
     "bbox": {
       "x": 0.48,
@@ -3836,8 +3878,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0268",
-    "documentId": "doc-0319",
+    "id": "ext-0271",
+    "documentId": "doc-0320",
     "page": 2,
     "bbox": {
       "x": 0.36,
@@ -3850,8 +3892,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0269",
-    "documentId": "doc-0321",
+    "id": "ext-0272",
+    "documentId": "doc-0322",
     "page": 1,
     "bbox": {
       "x": 0.19,
@@ -3864,8 +3906,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0270",
-    "documentId": "doc-0322",
+    "id": "ext-0273",
+    "documentId": "doc-0323",
     "page": 1,
     "bbox": {
       "x": 0.24,
@@ -3878,8 +3920,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0271",
-    "documentId": "doc-0323",
+    "id": "ext-0274",
+    "documentId": "doc-0324",
     "page": 1,
     "bbox": {
       "x": 0.24,
@@ -3892,8 +3934,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0272",
-    "documentId": "doc-0324",
+    "id": "ext-0275",
+    "documentId": "doc-0325",
     "page": 1,
     "bbox": {
       "x": 0.49,
@@ -3906,8 +3948,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0273",
-    "documentId": "doc-0325",
+    "id": "ext-0276",
+    "documentId": "doc-0326",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -3920,8 +3962,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0274",
-    "documentId": "doc-0326",
+    "id": "ext-0277",
+    "documentId": "doc-0327",
     "page": 1,
     "bbox": {
       "x": 0.2,
@@ -3934,8 +3976,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0275",
-    "documentId": "doc-0327",
+    "id": "ext-0278",
+    "documentId": "doc-0328",
     "page": 1,
     "bbox": {
       "x": 0.41,
@@ -3948,8 +3990,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0276",
-    "documentId": "doc-0328",
+    "id": "ext-0279",
+    "documentId": "doc-0329",
     "page": 1,
     "bbox": {
       "x": 0.17,
@@ -3962,8 +4004,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0277",
-    "documentId": "doc-0329",
+    "id": "ext-0280",
+    "documentId": "doc-0330",
     "page": 1,
     "bbox": {
       "x": 0.23,
@@ -3976,8 +4018,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0278",
-    "documentId": "doc-0330",
+    "id": "ext-0281",
+    "documentId": "doc-0331",
     "page": 1,
     "bbox": {
       "x": 0.38,
@@ -3990,8 +4032,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0279",
-    "documentId": "doc-0331",
+    "id": "ext-0282",
+    "documentId": "doc-0332",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -4004,8 +4046,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0280",
-    "documentId": "doc-0333",
+    "id": "ext-0283",
+    "documentId": "doc-0334",
     "page": 1,
     "bbox": {
       "x": 0.42,
@@ -4018,8 +4060,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0281",
-    "documentId": "doc-0334",
+    "id": "ext-0284",
+    "documentId": "doc-0335",
     "page": 1,
     "bbox": {
       "x": 0.09,
@@ -4032,8 +4074,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0282",
-    "documentId": "doc-0335",
+    "id": "ext-0285",
+    "documentId": "doc-0336",
     "page": 1,
     "bbox": {
       "x": 0.55,
@@ -4046,8 +4088,8 @@
     "confidence": 0.45
   },
   {
-    "id": "ext-0283",
-    "documentId": "doc-0337",
+    "id": "ext-0286",
+    "documentId": "doc-0338",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -4060,8 +4102,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0284",
-    "documentId": "doc-0339",
+    "id": "ext-0287",
+    "documentId": "doc-0340",
     "page": 2,
     "bbox": {
       "x": 0.53,
@@ -4074,8 +4116,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0285",
-    "documentId": "doc-0341",
+    "id": "ext-0288",
+    "documentId": "doc-0342",
     "page": 2,
     "bbox": {
       "x": 0.43,
@@ -4088,8 +4130,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0286",
-    "documentId": "doc-0343",
+    "id": "ext-0289",
+    "documentId": "doc-0344",
     "page": 2,
     "bbox": {
       "x": 0.17,
@@ -4102,8 +4144,8 @@
     "confidence": 0.56
   },
   {
-    "id": "ext-0287",
-    "documentId": "doc-0345",
+    "id": "ext-0290",
+    "documentId": "doc-0346",
     "page": 1,
     "bbox": {
       "x": 0.34,
@@ -4116,8 +4158,8 @@
     "confidence": 0.86
   },
   {
-    "id": "ext-0288",
-    "documentId": "doc-0346",
+    "id": "ext-0291",
+    "documentId": "doc-0347",
     "page": 1,
     "bbox": {
       "x": 0.54,
@@ -4130,8 +4172,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0289",
-    "documentId": "doc-0347",
+    "id": "ext-0292",
+    "documentId": "doc-0348",
     "page": 1,
     "bbox": {
       "x": 0.2,
@@ -4144,8 +4186,8 @@
     "confidence": 0.73
   },
   {
-    "id": "ext-0290",
-    "documentId": "doc-0348",
+    "id": "ext-0293",
+    "documentId": "doc-0349",
     "page": 1,
     "bbox": {
       "x": 0.23,
@@ -4158,8 +4200,8 @@
     "confidence": 0.91
   },
   {
-    "id": "ext-0291",
-    "documentId": "doc-0350",
+    "id": "ext-0294",
+    "documentId": "doc-0351",
     "page": 1,
     "bbox": {
       "x": 0.52,
@@ -4172,8 +4214,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0292",
-    "documentId": "doc-0351",
+    "id": "ext-0295",
+    "documentId": "doc-0352",
     "page": 1,
     "bbox": {
       "x": 0.12,
@@ -4186,8 +4228,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0293",
-    "documentId": "doc-0352",
+    "id": "ext-0296",
+    "documentId": "doc-0353",
     "page": 1,
     "bbox": {
       "x": 0.24,
@@ -4200,8 +4242,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0294",
-    "documentId": "doc-0353",
+    "id": "ext-0297",
+    "documentId": "doc-0354",
     "page": 1,
     "bbox": {
       "x": 0.13,
@@ -4214,8 +4256,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0295",
-    "documentId": "doc-0354",
+    "id": "ext-0298",
+    "documentId": "doc-0355",
     "page": 1,
     "bbox": {
       "x": 0.47,
@@ -4228,8 +4270,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0296",
-    "documentId": "doc-0355",
+    "id": "ext-0299",
+    "documentId": "doc-0356",
     "page": 1,
     "bbox": {
       "x": 0.39,
@@ -4242,8 +4284,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0297",
-    "documentId": "doc-0356",
+    "id": "ext-0300",
+    "documentId": "doc-0357",
     "page": 1,
     "bbox": {
       "x": 0.33,
@@ -4256,8 +4298,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0298",
-    "documentId": "doc-0357",
+    "id": "ext-0301",
+    "documentId": "doc-0358",
     "page": 1,
     "bbox": {
       "x": 0.44,
@@ -4270,8 +4312,8 @@
     "confidence": 0.58
   },
   {
-    "id": "ext-0299",
-    "documentId": "doc-0358",
+    "id": "ext-0302",
+    "documentId": "doc-0359",
     "page": 1,
     "bbox": {
       "x": 0.11,
@@ -4284,8 +4326,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0300",
-    "documentId": "doc-0359",
+    "id": "ext-0303",
+    "documentId": "doc-0360",
     "page": 1,
     "bbox": {
       "x": 0.55,
@@ -4298,8 +4340,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0301",
-    "documentId": "doc-0360",
+    "id": "ext-0304",
+    "documentId": "doc-0361",
     "page": 1,
     "bbox": {
       "x": 0.56,
@@ -4312,8 +4354,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0302",
-    "documentId": "doc-0361",
+    "id": "ext-0305",
+    "documentId": "doc-0362",
     "page": 1,
     "bbox": {
       "x": 0.53,
@@ -4326,8 +4368,8 @@
     "confidence": 0.94
   },
   {
-    "id": "ext-0303",
-    "documentId": "doc-0362",
+    "id": "ext-0306",
+    "documentId": "doc-0363",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -4340,8 +4382,8 @@
     "confidence": 0.96
   },
   {
-    "id": "ext-0304",
-    "documentId": "doc-0363",
+    "id": "ext-0307",
+    "documentId": "doc-0364",
     "page": 1,
     "bbox": {
       "x": 0.1,
@@ -4354,8 +4396,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0305",
-    "documentId": "doc-0364",
+    "id": "ext-0308",
+    "documentId": "doc-0365",
     "page": 1,
     "bbox": {
       "x": 0.36,
@@ -4368,8 +4410,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0306",
-    "documentId": "doc-0365",
+    "id": "ext-0309",
+    "documentId": "doc-0366",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -4382,8 +4424,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0307",
-    "documentId": "doc-0366",
+    "id": "ext-0310",
+    "documentId": "doc-0367",
     "page": 1,
     "bbox": {
       "x": 0.25,
@@ -4396,8 +4438,8 @@
     "confidence": 0.98
   },
   {
-    "id": "ext-0308",
-    "documentId": "doc-0367",
+    "id": "ext-0311",
+    "documentId": "doc-0368",
     "page": 1,
     "bbox": {
       "x": 0.11,
@@ -4410,8 +4452,8 @@
     "confidence": 0.6
   },
   {
-    "id": "ext-0309",
-    "documentId": "doc-0368",
+    "id": "ext-0312",
+    "documentId": "doc-0369",
     "page": 1,
     "bbox": {
       "x": 0.25,
@@ -4424,8 +4466,8 @@
     "confidence": 0.67
   },
   {
-    "id": "ext-0310",
-    "documentId": "doc-0369",
+    "id": "ext-0313",
+    "documentId": "doc-0370",
     "page": 1,
     "bbox": {
       "x": 0.15,
@@ -4438,8 +4480,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0311",
-    "documentId": "doc-0370",
+    "id": "ext-0314",
+    "documentId": "doc-0371",
     "page": 1,
     "bbox": {
       "x": 0.41,
@@ -4452,8 +4494,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0312",
-    "documentId": "doc-0371",
+    "id": "ext-0315",
+    "documentId": "doc-0372",
     "page": 2,
     "bbox": {
       "x": 0.24,
@@ -4466,8 +4508,8 @@
     "confidence": 0.72
   },
   {
-    "id": "ext-0313",
-    "documentId": "doc-0372",
+    "id": "ext-0316",
+    "documentId": "doc-0373",
     "page": 1,
     "bbox": {
       "x": 0.43,
@@ -4480,8 +4522,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0314",
-    "documentId": "doc-0373",
+    "id": "ext-0317",
+    "documentId": "doc-0374",
     "page": 1,
     "bbox": {
       "x": 0.21,
@@ -4494,8 +4536,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0315",
-    "documentId": "doc-0374",
+    "id": "ext-0318",
+    "documentId": "doc-0375",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -4508,8 +4550,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0316",
-    "documentId": "doc-0375",
+    "id": "ext-0319",
+    "documentId": "doc-0376",
     "page": 1,
     "bbox": {
       "x": 0.37,
@@ -4522,8 +4564,8 @@
     "confidence": 0.98
   },
   {
-    "id": "ext-0317",
-    "documentId": "doc-0376",
+    "id": "ext-0320",
+    "documentId": "doc-0377",
     "page": 1,
     "bbox": {
       "x": 0.51,
@@ -4536,8 +4578,8 @@
     "confidence": 0.93
   },
   {
-    "id": "ext-0318",
-    "documentId": "doc-0377",
+    "id": "ext-0321",
+    "documentId": "doc-0378",
     "page": 1,
     "bbox": {
       "x": 0.43,
@@ -4550,8 +4592,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0319",
-    "documentId": "doc-0379",
+    "id": "ext-0322",
+    "documentId": "doc-0380",
     "page": 1,
     "bbox": {
       "x": 0.51,
@@ -4564,8 +4606,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0320",
-    "documentId": "doc-0380",
+    "id": "ext-0323",
+    "documentId": "doc-0381",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -4578,8 +4620,8 @@
     "confidence": 0.8
   },
   {
-    "id": "ext-0321",
-    "documentId": "doc-0381",
+    "id": "ext-0324",
+    "documentId": "doc-0382",
     "page": 1,
     "bbox": {
       "x": 0.41,
@@ -4592,8 +4634,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0322",
-    "documentId": "doc-0382",
+    "id": "ext-0325",
+    "documentId": "doc-0383",
     "page": 1,
     "bbox": {
       "x": 0.53,
@@ -4606,8 +4648,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0323",
-    "documentId": "doc-0383",
+    "id": "ext-0326",
+    "documentId": "doc-0384",
     "page": 1,
     "bbox": {
       "x": 0.43,
@@ -4620,8 +4662,8 @@
     "confidence": 0.46
   },
   {
-    "id": "ext-0324",
-    "documentId": "doc-0384",
+    "id": "ext-0327",
+    "documentId": "doc-0385",
     "page": 1,
     "bbox": {
       "x": 0.18,
@@ -4634,8 +4676,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0325",
-    "documentId": "doc-0385",
+    "id": "ext-0328",
+    "documentId": "doc-0386",
     "page": 1,
     "bbox": {
       "x": 0.57,
@@ -4648,8 +4690,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0326",
-    "documentId": "doc-0386",
+    "id": "ext-0329",
+    "documentId": "doc-0387",
     "page": 1,
     "bbox": {
       "x": 0.08,
@@ -4662,8 +4704,8 @@
     "confidence": 0.97
   },
   {
-    "id": "ext-0327",
-    "documentId": "doc-0387",
+    "id": "ext-0330",
+    "documentId": "doc-0388",
     "page": 2,
     "bbox": {
       "x": 0.2,
@@ -4676,8 +4718,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0328",
-    "documentId": "doc-0388",
+    "id": "ext-0331",
+    "documentId": "doc-0389",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -4690,8 +4732,8 @@
     "confidence": 0.86
   },
   {
-    "id": "ext-0329",
-    "documentId": "doc-0390",
+    "id": "ext-0332",
+    "documentId": "doc-0391",
     "page": 3,
     "bbox": {
       "x": 0.44,
@@ -4704,8 +4746,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0330",
-    "documentId": "doc-0391",
+    "id": "ext-0333",
+    "documentId": "doc-0392",
     "page": 1,
     "bbox": {
       "x": 0.14,
@@ -4718,8 +4760,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0331",
-    "documentId": "doc-0392",
+    "id": "ext-0334",
+    "documentId": "doc-0393",
     "page": 1,
     "bbox": {
       "x": 0.24,
@@ -4732,8 +4774,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0332",
-    "documentId": "doc-0393",
+    "id": "ext-0335",
+    "documentId": "doc-0394",
     "page": 1,
     "bbox": {
       "x": 0.31,
@@ -4746,8 +4788,8 @@
     "confidence": 0.87
   },
   {
-    "id": "ext-0333",
-    "documentId": "doc-0394",
+    "id": "ext-0336",
+    "documentId": "doc-0395",
     "page": 1,
     "bbox": {
       "x": 0.11,
@@ -4760,8 +4802,8 @@
     "confidence": 0.53
   },
   {
-    "id": "ext-0334",
-    "documentId": "doc-0395",
+    "id": "ext-0337",
+    "documentId": "doc-0396",
     "page": 1,
     "bbox": {
       "x": 0.27,
@@ -4774,8 +4816,8 @@
     "confidence": 0.86
   },
   {
-    "id": "ext-0335",
-    "documentId": "doc-0396",
+    "id": "ext-0338",
+    "documentId": "doc-0397",
     "page": 1,
     "bbox": {
       "x": 0.59,
@@ -4788,8 +4830,8 @@
     "confidence": 0.82
   },
   {
-    "id": "ext-0336",
-    "documentId": "doc-0397",
+    "id": "ext-0339",
+    "documentId": "doc-0398",
     "page": 1,
     "bbox": {
       "x": 0.27,
@@ -4802,8 +4844,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0337",
-    "documentId": "doc-0398",
+    "id": "ext-0340",
+    "documentId": "doc-0399",
     "page": 1,
     "bbox": {
       "x": 0.36,
@@ -4816,8 +4858,8 @@
     "confidence": 0.85
   },
   {
-    "id": "ext-0338",
-    "documentId": "doc-0399",
+    "id": "ext-0341",
+    "documentId": "doc-0400",
     "page": 3,
     "bbox": {
       "x": 0.12,
@@ -4830,8 +4872,8 @@
     "confidence": 0.84
   },
   {
-    "id": "ext-0339",
-    "documentId": "doc-0400",
+    "id": "ext-0342",
+    "documentId": "doc-0401",
     "page": 1,
     "bbox": {
       "x": 0.26,
@@ -4844,8 +4886,8 @@
     "confidence": 0.53
   },
   {
-    "id": "ext-0340",
-    "documentId": "doc-0401",
+    "id": "ext-0343",
+    "documentId": "doc-0402",
     "page": 1,
     "bbox": {
       "x": 0.16,
@@ -4858,8 +4900,8 @@
     "confidence": 0.92
   },
   {
-    "id": "ext-0341",
-    "documentId": "doc-0402",
+    "id": "ext-0344",
+    "documentId": "doc-0403",
     "page": 2,
     "bbox": {
       "x": 0.16,
@@ -4872,8 +4914,8 @@
     "confidence": 0.9
   },
   {
-    "id": "ext-0342",
-    "documentId": "doc-0403",
+    "id": "ext-0345",
+    "documentId": "doc-0404",
     "page": 1,
     "bbox": {
       "x": 0.3,
@@ -4886,8 +4928,8 @@
     "confidence": 0.88
   },
   {
-    "id": "ext-0343",
-    "documentId": "doc-0405",
+    "id": "ext-0346",
+    "documentId": "doc-0406",
     "page": 1,
     "bbox": {
       "x": 0.34,
@@ -4900,8 +4942,8 @@
     "confidence": 0.95
   },
   {
-    "id": "ext-0344",
-    "documentId": "doc-0406",
+    "id": "ext-0347",
+    "documentId": "doc-0407",
     "page": 3,
     "bbox": {
       "x": 0.25,
@@ -4914,8 +4956,8 @@
     "confidence": 0.99
   },
   {
-    "id": "ext-0345",
-    "documentId": "doc-0408",
+    "id": "ext-0348",
+    "documentId": "doc-0409",
     "page": 1,
     "bbox": {
       "x": 0.17,
@@ -4928,8 +4970,8 @@
     "confidence": 0.81
   },
   {
-    "id": "ext-0346",
-    "documentId": "doc-0409",
+    "id": "ext-0349",
+    "documentId": "doc-0410",
     "page": 1,
     "bbox": {
       "x": 0.57,
@@ -4942,8 +4984,8 @@
     "confidence": 0.68
   },
   {
-    "id": "ext-0347",
-    "documentId": "doc-0410",
+    "id": "ext-0350",
+    "documentId": "doc-0411",
     "page": 2,
     "bbox": {
       "x": 0.3,
@@ -4954,19 +4996,5 @@
     "label": "Column (e) — Cost basis",
     "rawValue": "$44,077.19",
     "confidence": 0.86
-  },
-  {
-    "id": "ext-0348",
-    "documentId": "doc-0412",
-    "page": 1,
-    "bbox": {
-      "x": 0.54,
-      "y": 0.52,
-      "w": 0.33,
-      "h": 0.03
-    },
-    "label": "Box 1 — Wages, tips, other compensation",
-    "rawValue": "$94,540.55",
-    "confidence": 0.84
   }
 ]

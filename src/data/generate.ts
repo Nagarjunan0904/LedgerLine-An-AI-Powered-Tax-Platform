@@ -183,6 +183,13 @@ function personEmail(name: string, domain?: string): string {
   return faker.internet.email({ firstName: first, lastName: last, provider: domain }).toLowerCase()
 }
 
+/** First + last only. faker.person.fullName() occasionally prepends a prefix ("Mr.") or
+ * appends a suffix ("PhD", "III", "I") — returnLabel takes the last whitespace-separated
+ * token as the surname, so a suffix there renders as e.g. "I 2025" instead of a real name. */
+function personName(): string {
+  return `${faker.person.firstName()} ${faker.person.lastName()}`
+}
+
 const marcus = addUser({
   id: DEMO_IDS.MARCUS_ELLERY_USER,
   name: "Marcus Ellery",
@@ -223,7 +230,7 @@ const priyaVoss = addUser({
  */
 const staffUsers: User[] = []
 for (let i = 0; i < 11; i++) {
-  const name = faker.person.fullName()
+  const name = personName()
   staffUsers.push(
     addUser({
       id: nextUserId(),
@@ -239,7 +246,7 @@ const allStaff = [nadia, ...staffUsers]
 
 const clientUsers: User[] = []
 for (let i = 0; i < 54; i++) {
-  const name = faker.person.fullName()
+  const name = personName()
   clientUsers.push(
     addUser({
       id: nextUserId(),

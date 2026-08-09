@@ -4,7 +4,7 @@ import { useVirtualizer } from "@tanstack/react-virtual"
 import { ArrowRight, Users } from "lucide-react"
 import { format } from "date-fns"
 
-import type { Severity } from "@/types"
+import type { Role, Severity } from "@/types"
 import { getOpenItems, getReturn, getUser } from "@/data/fixtures"
 import { getEffectiveRole, useRoleStore } from "@/stores/useRoleStore"
 import { can } from "@/lib/permissions"
@@ -304,16 +304,16 @@ function PerPreparerLoad({ items }: { items: ScoredItem[] }) {
   )
 }
 
-function OldestUntouched({ items }: { items: ScoredItem[] }) {
+function OldestUntouched({ items, role }: { items: ScoredItem[]; role: Role }) {
   const oldest = useMemo(() => {
     const now = new Date()
     let best: { scored: ScoredItem; days: number } | null = null
     for (const scored of items) {
-      const days = daysSinceLastActivity(scored.item, now)
+      const days = daysSinceLastActivity(scored.item, now, role)
       if (days !== null && (best === null || days > best.days)) best = { scored, days }
     }
     return best
-  }, [items])
+  }, [items, role])
 
   return (
     <section>
@@ -379,11 +379,11 @@ function AtRiskDeadlines({ items }: { items: ScoredItem[] }) {
 /** Per-preparer load, oldest untouched item, at-risk deadlines — the same rankForRole output
  * as the personal queue (already weighted for this viewer's role), just aggregated across the
  * whole team instead of framed as one person's next action. */
-function TeamView({ items }: { items: ScoredItem[] }) {
+function TeamView({ items, role }: { items: ScoredItem[]; role: Role }) {
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
       <PerPreparerLoad items={items} />
-      <OldestUntouched items={items} />
+      <OldestUntouched items={items} role={role} />
       <AtRiskDeadlines items={items} />
     </div>
   )
@@ -466,7 +466,7 @@ export function StaffHome() {
           </p>
         </div>
       ) : showTeamView ? (
-        <TeamView items={ranked} />
+        <TeamView items={ranked} role={effectiveRole} />
       ) : (
         <div className="space-y-8">
           {topPick ? (

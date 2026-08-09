@@ -69,6 +69,11 @@ export const DEMO_IDS = {
 
   // Case 10 — Nadia Osei's own personal return (dual role: preparer and client)
   NADIA_OSEI_PERSONAL_RETURN: "return-osei-2025",
+
+  // Case 11 — the same document, two audiences: an internal question and a client-visible one,
+  // each an unanswered ask that surfaces as its own open item (src/lib/threads.ts).
+  ELLERY_CORVID_CONFIDENCE_OPEN_ITEM: "item-ellery-corvid-confidence",
+  ELLERY_CORVID_CONFIRM_OPEN_ITEM: "item-ellery-corvid-confirm",
 } as const
 
 export type DemoId = (typeof DEMO_IDS)[keyof typeof DEMO_IDS]

@@ -133,6 +133,10 @@ export interface Reason {
 export interface ScoringContext {
   now: Date
   userId: string
+  /** Threaded into getThreadsForObject so an item's activity log never includes an internal
+   * thread the viewing role can't see. rankForRole always supplies a staff role here — client
+   * roles never reach this scoring path at all. */
+  role: Role
   /** Defaults to WEIGHTS. rankForRole supplies a role-adjusted set here. */
   weights?: FactorWeights
 }
@@ -158,14 +162,14 @@ function plural(count: number, noun: string): string {
 }
 
 /** Every message across whatever threads are scoped to this item — its activity log. */
-function itemMessages(item: OpenItem) {
-  return getThreadsForObject({ type: "item", id: item.id }).flatMap((t) => t.messages)
+function itemMessages(item: OpenItem, role: Role) {
+  return getThreadsForObject({ type: "item", id: item.id }, role).flatMap((t) => t.messages)
 }
 
 /** The single most recent message on this item, if any activity exists at all. Staleness and
  * clientResponse both read off this — same fact, two different questions asked about it. */
-function latestMessage(item: OpenItem) {
-  const messages = itemMessages(item)
+function latestMessage(item: OpenItem, role: Role) {
+  const messages = itemMessages(item, role)
   if (messages.length === 0) return null
   return messages.reduce((latest, m) => (m.sentAt > latest.sentAt ? m : latest))
 }
@@ -217,8 +221,8 @@ function ownershipFactor(item: OpenItem, ctx: ScoringContext, weight: number): F
 /** Calendar days since this item's last recorded activity, or null when it has none at all —
  * shared by stalenessFactor and by StaffHome's team-view "oldest untouched item" pick, so both
  * ask the same question of the same fact. */
-export function daysSinceLastActivity(item: OpenItem, now: Date): number | null {
-  const last = latestMessage(item)
+export function daysSinceLastActivity(item: OpenItem, now: Date, role: Role): number | null {
+  const last = latestMessage(item, role)
   return last ? differenceInCalendarDays(now, new Date(last.sentAt)) : null
 }
 
@@ -226,7 +230,7 @@ export function daysSinceLastActivity(item: OpenItem, now: Date): number | null 
  * an hour ago isn't stale — it's the opposite (see clientResponseFactor) — so this only fires
  * once activity has gone quiet for at least 5 days. */
 function stalenessFactor(item: OpenItem, ctx: ScoringContext, weight: number): FactorResult {
-  const daysSince = daysSinceLastActivity(item, ctx.now)
+  const daysSince = daysSinceLastActivity(item, ctx.now, ctx.role)
   if (daysSince === null || daysSince < 5) return { points: 0, reason: null }
   const points = weight * clamp(daysSince / 21, 0, 1.5)
   return { points, reason: { factor: "staleness", label: `No activity in ${plural(daysSince, "day")}`, points } }
@@ -245,7 +249,7 @@ function unblockingFactor(item: OpenItem, weight: number): FactorResult {
  * it happened recently. Decays to nothing over 48 hours — after that it's just staleness. */
 function clientResponseFactor(item: OpenItem, ctx: ScoringContext, weight: number): FactorResult {
   const ret = getReturn(item.returnId)
-  const last = latestMessage(item)
+  const last = latestMessage(item, ctx.role)
   if (!ret || !last || last.authorId !== ret.clientId) return { points: 0, reason: null }
   const hoursSince = differenceInHours(ctx.now, new Date(last.sentAt))
   if (hoursSince >= 48) return { points: 0, reason: null }
@@ -298,7 +302,7 @@ function isActionable(item: OpenItem): boolean {
  * manager's team-wide one.
  */
 export function rankForRole(items: OpenItem[], role: StaffRole, userId: string): ScoredItem[] {
-  const ctx: ScoringContext = { now: new Date(), userId, weights: weightsForRole(role) }
+  const ctx: ScoringContext = { now: new Date(), userId, role, weights: weightsForRole(role) }
   return items
     .filter(isActionable)
     .map((item) => ({ item, ...scoreItem(item, ctx) }))

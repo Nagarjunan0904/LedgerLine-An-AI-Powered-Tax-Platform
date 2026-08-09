@@ -79,6 +79,13 @@
     --color-state-locked-border: var(--state-locked-border);
     --color-state-locked-fill: var(--state-locked-fill);
     --color-state-locked-text: var(--state-locked-text);
+
+    /* Thread visibility (src/types/collaboration.ts Thread.visibility) — internal only. A
+       client-visible thread uses ordinary paper/panel chrome; internal is the one that needs
+       a surface a writer can't mistake for something the client will see. */
+    --color-visibility-internal-border: var(--visibility-internal-border);
+    --color-visibility-internal-fill: var(--visibility-internal-fill);
+    --color-visibility-internal-text: var(--visibility-internal-text);
 }
 
 :root {
@@ -117,6 +124,12 @@
     --state-locked-border: oklch(0.5 0.006 250);
     --state-locked-fill: oklch(0.93 0.003 250);
     --state-locked-text: oklch(0.47 0.007 250);
+
+    /* A hue none of the five field states use (155 green, 300 magenta, 70 amber, 250 neutral)
+       so "internal" never gets confused for a field state riding along on the same surface. */
+    --visibility-internal-border: oklch(0.48 0.14 230);
+    --visibility-internal-fill: oklch(0.85 0.025 230);
+    --visibility-internal-text: oklch(0.35 0.12 230);
 
     --background: var(--paper);
     --foreground: var(--ink);

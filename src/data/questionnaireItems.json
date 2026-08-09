@@ -10,105 +10,42 @@
   },
   {
     "id": "qi-0001",
-    "returnId": "return-0014",
-    "sectionId": "business",
-    "question": "What percentage of your home is used exclusively for business?",
-    "answerType": "number",
-    "answer": 14,
-    "required": true
+    "returnId": "return-0050",
+    "sectionId": "deductions",
+    "question": "Do you want to itemize deductions or take the standard deduction?",
+    "answerType": "choice",
+    "answer": "Standard deduction",
+    "required": false
   },
   {
     "id": "qi-0002",
-    "returnId": "return-0034",
-    "sectionId": "income",
-    "question": "Did you receive any income from cryptocurrency transactions?",
-    "answerType": "boolean",
-    "answer": false,
-    "required": true
+    "returnId": "return-0050",
+    "sectionId": "household",
+    "question": "How many dependents will you claim this year?",
+    "answerType": "number",
+    "answer": null,
+    "required": false
   },
   {
     "id": "qi-0003",
-    "returnId": "return-0034",
+    "returnId": "return-0031",
     "sectionId": "income",
-    "question": "Did you receive any income from cryptocurrency transactions?",
+    "question": "Did you work in more than one state this year?",
     "answerType": "boolean",
     "answer": false,
     "required": true
   },
   {
     "id": "qi-0004",
-    "returnId": "return-0034",
-    "sectionId": "household",
-    "question": "How many dependents will you claim this year?",
-    "answerType": "number",
-    "answer": 43,
-    "required": true
-  },
-  {
-    "id": "qi-0005",
-    "returnId": "return-0001",
-    "sectionId": "deductions",
-    "question": "Do you want to itemize deductions or take the standard deduction?",
-    "answerType": "choice",
-    "answer": "Standard deduction",
-    "required": true
-  },
-  {
-    "id": "qi-0006",
-    "returnId": "return-0001",
-    "sectionId": "credits",
-    "question": "Did you make any energy-efficient home improvements?",
-    "answerType": "boolean",
-    "answer": false,
-    "required": false
-  },
-  {
-    "id": "qi-0007",
-    "returnId": "return-0001",
+    "returnId": "return-0031",
     "sectionId": "deductions",
     "question": "Do you want to itemize deductions or take the standard deduction?",
     "answerType": "choice",
     "answer": "Itemize",
-    "required": false
-  },
-  {
-    "id": "qi-0008",
-    "returnId": "return-0016",
-    "sectionId": "deductions",
-    "question": "Do you want to itemize deductions or take the standard deduction?",
-    "answerType": "choice",
-    "answer": "Standard deduction",
     "required": true
   },
   {
-    "id": "qi-0009",
-    "returnId": "return-ellery-2025",
-    "sectionId": "deductions",
-    "question": "What was your total mortgage interest paid?",
-    "answerType": "number",
-    "answer": 62,
-    "required": true
-  },
-  {
-    "id": "qi-0010",
-    "returnId": "return-0041",
-    "sectionId": "household",
-    "question": "How many dependents will you claim this year?",
-    "answerType": "number",
-    "answer": 0,
-    "required": true
-  },
-  {
-    "id": "qi-0011",
-    "returnId": "return-0033",
-    "sectionId": "credits",
-    "question": "Did you make any energy-efficient home improvements?",
-    "answerType": "boolean",
-    "answer": true,
-    "required": true
-  },
-  {
-    "id": "qi-0012",
+    "id": "qi-0005",
     "returnId": "return-0033",
     "sectionId": "income",
     "question": "Did you work in more than one state this year?",
@@ -117,8 +54,44 @@
     "required": true
   },
   {
-    "id": "qi-0013",
-    "returnId": "return-voss-2025",
+    "id": "qi-0006",
+    "returnId": "return-0045",
+    "sectionId": "credits",
+    "question": "Did you pay for childcare while you worked?",
+    "answerType": "boolean",
+    "answer": false,
+    "required": true
+  },
+  {
+    "id": "qi-0007",
+    "returnId": "return-0038",
+    "sectionId": "deductions",
+    "question": "What was your total mortgage interest paid?",
+    "answerType": "number",
+    "answer": null,
+    "required": true
+  },
+  {
+    "id": "qi-0008",
+    "returnId": "return-0038",
+    "sectionId": "credits",
+    "question": "Did you make any energy-efficient home improvements?",
+    "answerType": "boolean",
+    "answer": true,
+    "required": true
+  },
+  {
+    "id": "qi-0009",
+    "returnId": "return-0038",
+    "sectionId": "income",
+    "question": "Did you work in more than one state this year?",
+    "answerType": "boolean",
+    "answer": true,
+    "required": true
+  },
+  {
+    "id": "qi-0010",
+    "returnId": "return-0038",
     "sectionId": "income",
     "question": "Did you receive any income from cryptocurrency transactions?",
     "answerType": "boolean",
@@ -126,8 +99,8 @@
     "required": true
   },
   {
-    "id": "qi-0014",
-    "returnId": "return-voss-2025",
+    "id": "qi-0011",
+    "returnId": "return-0038",
     "sectionId": "household",
     "question": "How many dependents will you claim this year?",
     "answerType": "number",
@@ -135,8 +108,8 @@
     "required": true
   },
   {
-    "id": "qi-0015",
-    "returnId": "return-0005",
+    "id": "qi-0012",
+    "returnId": "return-0026",
     "sectionId": "household",
     "question": "Did your marital status change during the tax year?",
     "answerType": "boolean",
@@ -144,8 +117,8 @@
     "required": false
   },
   {
-    "id": "qi-0016",
-    "returnId": "return-0005",
+    "id": "qi-0013",
+    "returnId": "return-0026",
     "sectionId": "credits",
     "question": "Did you pay for childcare while you worked?",
     "answerType": "boolean",
@@ -153,8 +126,8 @@
     "required": true
   },
   {
-    "id": "qi-0017",
-    "returnId": "return-0005",
+    "id": "qi-0014",
+    "returnId": "return-0030",
     "sectionId": "business",
     "question": "What percentage of your home is used exclusively for business?",
     "answerType": "number",
@@ -162,8 +135,8 @@
     "required": true
   },
   {
-    "id": "qi-0018",
-    "returnId": "return-0026",
+    "id": "qi-0015",
+    "returnId": "return-0046",
     "sectionId": "deductions",
     "question": "Do you want to itemize deductions or take the standard deduction?",
     "answerType": "choice",
@@ -171,8 +144,8 @@
     "required": true
   },
   {
-    "id": "qi-0019",
-    "returnId": "return-0026",
+    "id": "qi-0016",
+    "returnId": "return-0017",
     "sectionId": "deductions",
     "question": "What was your total mortgage interest paid?",
     "answerType": "number",
@@ -180,8 +153,8 @@
     "required": true
   },
   {
-    "id": "qi-0020",
-    "returnId": "return-0026",
+    "id": "qi-0017",
+    "returnId": "return-0017",
     "sectionId": "credits",
     "question": "Did you pay for childcare while you worked?",
     "answerType": "boolean",
@@ -189,8 +162,8 @@
     "required": false
   },
   {
-    "id": "qi-0021",
-    "returnId": "return-0050",
+    "id": "qi-0018",
+    "returnId": "return-voss-2025",
     "sectionId": "general",
     "question": "Is there anything else we should know before preparing your return?",
     "answerType": "text",
@@ -198,8 +171,8 @@
     "required": true
   },
   {
-    "id": "qi-0022",
-    "returnId": "return-0050",
+    "id": "qi-0019",
+    "returnId": "return-voss-2025",
     "sectionId": "household",
     "question": "How many dependents will you claim this year?",
     "answerType": "number",
@@ -207,8 +180,8 @@
     "required": true
   },
   {
-    "id": "qi-0023",
-    "returnId": "return-0050",
+    "id": "qi-0020",
+    "returnId": "return-voss-2025",
     "sectionId": "deductions",
     "question": "What was your total mortgage interest paid?",
     "answerType": "number",
@@ -216,8 +189,8 @@
     "required": true
   },
   {
-    "id": "qi-0024",
-    "returnId": "return-0050",
+    "id": "qi-0021",
+    "returnId": "return-osei-2025",
     "sectionId": "household",
     "question": "How many dependents will you claim this year?",
     "answerType": "number",
@@ -225,8 +198,8 @@
     "required": false
   },
   {
-    "id": "qi-0025",
-    "returnId": "return-0054",
+    "id": "qi-0022",
+    "returnId": "return-osei-2025",
     "sectionId": "income",
     "question": "Did you receive any income from cryptocurrency transactions?",
     "answerType": "boolean",
@@ -234,8 +207,8 @@
     "required": false
   },
   {
-    "id": "qi-0026",
-    "returnId": "return-0054",
+    "id": "qi-0023",
+    "returnId": "return-osei-2025",
     "sectionId": "deductions",
     "question": "Do you want to itemize deductions or take the standard deduction?",
     "answerType": "choice",
@@ -243,8 +216,8 @@
     "required": true
   },
   {
-    "id": "qi-0027",
-    "returnId": "return-0019",
+    "id": "qi-0024",
+    "returnId": "return-osei-2025",
     "sectionId": "deductions",
     "question": "What was your total mortgage interest paid?",
     "answerType": "number",
@@ -252,8 +225,8 @@
     "required": true
   },
   {
-    "id": "qi-0028",
-    "returnId": "return-0019",
+    "id": "qi-0025",
+    "returnId": "return-0007",
     "sectionId": "business",
     "question": "What percentage of your home is used exclusively for business?",
     "answerType": "number",
@@ -261,8 +234,8 @@
     "required": true
   },
   {
-    "id": "qi-0029",
-    "returnId": "return-0019",
+    "id": "qi-0026",
+    "returnId": "return-0007",
     "sectionId": "household",
     "question": "Did your marital status change during the tax year?",
     "answerType": "boolean",
@@ -270,8 +243,8 @@
     "required": false
   },
   {
-    "id": "qi-0030",
-    "returnId": "return-0019",
+    "id": "qi-0027",
+    "returnId": "return-0007",
     "sectionId": "deductions",
     "question": "What was your total mortgage interest paid?",
     "answerType": "number",
@@ -279,8 +252,8 @@
     "required": true
   },
   {
-    "id": "qi-0031",
-    "returnId": "return-0010",
+    "id": "qi-0028",
+    "returnId": "return-0007",
     "sectionId": "deductions",
     "question": "What was your total mortgage interest paid?",
     "answerType": "number",
@@ -288,8 +261,8 @@
     "required": true
   },
   {
-    "id": "qi-0032",
-    "returnId": "return-0010",
+    "id": "qi-0029",
+    "returnId": "return-0044",
     "sectionId": "income",
     "question": "Did you work in more than one state this year?",
     "answerType": "boolean",
@@ -297,8 +270,8 @@
     "required": true
   },
   {
-    "id": "qi-0033",
-    "returnId": "return-0010",
+    "id": "qi-0030",
+    "returnId": "return-0044",
     "sectionId": "household",
     "question": "Did your marital status change during the tax year?",
     "answerType": "boolean",
@@ -306,8 +279,8 @@
     "required": false
   },
   {
-    "id": "qi-0034",
-    "returnId": "return-0010",
+    "id": "qi-0031",
+    "returnId": "return-0048",
     "sectionId": "household",
     "question": "How many dependents will you claim this year?",
     "answerType": "number",
@@ -315,8 +288,8 @@
     "required": true
   },
   {
-    "id": "qi-0035",
-    "returnId": "return-0012",
+    "id": "qi-0032",
+    "returnId": "return-0048",
     "sectionId": "income",
     "question": "Did you receive any income from cryptocurrency transactions?",
     "answerType": "boolean",
@@ -324,8 +297,8 @@
     "required": false
   },
   {
-    "id": "qi-0036",
-    "returnId": "return-0012",
+    "id": "qi-0033",
+    "returnId": "return-0048",
     "sectionId": "household",
     "question": "How many dependents will you claim this year?",
     "answerType": "number",
@@ -333,8 +306,8 @@
     "required": true
   },
   {
-    "id": "qi-0037",
-    "returnId": "return-0012",
+    "id": "qi-0034",
+    "returnId": "return-0048",
     "sectionId": "credits",
     "question": "Did you pay for childcare while you worked?",
     "answerType": "boolean",
@@ -342,7 +315,7 @@
     "required": false
   },
   {
-    "id": "qi-0038",
+    "id": "qi-0035",
     "returnId": "return-0012",
     "sectionId": "credits",
     "question": "Did you pay for childcare while you worked?",
@@ -351,8 +324,8 @@
     "required": true
   },
   {
-    "id": "qi-0039",
-    "returnId": "return-0009",
+    "id": "qi-0036",
+    "returnId": "return-0012",
     "sectionId": "business",
     "question": "What percentage of your home is used exclusively for business?",
     "answerType": "number",
@@ -360,12 +333,39 @@
     "required": true
   },
   {
-    "id": "qi-0040",
-    "returnId": "return-0009",
+    "id": "qi-0037",
+    "returnId": "return-0012",
     "sectionId": "general",
     "question": "Is there anything else we should know before preparing your return?",
     "answerType": "text",
     "answer": null,
     "required": false
+  },
+  {
+    "id": "qi-0038",
+    "returnId": "return-0012",
+    "sectionId": "income",
+    "question": "Did you work in more than one state this year?",
+    "answerType": "boolean",
+    "answer": false,
+    "required": false
+  },
+  {
+    "id": "qi-0039",
+    "returnId": "return-0012",
+    "sectionId": "household",
+    "question": "Did your marital status change during the tax year?",
+    "answerType": "boolean",
+    "answer": false,
+    "required": true
+  },
+  {
+    "id": "qi-0040",
+    "returnId": "return-0022",
+    "sectionId": "general",
+    "question": "Is there anything else we should know before preparing your return?",
+    "answerType": "text",
+    "answer": "Tracto conor utrimque deporto decipio adulatio eum aperiam vilitas.",
+    "required": true
   }
 ]

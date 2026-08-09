@@ -1,4 +1,4 @@
-import type { ObjectRef, OpenItem, Return, Thread } from "@/types"
+import type { ObjectRef, OpenItem, Return, Role } from "@/types"
 import {
   getDocument,
   getDocumentsForReturn,
@@ -11,7 +11,6 @@ import {
   getThread,
   getThreadsForObject,
 } from "@/data/fixtures"
-import type { WorkContext } from "@/stores/useRoleStore"
 import type { FocusedObject } from "./focus"
 import { documentLabel, returnLabel, threadLabel } from "./labels"
 
@@ -36,11 +35,6 @@ function pluralize(count: number, singular: string): string {
 
 function unresolved<T extends { resolvedAt: string | null }>(list: T[]): T[] {
   return list.filter((x) => x.resolvedAt === null)
-}
-
-/** In personal context, a dual-role user's rail must not surface firm-only objects. */
-function visibleThreads(threads: Thread[], context: WorkContext): Thread[] {
-  return context === "personal" ? threads.filter((t) => t.visibility === "client-visible") : threads
 }
 
 function documentLink(ret: Return, documentId: string): string {
@@ -107,8 +101,8 @@ function referencesGroups(refs: ObjectRef[], ret: Return): ConnectionGroup[] {
   }))
 }
 
-function threadGroup(scopeRef: ObjectRef, ret: Return, context: WorkContext): ConnectionGroup | null {
-  const threads = unresolved(visibleThreads(getThreadsForObject(scopeRef), context))
+function threadGroup(scopeRef: ObjectRef, ret: Return, role: Role): ConnectionGroup | null {
+  const threads = unresolved(getThreadsForObject(scopeRef, role))
   if (threads.length === 0) return null
   return {
     verb: "has",
@@ -128,7 +122,7 @@ function openItemsGroup(items: OpenItem[], ret: Return): ConnectionGroup | null 
   }
 }
 
-function buildGroups(focus: FocusedObject, context: WorkContext): ConnectionGroup[] {
+function buildGroups(focus: FocusedObject, role: Role): ConnectionGroup[] {
   if (focus.kind === "none") return []
   const groups: ConnectionGroup[] = []
   const { ret } = focus
@@ -154,7 +148,7 @@ function buildGroups(focus: FocusedObject, context: WorkContext): ConnectionGrou
     }
     const items = openItemsGroup(unresolved(getOpenItemsForReturn(ret.id)), ret)
     if (items) groups.push(items)
-    const threadsGroup = threadGroup({ type: "return", id: ret.id }, ret, context)
+    const threadsGroup = threadGroup({ type: "return", id: ret.id }, ret, role)
     if (threadsGroup) groups.push(threadsGroup)
     return groups
   }
@@ -182,7 +176,7 @@ function buildGroups(focus: FocusedObject, context: WorkContext): ConnectionGrou
       }
     }
 
-    const threadsGroup = threadGroup({ type: "field", id: focus.field.id }, ret, context)
+    const threadsGroup = threadGroup({ type: "field", id: focus.field.id }, ret, role)
     if (threadsGroup) groups.push(threadsGroup)
 
     const items = openItemsGroup(
@@ -212,7 +206,7 @@ function buildGroups(focus: FocusedObject, context: WorkContext): ConnectionGrou
       }
     }
 
-    const threadsGroup = threadGroup({ type: "document", id: focus.document.id }, ret, context)
+    const threadsGroup = threadGroup({ type: "document", id: focus.document.id }, ret, role)
     if (threadsGroup) groups.push(threadsGroup)
 
     const items = openItemsGroup(
@@ -248,7 +242,7 @@ function buildGroups(focus: FocusedObject, context: WorkContext): ConnectionGrou
       entries: [{ label: returnLabel(ret), to: `/returns/${ret.id}` }],
     })
   }
-  const threadsGroup = threadGroup({ type: "item", id: focus.item.id }, ret, context)
+  const threadsGroup = threadGroup({ type: "item", id: focus.item.id }, ret, role)
   if (threadsGroup) groups.push(threadsGroup)
   return groups
 }
@@ -268,10 +262,10 @@ function appendFrom(to: string, fromValue: string): string {
  */
 export function getConnections(
   focus: FocusedObject,
-  context: WorkContext,
+  role: Role,
   currentLocation: string
 ): ConnectionGroup[] {
-  const groups = buildGroups(focus, context)
+  const groups = buildGroups(focus, role)
   if (focus.kind !== "field") return groups
   return groups.map((group) => ({
     ...group,

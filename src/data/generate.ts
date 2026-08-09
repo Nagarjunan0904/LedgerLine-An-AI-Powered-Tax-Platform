@@ -669,6 +669,81 @@ addProvenance({
   verification: null,
 })
 
+// --- Case 11: one document, two audiences — an internal question and a client-visible one -
+// Both threads are unanswered asks (isRequest: true, no reply after them). isOutstandingRequest
+// mirrors src/lib/threads.ts's function of the same name exactly — that's the predicate
+// ThreadPanel uses to show "waiting on" in its owner header, so an open item seeded here
+// whenever it's true stays in permanent agreement with what the UI displays. Duplicated
+// rather than imported: generate.ts runs under its own tsconfig with no "@/" alias, by design
+// (see this file's header comment) — pulling in a sibling under src/lib would cross that
+// boundary for a two-line check.
+function isOutstandingRequest(thread: Thread): boolean {
+  if (thread.resolvedAt !== null) return false
+  const last = thread.messages[thread.messages.length - 1]
+  return last !== undefined && last.isRequest
+}
+
+const corvidConfidenceThread = makeThread(
+  nextThreadId(),
+  { type: "document", id: DEMO_IDS.ELLERY_W2_CORVID_DOC },
+  "internal",
+  [nadia.id, staffUsers[4].id],
+  [
+    {
+      authorId: nadia.id,
+      body: "Corvid Inc.'s W-2 box 1 extracted at 71% confidence — the lowest read on this return. Can you pull up the scan and confirm $26,500.00 before I mark it verified?",
+      isRequest: true,
+      daysAgo: 2,
+    },
+  ],
+  false
+)
+if (isOutstandingRequest(corvidConfidenceThread)) {
+  addOpenItem({
+    id: DEMO_IDS.ELLERY_CORVID_CONFIDENCE_OPEN_ITEM,
+    returnId: elleryReturn.id,
+    title: "Sanity-check Corvid Inc.'s W-2 wages figure",
+    description:
+      "Box 1 extracted at 71% confidence, the lowest read on this return. Asked a reviewer to confirm $26,500.00 against the scan before marking it verified.",
+    owner: "firm",
+    assignedTo: staffUsers[4].id,
+    dueDate: daysFrom(NOW, 3),
+    severity: "medium",
+    linkedObjects: [{ type: "document", id: DEMO_IDS.ELLERY_W2_CORVID_DOC }],
+    resolvedAt: null,
+  })
+}
+
+const corvidConfirmThread = makeThread(
+  nextThreadId(),
+  { type: "document", id: DEMO_IDS.ELLERY_W2_CORVID_DOC },
+  "client-visible",
+  [nadia.id, marcus.id],
+  [
+    {
+      authorId: nadia.id,
+      body: "Quick check on your W-2 from Corvid Inc. — could you confirm box 1 shows $26,500.00 on your copy?",
+      isRequest: true,
+      daysAgo: 2,
+    },
+  ],
+  false
+)
+if (isOutstandingRequest(corvidConfirmThread)) {
+  addOpenItem({
+    id: DEMO_IDS.ELLERY_CORVID_CONFIRM_OPEN_ITEM,
+    returnId: elleryReturn.id,
+    title: "Get Marcus to confirm Corvid Inc.'s W-2 wages amount",
+    description: "Asked Marcus to confirm the $26,500.00 box 1 figure against his own copy of the W-2 before filing.",
+    owner: "firm",
+    assignedTo: nadia.id,
+    dueDate: daysFrom(NOW, 5),
+    severity: "medium",
+    linkedObjects: [{ type: "document", id: DEMO_IDS.ELLERY_W2_CORVID_DOC }],
+    resolvedAt: null,
+  })
+}
+
 // --- Case 2: AI misread a 1099-INT; a preparer corrected it; audit trail intact -----------
 
 addDoc({
@@ -1497,7 +1572,9 @@ openItemEligibleReturns.forEach((ret, i) => {
 })
 
 // ---------------------------------------------------------------------------
-// Threads + messages — 12 total, 5 scripted, 7 generic
+// Threads + messages — 14 total, 7 scripted, 7 generic. 2 of the 7 scripted threads (Case 11)
+// are created earlier, alongside the Corvid W-2 documents, so their open items land before the
+// 120-total open-item allocation above runs.
 // ---------------------------------------------------------------------------
 
 function makeThread(

@@ -106,8 +106,17 @@ export function getOpenItems(): OpenItem[] {
   return openItems
 }
 
-export function getThreadsForObject(ref: ObjectRef): Thread[] {
-  return threads.filter((t) => t.scope.type === ref.type && t.scope.id === ref.id)
+/**
+ * role is mandatory, not optional — the client role must never be able to fetch an internal
+ * thread by forgetting to filter downstream. individual/business-owner only ever get back
+ * client-visible threads; every other role sees everything scoped here.
+ */
+export function getThreadsForObject(ref: ObjectRef, role: Role): Thread[] {
+  const inScope = threads.filter((t) => t.scope.type === ref.type && t.scope.id === ref.id)
+  if (role === "individual" || role === "business-owner") {
+    return inScope.filter((t) => t.visibility === "client-visible")
+  }
+  return inScope
 }
 
 export function getThread(id: string): Thread | undefined {

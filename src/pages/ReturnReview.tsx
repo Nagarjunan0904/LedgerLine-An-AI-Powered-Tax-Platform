@@ -14,6 +14,7 @@ import {
 import { returnLabel } from "@/lib/labels"
 import { cn } from "@/lib/utils"
 import { ProvenanceChain } from "@/components/provenance/ProvenanceChain"
+import { ThreadPanel } from "@/components/collab/ThreadPanel"
 import { ConnectorOverlay } from "@/components/provenance/ConnectorOverlay"
 import { MockFormRenderer } from "@/components/documents/MockFormRenderer"
 import { CorrectionFlow } from "@/components/ai/CorrectionFlow"
@@ -320,7 +321,10 @@ export function ReturnReview() {
 
       <section className="rounded-sm border border-border p-4 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto">
         {selectedField ? (
-          <ProvenanceChain fieldId={selectedField.id} />
+          <>
+            <ProvenanceChain fieldId={selectedField.id} />
+            <ThreadPanel className="mt-6" />
+          </>
         ) : (
           <CenterEmptyState flaggedCount={flaggedFields.length} onJump={jumpToFirstFlagged} />
         )}

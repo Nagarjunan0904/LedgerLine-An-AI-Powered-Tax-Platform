@@ -3,7 +3,7 @@ import { Link, useLocation, useParams, useSearchParams } from "react-router"
 import { getConnections } from "@/lib/connections"
 import { resolveFocusedObject, type FocusedObject } from "@/lib/focus"
 import { documentLabel, returnLabel, threadLabel } from "@/lib/labels"
-import { useRoleStore } from "@/stores/useRoleStore"
+import { getEffectiveRole, useRoleStore } from "@/stores/useRoleStore"
 
 function focusKindLabel(kind: FocusedObject["kind"]): string {
   switch (kind) {
@@ -50,7 +50,9 @@ export function ContextRail() {
   const params = useParams()
   const [searchParams] = useSearchParams()
   const location = useLocation()
+  const role = useRoleStore((s) => s.role)
   const context = useRoleStore((s) => s.context)
+  const effectiveRole = getEffectiveRole(role, context)
 
   const focus = resolveFocusedObject(params, searchParams)
 
@@ -63,7 +65,7 @@ export function ContextRail() {
     )
   }
 
-  const groups = getConnections(focus, context, `${location.pathname}${location.search}`)
+  const groups = getConnections(focus, effectiveRole, `${location.pathname}${location.search}`)
 
   return (
     <div className="flex flex-col gap-5">

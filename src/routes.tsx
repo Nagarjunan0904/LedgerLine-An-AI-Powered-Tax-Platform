@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router"
 
 import { AppShell } from "@/components/shell/AppShell"
+import { DocumentExplorer } from "@/pages/DocumentExplorer"
 import { DocumentViewer } from "@/pages/DocumentViewer"
 import { Home } from "@/pages/Home"
 import { KitchenSink } from "@/pages/KitchenSink"
@@ -27,10 +28,11 @@ export const router = createBrowserRouter([
       { path: "returns", element: <ReturnsIndex /> },
       { path: "returns/:id", element: <PlaceholderPage name="ReturnOverview" /> },
       { path: "returns/:id/review", element: <ReturnReview /> },
-      { path: "returns/:id/documents", element: <PlaceholderPage name="DocumentExplorer" /> },
+      { path: "returns/:id/documents", element: <DocumentExplorer /> },
       { path: "returns/:id/documents/:docId", element: <DocumentViewer /> },
       { path: "returns/:id/items", element: <PlaceholderPage name="OpenItems" /> },
       { path: "returns/:id/threads/:threadId", element: <PlaceholderPage name="ThreadView" /> },
+      { path: "documents", element: <DocumentExplorer /> },
       { path: "questionnaire/:sectionId", element: <PlaceholderPage name="Questionnaire" /> },
       { path: "kitchen-sink", element: <KitchenSink /> },
       { path: "tokens", element: <TokenProofSheet /> },

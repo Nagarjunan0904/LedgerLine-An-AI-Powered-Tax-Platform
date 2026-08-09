@@ -73,6 +73,15 @@ export function getDocumentsForReturn(returnId: string): Document[] {
   return documents.filter((d) => d.returnId === returnId)
 }
 
+/** Every document across every return — the firm-wide pool DocumentExplorer searches in "All
+ * documents" scope. Unfiltered by design, matching getOpenItems(): a document has no
+ * visibility concept of its own (unlike Thread), so the access boundary that matters is which
+ * return a viewer may see, not which documents — callers scope that themselves (a client role
+ * must always go through getDocumentsForReturn on their own return, never this). */
+export function getDocuments(): Document[] {
+  return documents
+}
+
 export function getDocument(id: string): Document | undefined {
   return documents.find((d) => d.id === id)
 }

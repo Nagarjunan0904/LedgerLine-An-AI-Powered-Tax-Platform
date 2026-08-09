@@ -35,6 +35,8 @@ function buildNavItems(effectiveRole: Role, userId: string): NavItem[] {
         { label: "My open items", to: `/returns/${ownReturn.id}/items` }
       )
     }
+  } else {
+    items.push({ label: "All documents", to: "/documents" })
   }
   return items
 }

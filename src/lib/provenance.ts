@@ -1,5 +1,5 @@
 import type { Document, ExtractedField, FieldState, Provenance, ReturnField, TransformStep } from "@/types"
-import { getDocument, getExtractedField, getField, getProvenance } from "@/data/fixtures"
+import { getDocument, getExtractedField, getField, getFieldsForReturn, getProvenance } from "@/data/fixtures"
 import type { Correction } from "@/stores/useCorrectionsStore"
 
 /**
@@ -195,6 +195,14 @@ export function collectExtractedSources(node: FieldNode): ExtractedSource[] {
     }
   }
   return result
+}
+
+/** Every ReturnField on this return whose provenance directly cites this extracted field as a
+ * source — the reverse of traceField's own direction. A field-centric view walks from a field
+ * down to its sources; a document-centric view (DocumentExplorer's expanded row) needs the
+ * other way round: what does this extraction feed into. */
+export function fieldsSourcedFrom(extractedId: string, returnId: string): ReturnField[] {
+  return getFieldsForReturn(returnId).filter((f) => getProvenance(f.id)?.sourceFieldIds.includes(extractedId))
 }
 
 /** The distinct documents behind a chain, in first-seen order — one per document even when

@@ -244,7 +244,7 @@ function WaitingRow({ scored }: { scored: ScoredItem }) {
  */
 function WaitingSection({ items }: { items: ScoredItem[] }) {
   return (
-    <section>
+    <section id="waiting-on-client" className="scroll-mt-6">
       <h2 className="font-display text-sm font-semibold uppercase tracking-widest">
         Waiting on the client{items.length > 0 ? ` (${items.length})` : ""}
       </h2>
@@ -464,6 +464,13 @@ export function StaffHome() {
           <p className="mt-1 text-sm text-ink/60">
             New items appear here as documents come in and returns move through review.
           </p>
+          <Link
+            to="/returns"
+            className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium underline decoration-ink/30 underline-offset-2 hover:decoration-ink"
+          >
+            Browse returns
+            <ArrowRight className="size-3.5" aria-hidden="true" />
+          </Link>
         </div>
       ) : showTeamView ? (
         <TeamView items={ranked} role={effectiveRole} />
@@ -475,8 +482,17 @@ export function StaffHome() {
             <div className="rounded-sm border border-border p-8 text-center">
               <p className="font-medium">Nothing needs you right now.</p>
               <p className="mt-1 text-sm text-ink/60">
-                Every open item is currently waiting on the client — see below.
+                Every open item is currently waiting on the client.
               </p>
+              {waitingItems.length > 0 && (
+                <a
+                  href="#waiting-on-client"
+                  className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium underline decoration-ink/30 underline-offset-2 hover:decoration-ink"
+                >
+                  See what's waiting
+                  <ArrowRight className="size-3.5" aria-hidden="true" />
+                </a>
+              )}
             </div>
           )}
 

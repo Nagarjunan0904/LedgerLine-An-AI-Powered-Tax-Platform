@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router"
 import { AppShell } from "@/components/shell/AppShell"
 import { DocumentExplorer } from "@/pages/DocumentExplorer"
 import { DocumentViewer } from "@/pages/DocumentViewer"
+import { ErrorPage } from "@/pages/ErrorPage"
 import { Home } from "@/pages/Home"
 import { KitchenSink } from "@/pages/KitchenSink"
 import { PlaceholderPage } from "@/pages/PlaceholderPage"
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <AppShell />,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <RootRedirect /> },
       { path: "home", element: <Home /> },

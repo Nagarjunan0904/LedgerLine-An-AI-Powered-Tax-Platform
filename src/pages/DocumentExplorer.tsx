@@ -161,6 +161,18 @@ function ChipRow({ chips }: { chips: Chip[] }) {
   )
 }
 
+/** Genuinely no documents in scope — nothing to search or filter, so no "clear" affordance
+ * makes sense here. Distinct from the filtered-to-zero case below: that one blames the
+ * filters, this one has nothing to blame them for. */
+function NoDocumentsInScope({ scopeLabel }: { scopeLabel: string }) {
+  return (
+    <div className="flex flex-col items-center gap-2 px-8 py-16 text-center">
+      <p className="font-display text-sm font-semibold uppercase tracking-wide text-ink/60">No documents yet</p>
+      <p className="max-w-sm text-sm text-ink/50">{scopeLabel} has no documents on file yet.</p>
+    </div>
+  )
+}
+
 function EmptyState({
   query,
   filtersActive,
@@ -617,7 +629,9 @@ export function DocumentExplorer() {
         </div>
       </div>
 
-      {filtered.length === 0 ? (
+      {records.length === 0 ? (
+        <NoDocumentsInScope scopeLabel={scopeLabel} />
+      ) : filtered.length === 0 ? (
         <EmptyState query={query} filtersActive={hasActiveFilters(filters)} onClear={clearAll} />
       ) : (
         <DocumentList rows={rows} showReturnLabel={isFirmWide} scrollKey={`${location.pathname}${location.search}`} />
